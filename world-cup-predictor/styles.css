@@ -484,6 +484,254 @@ body {
   border-radius: 50%;
 }
 
+/* ─── Stage pill ─── */
+.stage-pill {
+  background: rgba(56, 139, 253, 0.12);
+  border: 1px solid rgba(56, 139, 253, 0.3);
+  color: var(--accent-blue);
+  padding: 2px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* ─── Time slot label ─── */
+.time-slot-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin: 14px 0 6px;
+}
+
+/* ─── xG + MOTM strip ─── */
+.xg-motm-section {
+  border-top: 1px solid var(--border);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.xg-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.xg-val {
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 28px;
+  text-align: center;
+}
+
+.xg-bars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.xg-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.xg-bar-home,
+.xg-bar-away {
+  height: 4px;
+  background: var(--bg-stat);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.xg-bar-home { direction: rtl; }
+
+.xg-fill-home {
+  height: 100%;
+  background: var(--accent-blue);
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.xg-fill-away {
+  height: 100%;
+  background: var(--accent-purple);
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.motm-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 197, 24, 0.07);
+  border: 1px solid rgba(245, 197, 24, 0.2);
+  padding: 6px 12px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.motm-label {
+  font-size: 10px;
+  color: var(--accent-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.motm-player {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.motm-prob {
+  font-size: 11px;
+  color: var(--accent-gold);
+  font-weight: 500;
+}
+
+/* ─── Context sections (inside details) ─── */
+.context-section {
+  border-bottom: 1px solid var(--border);
+  padding: 12px 16px;
+}
+
+/* Forma reciente */
+.form-rows { display: flex; flex-direction: column; gap: 6px; }
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-team-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  min-width: 120px;
+}
+
+.form-dots { display: flex; gap: 4px; }
+
+.form-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.form-w { background: rgba(63, 185, 80, 0.2); color: var(--accent-green); border: 1px solid rgba(63,185,80,0.4); }
+.form-d { background: rgba(210, 153, 34, 0.2); color: var(--accent-orange); border: 1px solid rgba(210,153,34,0.4); }
+.form-l { background: rgba(248, 81, 73, 0.2); color: var(--accent-red); border: 1px solid rgba(248,81,73,0.4); }
+
+/* Récord del torneo */
+.wc-record-row {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.wc-record-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wc-record-val {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+
+/* H2H */
+.h2h-bar-wrap { margin-top: 6px; }
+
+.h2h-bar {
+  display: flex;
+  height: 24px;
+  border-radius: 6px;
+  overflow: hidden;
+  gap: 1px;
+}
+
+.h2h-seg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 28px;
+  transition: flex 0.4s;
+}
+
+.h2h-home { background: rgba(56, 139, 253, 0.25); color: var(--accent-blue); }
+.h2h-draw { background: rgba(210, 153, 34, 0.2); color: var(--accent-orange); }
+.h2h-away { background: rgba(188, 140, 255, 0.2); color: var(--accent-purple); }
+
+.h2h-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 11px;
+}
+
+/* Injuries */
+.injuries-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.injury-team-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.injury-list { display: flex; flex-direction: column; gap: 4px; }
+
+.injury-chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.injury-icon { font-size: 11px; }
+.injury-name { font-weight: 500; }
+.injury-reason {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-style: italic;
+}
+
 /* ─── Footer ─── */
 .footer {
   text-align: center;

@@ -5,417 +5,431 @@
     "start": "2026-06-11",
     "final": "2026-07-19",
     "teams": 48,
-    "matches": 104
+    "totalMatches": 104,
+    "currentStage": "Ronda de 16 (Octavos de Final)",
+    "groupStageEnded": "2026-06-27"
   },
-  "groups": {
-    "A": ["USA", "Panama", "Bolivia", "New Zealand"],
-    "B": ["Argentina", "Chile", "Peru", "Australia"],
-    "C": ["Brazil", "Colombia", "Venezuela", "Ecuador"],
-    "D": ["France", "Belgium", "Croatia", "Morocco"],
-    "E": ["Spain", "Portugal", "Turkey", "Georgia"],
-    "F": ["England", "Netherlands", "Serbia", "Algeria"],
-    "G": ["Germany", "Poland", "Switzerland", "Cameroon"],
-    "H": ["Mexico", "Honduras", "Jamaica", "Costa Rica"],
-    "I": ["Japan", "South Korea", "Saudi Arabia", "Iran"],
-    "J": ["Senegal", "Nigeria", "Egypt", "Tunisia"],
-    "K": ["Uruguay", "Paraguay", "Venezuela", "Canada"],
-    "L": ["Denmark", "Austria", "Czech Republic", "Ivory Coast"]
+  "knockout": {
+    "R16": {
+      "dates": ["2026-06-28", "2026-06-29", "2026-06-30", "2026-07-01"],
+      "matches": 16
+    },
+    "QF": { "dates": ["2026-07-04", "2026-07-05"], "matches": 8 },
+    "SF": { "dates": ["2026-07-09", "2026-07-10"], "matches": 4 },
+    "Final": { "date": "2026-07-19", "matches": 1 }
   },
   "matches": [
     {
-      "id": "WC2026-001",
-      "date": "2026-06-11",
-      "time": "18:00",
-      "venue": "SoFi Stadium, Los Angeles",
-      "group": "A",
-      "matchday": 1,
-      "home": {
-        "team": "USA",
-        "flag": "🇺🇸",
-        "fifaRank": 13
-      },
-      "away": {
-        "team": "Panama",
-        "flag": "🇵🇦",
-        "fifaRank": 43
+      "id": "WC2026-R16-01",
+      "date": "2026-06-28",
+      "time": "15:00",
+      "venue": "MetLife Stadium, New York",
+      "stage": "Ronda de 16",
+      "matchday": null,
+      "home": { "team": "France", "flag": "🇫🇷", "fifaRank": 2 },
+      "away": { "team": "Uruguay", "flag": "🇺🇾", "fifaRank": 18 },
+      "context": {
+        "form": {
+          "home": ["W", "W", "W"],
+          "away": ["W", "D", "W"]
+        },
+        "wcRecord": {
+          "home": "3 PJ · 3G · 0E · 0P · 8-1",
+          "away": "3 PJ · 2G · 1E · 0P · 5-2"
+        },
+        "xg": { "home": 2.3, "away": 1.0 },
+        "h2h": {
+          "played": 14, "homeWins": 7, "draws": 4, "awayWins": 3,
+          "lastResult": "2-0 FRA (Copa del Mundo Qatar 2022)"
+        },
+        "injuries": {
+          "home": [],
+          "away": [{ "player": "Ronald Araújo", "reason": "lesión muscular" }]
+        },
+        "motm": { "player": "Kylian Mbappé", "team": "France", "flag": "🇫🇷", "probability": 41 }
       },
       "prediction": {
         "result": "2-0",
         "winner": "home",
-        "confidence": 78,
+        "confidence": 68,
         "scorers": [
-          { "player": "Christian Pulisic", "team": "USA", "minute": 24, "probability": 62 },
-          { "player": "Ricardo Pepi", "team": "USA", "minute": 67, "probability": 45 }
+          { "player": "Kylian Mbappé", "team": "France", "minute": 27, "probability": 74 },
+          { "player": "Ousmane Dembélé", "team": "France", "minute": 61, "probability": 41 }
         ],
         "stats": {
           "home": {
-            "shotsOnTarget": 6,
-            "shotsTotal": 14,
-            "corners": 7,
-            "passes": 512,
-            "fouls": 11,
-            "tackles": 18,
-            "yellowCards": ["Tyler Adams"],
-            "possession": 57
+            "shotsOnTarget": 7, "shotsTotal": 15, "corners": 8,
+            "passes": 596, "fouls": 9, "tackles": 16,
+            "yellowCards": ["Aurélien Tchouaméni"], "possession": 60
           },
           "away": {
-            "shotsOnTarget": 2,
-            "shotsTotal": 7,
-            "corners": 3,
-            "passes": 378,
-            "fouls": 15,
-            "tackles": 24,
-            "yellowCards": ["Adalberto Carrasquilla"],
-            "possession": 43
+            "shotsOnTarget": 3, "shotsTotal": 9, "corners": 4,
+            "passes": 396, "fouls": 13, "tackles": 22,
+            "yellowCards": ["Matías Vecino"], "possession": 40
           }
         }
       }
     },
     {
-      "id": "WC2026-002",
-      "date": "2026-06-11",
+      "id": "WC2026-R16-02",
+      "date": "2026-06-28",
       "time": "21:00",
-      "venue": "Estadio Azteca, Ciudad de México",
-      "group": "H",
-      "matchday": 1,
-      "home": {
-        "team": "Mexico",
-        "flag": "🇲🇽",
-        "fifaRank": 16
-      },
-      "away": {
-        "team": "Honduras",
-        "flag": "🇭🇳",
-        "fifaRank": 76
-      },
-      "prediction": {
-        "result": "3-1",
-        "winner": "home",
-        "confidence": 81,
-        "scorers": [
-          { "player": "Hirving Lozano", "team": "Mexico", "minute": 18, "probability": 55 },
-          { "player": "Raúl Jiménez", "team": "Mexico", "minute": 45, "probability": 48 },
-          { "player": "Alexis Vega", "team": "Mexico", "minute": 78, "probability": 37 },
-          { "player": "Alberth Elis", "team": "Honduras", "minute": 62, "probability": 41 }
-        ],
-        "stats": {
-          "home": {
-            "shotsOnTarget": 8,
-            "shotsTotal": 16,
-            "corners": 9,
-            "passes": 556,
-            "fouls": 10,
-            "tackles": 16,
-            "yellowCards": ["Edson Álvarez"],
-            "possession": 62
-          },
-          "away": {
-            "shotsOnTarget": 3,
-            "shotsTotal": 9,
-            "corners": 4,
-            "passes": 341,
-            "fouls": 13,
-            "tackles": 22,
-            "yellowCards": ["Bryan Róchez", "Denil Maldonado"],
-            "possession": 38
-          }
-        }
-      }
-    },
-    {
-      "id": "WC2026-028",
-      "date": "2026-06-29",
-      "time": "15:00",
       "venue": "AT&T Stadium, Dallas",
-      "group": "D",
-      "matchday": 3,
-      "home": {
-        "team": "France",
-        "flag": "🇫🇷",
-        "fifaRank": 2
-      },
-      "away": {
-        "team": "Belgium",
-        "flag": "🇧🇪",
-        "fifaRank": 5
+      "stage": "Ronda de 16",
+      "matchday": null,
+      "home": { "team": "Germany", "flag": "🇩🇪", "fifaRank": 12 },
+      "away": { "team": "Mexico", "flag": "🇲🇽", "fifaRank": 16 },
+      "context": {
+        "form": {
+          "home": ["W", "W", "W"],
+          "away": ["W", "D", "W"]
+        },
+        "wcRecord": {
+          "home": "3 PJ · 2G · 1E · 0P · 7-3",
+          "away": "3 PJ · 2G · 0E · 1P · 6-4"
+        },
+        "xg": { "home": 1.9, "away": 1.4 },
+        "h2h": {
+          "played": 9, "homeWins": 5, "draws": 2, "awayWins": 2,
+          "lastResult": "1-0 MEX (Copa del Mundo Rusia 2018)"
+        },
+        "injuries": {
+          "home": [{ "player": "Toni Kroos", "reason": "retirado" }],
+          "away": [{ "player": "Carlos Vela", "reason": "retirado" }]
+        },
+        "motm": { "player": "Jamal Musiala", "team": "Germany", "flag": "🇩🇪", "probability": 36 }
       },
       "prediction": {
         "result": "2-1",
         "winner": "home",
-        "confidence": 55,
+        "confidence": 58,
         "scorers": [
-          { "player": "Kylian Mbappé", "team": "France", "minute": 33, "probability": 71 },
-          { "player": "Randal Kolo Muani", "team": "France", "minute": 58, "probability": 43 },
-          { "player": "Romelu Lukaku", "team": "Belgium", "minute": 72, "probability": 52 }
+          { "player": "Jamal Musiala", "team": "Germany", "minute": 19, "probability": 52 },
+          { "player": "Kai Havertz", "team": "Germany", "minute": 67, "probability": 44 },
+          { "player": "Hirving Lozano", "team": "Mexico", "minute": 51, "probability": 48 }
         ],
         "stats": {
           "home": {
-            "shotsOnTarget": 7,
-            "shotsTotal": 15,
-            "corners": 8,
-            "passes": 587,
-            "fouls": 9,
-            "tackles": 17,
-            "yellowCards": ["Aurélien Tchouaméni"],
-            "possession": 58
+            "shotsOnTarget": 6, "shotsTotal": 14, "corners": 7,
+            "passes": 561, "fouls": 10, "tackles": 18,
+            "yellowCards": ["Leon Goretzka"], "possession": 56
           },
           "away": {
-            "shotsOnTarget": 5,
-            "shotsTotal": 12,
-            "corners": 6,
-            "passes": 421,
-            "fouls": 12,
-            "tackles": 21,
-            "yellowCards": ["Axel Witsel", "Kevin De Bruyne"],
-            "possession": 42
+            "shotsOnTarget": 4, "shotsTotal": 11, "corners": 6,
+            "passes": 437, "fouls": 11, "tackles": 21,
+            "yellowCards": ["Edson Álvarez", "Raúl Jiménez"], "possession": 44
           }
         }
       }
     },
     {
-      "id": "WC2026-029",
+      "id": "WC2026-R16-03",
       "date": "2026-06-29",
       "time": "15:00",
-      "venue": "BC Place, Vancouver",
-      "group": "D",
-      "matchday": 3,
-      "home": {
-        "team": "Croatia",
-        "flag": "🇭🇷",
-        "fifaRank": 10
-      },
-      "away": {
-        "team": "Morocco",
-        "flag": "🇲🇦",
-        "fifaRank": 14
-      },
-      "prediction": {
-        "result": "1-1",
-        "winner": "draw",
-        "confidence": 44,
-        "scorers": [
-          { "player": "Luka Modrić", "team": "Croatia", "minute": 41, "probability": 38 },
-          { "player": "Youssef En-Nesyri", "team": "Morocco", "minute": 67, "probability": 49 }
-        ],
-        "stats": {
-          "home": {
-            "shotsOnTarget": 4,
-            "shotsTotal": 11,
-            "corners": 6,
-            "passes": 463,
-            "fouls": 13,
-            "tackles": 22,
-            "yellowCards": ["Mateo Kovačić", "Josip Šutalo"],
-            "possession": 51
-          },
-          "away": {
-            "shotsOnTarget": 4,
-            "shotsTotal": 10,
-            "corners": 5,
-            "passes": 447,
-            "fouls": 14,
-            "tackles": 26,
-            "yellowCards": ["Sofyan Amrabat"],
-            "possession": 49
-          }
-        }
-      }
-    },
-    {
-      "id": "WC2026-030",
-      "date": "2026-06-29",
-      "time": "18:00",
       "venue": "SoFi Stadium, Los Angeles",
-      "group": "E",
-      "matchday": 3,
-      "home": {
-        "team": "Spain",
-        "flag": "🇪🇸",
-        "fifaRank": 3
-      },
-      "away": {
-        "team": "Portugal",
-        "flag": "🇵🇹",
-        "fifaRank": 7
+      "stage": "Ronda de 16",
+      "matchday": null,
+      "home": { "team": "Brazil", "flag": "🇧🇷", "fifaRank": 1 },
+      "away": { "team": "USA", "flag": "🇺🇸", "fifaRank": 13 },
+      "context": {
+        "form": {
+          "home": ["W", "W", "W"],
+          "away": ["W", "W", "D"]
+        },
+        "wcRecord": {
+          "home": "3 PJ · 3G · 0E · 0P · 9-2",
+          "away": "3 PJ · 2G · 1E · 0P · 5-3"
+        },
+        "xg": { "home": 2.6, "away": 1.1 },
+        "h2h": {
+          "played": 7, "homeWins": 5, "draws": 1, "awayWins": 1,
+          "lastResult": "1-1 (amistoso 2023)"
+        },
+        "injuries": {
+          "home": [{ "player": "Neymar Jr.", "reason": "no convocado (lesión ACL)" }],
+          "away": []
+        },
+        "motm": { "player": "Vinícius Jr.", "team": "Brazil", "flag": "🇧🇷", "probability": 45 }
       },
       "prediction": {
-        "result": "1-1",
-        "winner": "draw",
-        "confidence": 41,
+        "result": "3-1",
+        "winner": "home",
+        "confidence": 72,
         "scorers": [
-          { "player": "Pedri", "team": "Spain", "minute": 28, "probability": 40 },
-          { "player": "Bruno Fernandes", "team": "Portugal", "minute": 54, "probability": 46 }
+          { "player": "Vinícius Jr.", "team": "Brazil", "minute": 12, "probability": 68 },
+          { "player": "Rodrygo", "team": "Brazil", "minute": 44, "probability": 51 },
+          { "player": "Raphinha", "team": "Brazil", "minute": 79, "probability": 43 },
+          { "player": "Christian Pulisic", "team": "USA", "minute": 58, "probability": 55 }
         ],
         "stats": {
           "home": {
-            "shotsOnTarget": 6,
-            "shotsTotal": 14,
-            "corners": 7,
-            "passes": 631,
-            "fouls": 8,
-            "tackles": 15,
-            "yellowCards": ["Rodri"],
-            "possession": 60
+            "shotsOnTarget": 9, "shotsTotal": 18, "corners": 9,
+            "passes": 612, "fouls": 8, "tackles": 14,
+            "yellowCards": ["Casemiro"], "possession": 62
           },
           "away": {
-            "shotsOnTarget": 5,
-            "shotsTotal": 12,
-            "corners": 5,
-            "passes": 419,
-            "fouls": 11,
-            "tackles": 18,
-            "yellowCards": ["Rúben Dias", "João Cancelo"],
-            "possession": 40
+            "shotsOnTarget": 4, "shotsTotal": 10, "corners": 4,
+            "passes": 378, "fouls": 14, "tackles": 22,
+            "yellowCards": ["Tyler Adams", "Weston McKennie"], "possession": 38
           }
         }
       }
     },
     {
-      "id": "WC2026-031",
+      "id": "WC2026-R16-04",
       "date": "2026-06-29",
       "time": "18:00",
-      "venue": "Estadio BBVA, Monterrey",
-      "group": "E",
-      "matchday": 3,
-      "home": {
-        "team": "Turkey",
-        "flag": "🇹🇷",
-        "fifaRank": 31
-      },
-      "away": {
-        "team": "Georgia",
-        "flag": "🇬🇪",
-        "fifaRank": 74
-      },
-      "prediction": {
-        "result": "3-0",
-        "winner": "home",
-        "confidence": 74,
-        "scorers": [
-          { "player": "Arda Güler", "team": "Turkey", "minute": 14, "probability": 58 },
-          { "player": "Hakan Çalhanoğlu", "team": "Turkey", "minute": 42, "probability": 47 },
-          { "player": "Baris Yilmaz", "team": "Turkey", "minute": 81, "probability": 33 }
-        ],
-        "stats": {
-          "home": {
-            "shotsOnTarget": 7,
-            "shotsTotal": 16,
-            "corners": 8,
-            "passes": 498,
-            "fouls": 11,
-            "tackles": 19,
-            "yellowCards": ["Samet Akaydın"],
-            "possession": 56
-          },
-          "away": {
-            "shotsOnTarget": 2,
-            "shotsTotal": 8,
-            "corners": 3,
-            "passes": 312,
-            "fouls": 16,
-            "tackles": 28,
-            "yellowCards": ["Giorgi Chakvetadze", "Saba Lobjanidze"],
-            "possession": 44
-          }
-        }
-      }
-    },
-    {
-      "id": "WC2026-032",
-      "date": "2026-06-29",
-      "time": "21:00",
-      "venue": "MetLife Stadium, New York",
-      "group": "F",
-      "matchday": 3,
-      "home": {
-        "team": "England",
-        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-        "fifaRank": 4
-      },
-      "away": {
-        "team": "Netherlands",
-        "flag": "🇳🇱",
-        "fifaRank": 8
-      },
-      "prediction": {
-        "result": "2-2",
-        "winner": "draw",
-        "confidence": 38,
-        "scorers": [
-          { "player": "Harry Kane", "team": "England", "minute": 22, "probability": 67 },
-          { "player": "Jude Bellingham", "team": "England", "minute": 55, "probability": 52 },
-          { "player": "Cody Gakpo", "team": "Netherlands", "minute": 38, "probability": 55 },
-          { "player": "Memphis Depay", "team": "Netherlands", "minute": 77, "probability": 43 }
-        ],
-        "stats": {
-          "home": {
-            "shotsOnTarget": 8,
-            "shotsTotal": 16,
-            "corners": 7,
-            "passes": 541,
-            "fouls": 10,
-            "tackles": 16,
-            "yellowCards": ["Declan Rice"],
-            "possession": 52
-          },
-          "away": {
-            "shotsOnTarget": 7,
-            "shotsTotal": 15,
-            "corners": 8,
-            "passes": 497,
-            "fouls": 12,
-            "tackles": 20,
-            "yellowCards": ["Frenkie de Jong", "Virgil van Dijk"],
-            "possession": 48
-          }
-        }
-      }
-    },
-    {
-      "id": "WC2026-033",
-      "date": "2026-06-29",
-      "time": "21:00",
-      "venue": "Lumen Field, Seattle",
-      "group": "F",
-      "matchday": 3,
-      "home": {
-        "team": "Serbia",
-        "flag": "🇷🇸",
-        "fifaRank": 25
-      },
-      "away": {
-        "team": "Algeria",
-        "flag": "🇩🇿",
-        "fifaRank": 52
+      "venue": "Estadio Azteca, Ciudad de México",
+      "stage": "Ronda de 16",
+      "matchday": null,
+      "home": { "team": "Spain", "flag": "🇪🇸", "fifaRank": 3 },
+      "away": { "team": "Morocco", "flag": "🇲🇦", "fifaRank": 14 },
+      "context": {
+        "form": {
+          "home": ["W", "W", "W"],
+          "away": ["W", "W", "D"]
+        },
+        "wcRecord": {
+          "home": "3 PJ · 3G · 0E · 0P · 10-1",
+          "away": "3 PJ · 2G · 1E · 0P · 4-2"
+        },
+        "xg": { "home": 2.0, "away": 0.9 },
+        "h2h": {
+          "played": 8, "homeWins": 5, "draws": 2, "awayWins": 1,
+          "lastResult": "0-0 (4-3 en pen) MAR (Copa del Mundo Qatar 2022)"
+        },
+        "injuries": {
+          "home": [],
+          "away": [{ "player": "Achraf Hakimi", "reason": "duda (molestias)" }]
+        },
+        "motm": { "player": "Pedri", "team": "Spain", "flag": "🇪🇸", "probability": 37 }
       },
       "prediction": {
         "result": "2-0",
         "winner": "home",
-        "confidence": 65,
+        "confidence": 61,
         "scorers": [
-          { "player": "Dušan Vlahović", "team": "Serbia", "minute": 31, "probability": 59 },
-          { "player": "Aleksandar Mitrović", "team": "Serbia", "minute": 74, "probability": 48 }
+          { "player": "Pedri", "team": "Spain", "minute": 36, "probability": 44 },
+          { "player": "Álvaro Morata", "team": "Spain", "minute": 72, "probability": 49 }
         ],
         "stats": {
           "home": {
-            "shotsOnTarget": 6,
-            "shotsTotal": 13,
-            "corners": 6,
-            "passes": 467,
-            "fouls": 12,
-            "tackles": 20,
-            "yellowCards": ["Nemanja Gudelj"],
-            "possession": 54
+            "shotsOnTarget": 7, "shotsTotal": 15, "corners": 9,
+            "passes": 648, "fouls": 8, "tackles": 14,
+            "yellowCards": ["Rodri"], "possession": 65
           },
           "away": {
-            "shotsOnTarget": 2,
-            "shotsTotal": 8,
-            "corners": 4,
-            "passes": 396,
-            "fouls": 14,
-            "tackles": 24,
-            "yellowCards": ["Riyad Mahrez", "Ismael Bennacer"],
-            "possession": 46
+            "shotsOnTarget": 3, "shotsTotal": 8, "corners": 3,
+            "passes": 352, "fouls": 15, "tackles": 28,
+            "yellowCards": ["Sofyan Amrabat", "Nayef Aguerd"], "possession": 35
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-R16-05",
+      "date": "2026-06-29",
+      "time": "21:00",
+      "venue": "Lumen Field, Seattle",
+      "stage": "Ronda de 16",
+      "matchday": null,
+      "home": { "team": "Argentina", "flag": "🇦🇷", "fifaRank": 9 },
+      "away": { "team": "Japan", "flag": "🇯🇵", "fifaRank": 17 },
+      "context": {
+        "form": {
+          "home": ["W", "W", "W"],
+          "away": ["W", "W", "W"]
+        },
+        "wcRecord": {
+          "home": "3 PJ · 2G · 1E · 0P · 7-4",
+          "away": "3 PJ · 3G · 0E · 0P · 7-2"
+        },
+        "xg": { "home": 1.8, "away": 1.2 },
+        "h2h": {
+          "played": 6, "homeWins": 4, "draws": 1, "awayWins": 1,
+          "lastResult": "1-0 ARG (amistoso 2022)"
+        },
+        "injuries": {
+          "home": [{ "player": "Ángel Di María", "reason": "retirado" }],
+          "away": [{ "player": "Takehiro Tomiyasu", "reason": "suspendido (amarillas)" }]
+        },
+        "motm": { "player": "Lionel Messi", "team": "Argentina", "flag": "🇦🇷", "probability": 52 }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 63,
+        "scorers": [
+          { "player": "Lionel Messi", "team": "Argentina", "minute": 23, "probability": 62 },
+          { "player": "Julián Álvarez", "team": "Argentina", "minute": 68, "probability": 47 },
+          { "player": "Kaoru Mitoma", "team": "Japan", "minute": 51, "probability": 43 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6, "shotsTotal": 14, "corners": 7,
+            "passes": 534, "fouls": 10, "tackles": 18,
+            "yellowCards": ["Rodrigo De Paul"], "possession": 55
+          },
+          "away": {
+            "shotsOnTarget": 5, "shotsTotal": 12, "corners": 6,
+            "passes": 446, "fouls": 12, "tackles": 23,
+            "yellowCards": ["Maya Yoshida"], "possession": 45
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-R16-06",
+      "date": "2026-06-30",
+      "time": "15:00",
+      "venue": "BC Place, Vancouver",
+      "stage": "Ronda de 16",
+      "matchday": null,
+      "home": { "team": "England", "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "fifaRank": 4 },
+      "away": { "team": "Senegal", "flag": "🇸🇳", "fifaRank": 20 },
+      "context": {
+        "form": {
+          "home": ["W", "W", "W"],
+          "away": ["W", "D", "W"]
+        },
+        "wcRecord": {
+          "home": "3 PJ · 3G · 0E · 0P · 9-2",
+          "away": "3 PJ · 2G · 1E · 0P · 6-3"
+        },
+        "xg": { "home": 2.2, "away": 0.9 },
+        "h2h": {
+          "played": 3, "homeWins": 2, "draws": 0, "awayWins": 1,
+          "lastResult": "3-0 ENG (Copa del Mundo Qatar 2022)"
+        },
+        "injuries": {
+          "home": [{ "player": "Luke Shaw", "reason": "lesión muscular" }],
+          "away": []
+        },
+        "motm": { "player": "Harry Kane", "team": "England", "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "probability": 39 }
+      },
+      "prediction": {
+        "result": "3-0",
+        "winner": "home",
+        "confidence": 71,
+        "scorers": [
+          { "player": "Harry Kane", "team": "England", "minute": 17, "probability": 70 },
+          { "player": "Bukayo Saka", "team": "England", "minute": 49, "probability": 53 },
+          { "player": "Jude Bellingham", "team": "England", "minute": 78, "probability": 48 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 8, "shotsTotal": 17, "corners": 9,
+            "passes": 567, "fouls": 9, "tackles": 16,
+            "yellowCards": ["Declan Rice"], "possession": 59
+          },
+          "away": {
+            "shotsOnTarget": 2, "shotsTotal": 8, "corners": 3,
+            "passes": 394, "fouls": 13, "tackles": 25,
+            "yellowCards": ["Idrissa Gueye"], "possession": 41
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-R16-07",
+      "date": "2026-06-30",
+      "time": "21:00",
+      "venue": "Estadio BBVA, Monterrey",
+      "stage": "Ronda de 16",
+      "matchday": null,
+      "home": { "team": "Portugal", "flag": "🇵🇹", "fifaRank": 7 },
+      "away": { "team": "Netherlands", "flag": "🇳🇱", "fifaRank": 8 },
+      "context": {
+        "form": {
+          "home": ["W", "W", "W"],
+          "away": ["W", "W", "D"]
+        },
+        "wcRecord": {
+          "home": "3 PJ · 3G · 0E · 0P · 11-2",
+          "away": "3 PJ · 2G · 1E · 0P · 7-4"
+        },
+        "xg": { "home": 1.9, "away": 1.7 },
+        "h2h": {
+          "played": 18, "homeWins": 6, "draws": 6, "awayWins": 6,
+          "lastResult": "0-0 (4-2 en pen) POR (EURO 2024)"
+        },
+        "injuries": {
+          "home": [{ "player": "Diogo Jota", "reason": "molestias musculares" }],
+          "away": []
+        },
+        "motm": { "player": "Bruno Fernandes", "team": "Portugal", "flag": "🇵🇹", "probability": 34 }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 48,
+        "scorers": [
+          { "player": "Bruno Fernandes", "team": "Portugal", "minute": 35, "probability": 49 },
+          { "player": "Rafael Leão", "team": "Portugal", "minute": 74, "probability": 42 },
+          { "player": "Cody Gakpo", "team": "Netherlands", "minute": 58, "probability": 53 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6, "shotsTotal": 13, "corners": 6,
+            "passes": 498, "fouls": 11, "tackles": 19,
+            "yellowCards": ["João Cancelo"], "possession": 52
+          },
+          "away": {
+            "shotsOnTarget": 6, "shotsTotal": 14, "corners": 7,
+            "passes": 471, "fouls": 12, "tackles": 20,
+            "yellowCards": ["Frenkie de Jong"], "possession": 48
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-R16-08",
+      "date": "2026-07-01",
+      "time": "18:00",
+      "venue": "SoFi Stadium, Los Angeles",
+      "stage": "Ronda de 16",
+      "matchday": null,
+      "home": { "team": "Canada", "flag": "🇨🇦", "fifaRank": 49 },
+      "away": { "team": "South Korea", "flag": "🇰🇷", "fifaRank": 23 },
+      "context": {
+        "form": {
+          "home": ["W", "D", "W"],
+          "away": ["W", "W", "D"]
+        },
+        "wcRecord": {
+          "home": "3 PJ · 2G · 1E · 0P · 6-4",
+          "away": "3 PJ · 2G · 1E · 0P · 5-3"
+        },
+        "xg": { "home": 1.3, "away": 1.5 },
+        "h2h": {
+          "played": 4, "homeWins": 1, "draws": 2, "awayWins": 1,
+          "lastResult": "2-2 (amistoso 2024)"
+        },
+        "injuries": {
+          "home": [],
+          "away": [{ "player": "Heung-min Son", "reason": "duda (fatiga)" }]
+        },
+        "motm": { "player": "Alphonso Davies", "team": "Canada", "flag": "🇨🇦", "probability": 33 }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 50,
+        "scorers": [
+          { "player": "Jonathan David", "team": "Canada", "minute": 40, "probability": 46 },
+          { "player": "Heung-min Son", "team": "South Korea", "minute": 27, "probability": 55 },
+          { "player": "Cho Gue-sung", "team": "South Korea", "minute": 63, "probability": 41 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 5, "shotsTotal": 12, "corners": 6,
+            "passes": 467, "fouls": 13, "tackles": 22,
+            "yellowCards": ["Atiba Hutchinson"], "possession": 49
+          },
+          "away": {
+            "shotsOnTarget": 6, "shotsTotal": 13, "corners": 7,
+            "passes": 481, "fouls": 11, "tackles": 20,
+            "yellowCards": ["Kim Min-jae"], "possession": 51
           }
         }
       }

@@ -47,8 +47,9 @@ world-cup-predictor/
 ## Estado Actual
 
 - [x] Archivos HTML/JS/CSS creados
-- [x] Datos del Mundial 2026 cargados (partidos del 29 de junio y más)
+- [x] Datos del Mundial 2026 cargados — Ronda de 16 (3 jornadas: 28, 29, 30 jun y 1 jul)
 - [x] GitHub Actions configurado
+- [x] Forma reciente, xG, H2H, bajas, MOTM por partido
 - [ ] GitHub Pages habilitado (requiere configuración manual en Settings del repo)
 
 ## Partidos del Mundial 2026 (referencia)

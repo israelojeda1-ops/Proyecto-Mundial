@@ -2,7 +2,6 @@
 (function () {
   'use strict';
 
-  /* ─── State ─── */
   const TODAY = getLocalDateString();
 
   /* ─── Helpers ─── */
@@ -31,10 +30,6 @@
     return [Math.round((home / total) * 100), Math.round((away / total) * 100)];
   }
 
-  function getTeamFlag(match, side) {
-    return match[side].flag || '';
-  }
-
   function winnerClass(match, side) {
     const w = match.prediction.winner;
     if (w === 'draw') return '';
@@ -43,11 +38,145 @@
     return '';
   }
 
-  /* ─── Render helpers ─── */
-  function renderScorers(scorers, homeTeam, awayTeam, matchObj) {
+  /* ─── Render: Forma reciente ─── */
+  function renderForm(form, homeTeam, awayTeam) {
+    if (!form) return '';
+    function formDots(arr) {
+      return arr.map(r => {
+        const cls = r === 'W' ? 'form-w' : r === 'D' ? 'form-d' : 'form-l';
+        return `<span class="form-dot ${cls}" title="${r === 'W' ? 'Victoria' : r === 'D' ? 'Empate' : 'Derrota'}">${r}</span>`;
+      }).join('');
+    }
+    return `
+      <div class="context-section">
+        <div class="section-title">📈 Forma reciente (Mundial 2026)</div>
+        <div class="form-rows">
+          <div class="form-row">
+            <span class="form-team-label">${homeTeam.flag} ${homeTeam.team}</span>
+            <div class="form-dots">${formDots(form.home)}</div>
+          </div>
+          <div class="form-row">
+            <span class="form-team-label">${awayTeam.flag} ${awayTeam.team}</span>
+            <div class="form-dots">${formDots(form.away)}</div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  /* ─── Render: Récord en el torneo ─── */
+  function renderWCRecord(ctx, homeTeam, awayTeam) {
+    if (!ctx || !ctx.wcRecord) return '';
+    return `
+      <div class="wc-record-row">
+        <div class="wc-record-item">
+          <span class="form-team-label">${homeTeam.flag} ${homeTeam.team}</span>
+          <span class="wc-record-val">${ctx.wcRecord.home}</span>
+        </div>
+        <div class="wc-record-item">
+          <span class="form-team-label">${awayTeam.flag} ${awayTeam.team}</span>
+          <span class="wc-record-val">${ctx.wcRecord.away}</span>
+        </div>
+      </div>`;
+  }
+
+  /* ─── Render: H2H ─── */
+  function renderH2H(h2h, homeTeam, awayTeam) {
+    if (!h2h) return '';
+    const total = h2h.homeWins + h2h.draws + h2h.awayWins;
+    const homePct = Math.round((h2h.homeWins / total) * 100);
+    const drawPct = Math.round((h2h.draws / total) * 100);
+    const awayPct = 100 - homePct - drawPct;
+    return `
+      <div class="context-section">
+        <div class="section-title">⚔️ Historial cara a cara (${h2h.played} encuentros)</div>
+        <div class="h2h-bar-wrap">
+          <div class="h2h-bar">
+            <div class="h2h-seg h2h-home" style="width:${homePct}%" title="${homeTeam.team}: ${h2h.homeWins} victorias">${h2h.homeWins}V</div>
+            <div class="h2h-seg h2h-draw" style="width:${drawPct}%" title="Empates: ${h2h.draws}">${h2h.draws}E</div>
+            <div class="h2h-seg h2h-away" style="width:${awayPct}%" title="${awayTeam.team}: ${h2h.awayWins} victorias">${h2h.awayWins}V</div>
+          </div>
+          <div class="h2h-labels">
+            <span style="color:var(--accent-blue)">${homeTeam.flag} ${homeTeam.team}</span>
+            <span style="color:var(--text-muted);font-size:11px">Último: ${h2h.lastResult}</span>
+            <span style="color:var(--accent-purple)">${awayTeam.flag} ${awayTeam.team}</span>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  /* ─── Render: Bajas e lesiones ─── */
+  function renderInjuries(injuries, homeTeam, awayTeam) {
+    if (!injuries) return '';
+    const homeList = injuries.home || [];
+    const awayList = injuries.away || [];
+    if (homeList.length === 0 && awayList.length === 0) return '';
+
+    function injuryChips(list) {
+      if (list.length === 0) return '<span style="color:var(--text-muted);font-size:11px">Sin bajas confirmadas</span>';
+      return list.map(i => `
+        <span class="injury-chip">
+          <span class="injury-icon">🚫</span>
+          <span class="injury-name">${i.player}</span>
+          <span class="injury-reason">${i.reason}</span>
+        </span>`).join('');
+    }
+
+    return `
+      <div class="context-section">
+        <div class="section-title">🏥 Bajas y suspendidos</div>
+        <div class="injuries-grid">
+          <div>
+            <div class="injury-team-label">${homeTeam.flag} ${homeTeam.team}</div>
+            <div class="injury-list">${injuryChips(homeList)}</div>
+          </div>
+          <div>
+            <div class="injury-team-label">${awayTeam.flag} ${awayTeam.team}</div>
+            <div class="injury-list">${injuryChips(awayList)}</div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  /* ─── Render: xG y Jugador del partido ─── */
+  function renderXgAndMotm(ctx, homeTeam, awayTeam) {
+    if (!ctx) return '';
+    let xgHtml = '';
+    if (ctx.xg) {
+      const homeXg = ctx.xg.home;
+      const awayXg = ctx.xg.away;
+      const [homePct, awayPct] = statPercent(homeXg, awayXg);
+      xgHtml = `
+        <div class="xg-row">
+          <span class="xg-val" style="color:var(--accent-blue)">${homeXg}</span>
+          <div class="xg-bars">
+            <div class="xg-bar-home"><div class="xg-fill-home" style="width:${homePct}%"></div></div>
+            <div class="xg-label">xG esperados</div>
+            <div class="xg-bar-away"><div class="xg-fill-away" style="width:${awayPct}%"></div></div>
+          </div>
+          <span class="xg-val" style="color:var(--accent-purple)">${awayXg}</span>
+        </div>`;
+    }
+
+    let motmHtml = '';
+    if (ctx.motm) {
+      const m = ctx.motm;
+      motmHtml = `
+        <div class="motm-block">
+          <span class="motm-label">⭐ Jugador del partido</span>
+          <span class="motm-player">${m.flag} ${m.player}</span>
+          <span class="motm-prob">${m.probability}% probable</span>
+        </div>`;
+    }
+
+    if (!xgHtml && !motmHtml) return '';
+    return `<div class="xg-motm-section">${xgHtml}${motmHtml}</div>`;
+  }
+
+  /* ─── Render: Anotadores ─── */
+  function renderScorers(scorers, match) {
     if (!scorers || scorers.length === 0) return '';
     const chips = scorers.map(s => {
-      const side = s.team === homeTeam ? matchObj.home : matchObj.away;
+      const side = s.team === match.home.team ? match.home : match.away;
       return `<span class="scorer-chip">
         <span class="flag">${side.flag}</span>
         <span class="name">${s.player}</span>
@@ -62,6 +191,7 @@
       </div>`;
   }
 
+  /* ─── Render: Barra stat ─── */
   function renderStatRow(label, homeVal, awayVal) {
     const [homePct, awayPct] = statPercent(homeVal, awayVal);
     return `
@@ -105,15 +235,14 @@
       </div>`;
   }
 
+  /* ─── Render: Amarillas ─── */
   function renderYellows(stats, match) {
     const homeYellows = stats.home.yellowCards || [];
     const awayYellows = stats.away.yellowCards || [];
-
-    function chips(players, flag) {
+    function chips(players) {
       if (players.length === 0) return '<span style="color:var(--text-muted);font-size:11px;">Ninguna prevista</span>';
       return players.map(p => `<span class="yellow-chip">${p}</span>`).join('');
     }
-
     return `
       <div class="yellows-section">
         <div class="yellows-team">
@@ -127,32 +256,35 @@
       </div>`;
   }
 
+  /* ─── Render: Card completa ─── */
   function renderCard(match) {
     const p = match.prediction;
+    const ctx = match.context || null;
     const confClass = confidenceClass(p.confidence);
-    const cardId = `card-${match.id}`;
     const detailsId = `details-${match.id}`;
-
-    const homeWinnerClass = winnerClass(match, 'home');
-    const awayWinnerClass = winnerClass(match, 'away');
+    const homeWC = winnerClass(match, 'home');
+    const awayWC = winnerClass(match, 'away');
 
     const resultLabel = p.winner === 'draw'
-      ? '<span style="color:var(--accent-orange)">Empate</span>'
+      ? `<span style="color:var(--accent-orange)">Empate</span>`
       : `<span style="color:var(--accent-green)">Victoria ${p.winner === 'home' ? match.home.team : match.away.team}</span>`;
 
+    const stageLabel = match.stage
+      ? `<span class="stage-pill">${match.stage}</span>`
+      : `<span class="group-pill">Grupo ${match.group} · J${match.matchday}</span>`;
+
     return `
-      <article class="match-card" id="${cardId}">
+      <article class="match-card" id="card-${match.id}" role="listitem">
         <div class="card-header">
           <div class="card-meta-left">
-            <span class="group-pill">Grupo ${match.group}</span>
+            ${stageLabel}
             <span class="match-time">🕐 ${match.time}</span>
-            <span style="color:var(--text-muted);font-size:11px;">J${match.matchday}</span>
           </div>
           <span class="match-venue">📍 ${match.venue}</span>
         </div>
 
         <div class="matchup">
-          <div class="team ${homeWinnerClass}">
+          <div class="team ${homeWC}">
             <span class="team-flag">${match.home.flag}</span>
             <span class="team-name">${match.home.team}</span>
             <span class="team-rank">FIFA #${match.home.fifaRank}</span>
@@ -170,37 +302,41 @@
             <div style="margin-top:4px;font-size:11px;">${resultLabel}</div>
           </div>
 
-          <div class="team ${awayWinnerClass}">
+          <div class="team ${awayWC}">
             <span class="team-flag">${match.away.flag}</span>
             <span class="team-name">${match.away.team}</span>
             <span class="team-rank">FIFA #${match.away.fifaRank}</span>
           </div>
         </div>
 
-        ${renderScorers(p.scorers, match.home.team, match.away.team, match)}
+        ${ctx ? renderXgAndMotm(ctx, match.home, match.away) : ''}
+
+        ${renderScorers(p.scorers, match)}
 
         <button class="card-toggle" onclick="toggleDetails('${detailsId}', this)" aria-expanded="false">
-          <span>Ver estadísticas detalladas</span>
+          <span>Ver análisis completo</span>
           <i class="toggle-icon">▼</i>
         </button>
 
         <div class="card-details" id="${detailsId}">
+          ${ctx ? renderForm(ctx.form, match.home, match.away) : ''}
+          ${ctx ? renderWCRecord(ctx, match.home, match.away) : ''}
+          ${ctx ? renderH2H(ctx.h2h, match.home, match.away) : ''}
+          ${ctx ? renderInjuries(ctx.injuries, match.home, match.away) : ''}
           ${renderStats(p.stats, match)}
           ${renderYellows(p.stats, match)}
         </div>
       </article>`;
   }
 
-  /* ─── Toggle details ─── */
+  /* ─── Toggle ─── */
   window.toggleDetails = function (detailsId, btn) {
     const el = document.getElementById(detailsId);
     const isOpen = el.classList.contains('open');
     el.classList.toggle('open', !isOpen);
     btn.classList.toggle('open', !isOpen);
     btn.setAttribute('aria-expanded', String(!isOpen));
-    btn.querySelector('span').textContent = isOpen
-      ? 'Ver estadísticas detalladas'
-      : 'Ocultar estadísticas';
+    btn.querySelector('span').textContent = isOpen ? 'Ver análisis completo' : 'Ocultar análisis';
   };
 
   /* ─── Main render ─── */
@@ -208,9 +344,11 @@
     const displayDate = targetDate || TODAY;
     const todayMatches = fixtures.matches.filter(m => m.date === displayDate);
 
-    // Update date display
     const dateEl = document.getElementById('display-date');
     if (dateEl) dateEl.textContent = formatDisplayDate(displayDate);
+
+    const stageEl = document.getElementById('current-stage');
+    if (stageEl) stageEl.textContent = fixtures.tournament.currentStage || '';
 
     const countEl = document.getElementById('match-count');
     if (countEl) countEl.textContent = todayMatches.length;
@@ -236,13 +374,10 @@
     });
 
     let html = '';
-    const times = Object.keys(byTime).sort();
-    times.forEach(time => {
+    Object.keys(byTime).sort().forEach(time => {
       const matches = byTime[time];
       if (matches.length > 1) {
-        html += `<div style="margin-bottom:6px;margin-top:14px;">
-          <span style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.6px;">🕐 ${time} ET — Simultáneos</span>
-        </div>`;
+        html += `<div class="time-slot-label">🕐 ${time} ET — Simultáneos</div>`;
       }
       matches.forEach(m => { html += renderCard(m); });
     });
@@ -250,20 +385,16 @@
     container.innerHTML = html;
   }
 
-  /* ─── Date navigation ─── */
+  /* ─── Navegación ─── */
   function setupNavigation(fixtures) {
     const matchDates = [...new Set(fixtures.matches.map(m => m.date))].sort();
     const prevBtn = document.getElementById('btn-prev');
     const nextBtn = document.getElementById('btn-next');
     const todayBtn = document.getElementById('btn-today');
 
-    let currentDate = TODAY;
-    const hasToday = matchDates.includes(TODAY);
-
-    // If today has no matches, default to first date with matches
-    if (!hasToday && matchDates.length > 0) {
-      currentDate = matchDates[matchDates.length - 1];
-    }
+    let currentDate = matchDates.includes(TODAY)
+      ? TODAY
+      : matchDates[matchDates.length - 1];
 
     function update() {
       renderPage(fixtures, currentDate);
@@ -283,7 +414,7 @@
     });
 
     if (todayBtn) todayBtn.addEventListener('click', () => {
-      currentDate = TODAY;
+      currentDate = matchDates.includes(TODAY) ? TODAY : matchDates[matchDates.length - 1];
       update();
     });
 
