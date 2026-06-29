@@ -13,12 +13,10 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
-  update-predictor:
-    name: Regenerate predictor for today's matches
+  deploy:
+    name: Update data and deploy to gh-pages
     runs-on: ubuntu-latest
 
     steps:
@@ -46,7 +44,6 @@ jobs:
         run: |
           TARGET="${{ steps.date.outputs.date }}"
           echo "Updating predictor data for $TARGET"
-          # Inject current date as a comment into the JSON for cache-busting
           node -e "
             const fs = require('fs');
             const data = JSON.parse(fs.readFileSync('world-cup-predictor/data/fixtures_2026.json', 'utf8'));
@@ -65,33 +62,30 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore: update predictor data for ${{ steps.date.outputs.date }}"
-            git push origin HEAD
+            git push origin HEAD:main
           fi
 
-  deploy-pages:
-    name: Deploy to GitHub Pages
-    needs: update-predictor
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      - name: Deploy to gh-pages branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
+          # Copy the predictor files to a temp dir
+          cp -r world-cup-predictor /tmp/predictor-dist
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
+          # Switch to gh-pages branch (create if needed)
+          git fetch origin gh-pages 2>/dev/null || true
+          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: world-cup-predictor/
+          # Clear everything and copy fresh build
+          git rm -rf . --quiet 2>/dev/null || true
+          cp -r /tmp/predictor-dist/. .
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          # Commit and push
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Nothing to deploy."
+          else
+            git commit -m "deploy: update predictor for ${{ steps.date.outputs.date }}"
+            git push origin gh-pages
+          fi
