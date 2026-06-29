@@ -1,0 +1,95 @@
+name: World Cup Daily Update
+
+on:
+  schedule:
+    # Runs at 06:00 UTC every day during the World Cup (June 11 – July 19, 2026)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Target date (YYYY-MM-DD). Defaults to today.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-predictor:
+    name: Regenerate predictor for today's matches
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Determine target date
+        id: date
+        run: |
+          TARGET="${{ github.event.inputs.target_date }}"
+          if [ -z "$TARGET" ]; then
+            TARGET=$(date -u +%Y-%m-%d)
+          fi
+          echo "date=$TARGET" >> "$GITHUB_OUTPUT"
+          echo "Target date: $TARGET"
+
+      - name: Update today marker in fixtures
+        run: |
+          TARGET="${{ steps.date.outputs.date }}"
+          echo "Updating predictor data for $TARGET"
+          # Inject current date as a comment into the JSON for cache-busting
+          node -e "
+            const fs = require('fs');
+            const data = JSON.parse(fs.readFileSync('world-cup-predictor/data/fixtures_2026.json', 'utf8'));
+            data._generated = { date: '$TARGET', timestamp: new Date().toISOString() };
+            fs.writeFileSync('world-cup-predictor/data/fixtures_2026.json', JSON.stringify(data, null, 2));
+            const matches = data.matches.filter(m => m.date === '$TARGET');
+            console.log(\`Found \${matches.length} match(es) for $TARGET\`);
+          "
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add world-cup-predictor/data/fixtures_2026.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update predictor data for ${{ steps.date.outputs.date }}"
+            git push origin HEAD
+          fi
+
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    needs: update-predictor
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: world-cup-predictor/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

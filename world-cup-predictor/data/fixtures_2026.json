@@ -1,0 +1,424 @@
+{
+  "tournament": {
+    "name": "FIFA World Cup 2026",
+    "hosts": ["USA", "Canada", "Mexico"],
+    "start": "2026-06-11",
+    "final": "2026-07-19",
+    "teams": 48,
+    "matches": 104
+  },
+  "groups": {
+    "A": ["USA", "Panama", "Bolivia", "New Zealand"],
+    "B": ["Argentina", "Chile", "Peru", "Australia"],
+    "C": ["Brazil", "Colombia", "Venezuela", "Ecuador"],
+    "D": ["France", "Belgium", "Croatia", "Morocco"],
+    "E": ["Spain", "Portugal", "Turkey", "Georgia"],
+    "F": ["England", "Netherlands", "Serbia", "Algeria"],
+    "G": ["Germany", "Poland", "Switzerland", "Cameroon"],
+    "H": ["Mexico", "Honduras", "Jamaica", "Costa Rica"],
+    "I": ["Japan", "South Korea", "Saudi Arabia", "Iran"],
+    "J": ["Senegal", "Nigeria", "Egypt", "Tunisia"],
+    "K": ["Uruguay", "Paraguay", "Venezuela", "Canada"],
+    "L": ["Denmark", "Austria", "Czech Republic", "Ivory Coast"]
+  },
+  "matches": [
+    {
+      "id": "WC2026-001",
+      "date": "2026-06-11",
+      "time": "18:00",
+      "venue": "SoFi Stadium, Los Angeles",
+      "group": "A",
+      "matchday": 1,
+      "home": {
+        "team": "USA",
+        "flag": "🇺🇸",
+        "fifaRank": 13
+      },
+      "away": {
+        "team": "Panama",
+        "flag": "🇵🇦",
+        "fifaRank": 43
+      },
+      "prediction": {
+        "result": "2-0",
+        "winner": "home",
+        "confidence": 78,
+        "scorers": [
+          { "player": "Christian Pulisic", "team": "USA", "minute": 24, "probability": 62 },
+          { "player": "Ricardo Pepi", "team": "USA", "minute": 67, "probability": 45 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 7,
+            "passes": 512,
+            "fouls": 11,
+            "tackles": 18,
+            "yellowCards": ["Tyler Adams"],
+            "possession": 57
+          },
+          "away": {
+            "shotsOnTarget": 2,
+            "shotsTotal": 7,
+            "corners": 3,
+            "passes": 378,
+            "fouls": 15,
+            "tackles": 24,
+            "yellowCards": ["Adalberto Carrasquilla"],
+            "possession": 43
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-002",
+      "date": "2026-06-11",
+      "time": "21:00",
+      "venue": "Estadio Azteca, Ciudad de México",
+      "group": "H",
+      "matchday": 1,
+      "home": {
+        "team": "Mexico",
+        "flag": "🇲🇽",
+        "fifaRank": 16
+      },
+      "away": {
+        "team": "Honduras",
+        "flag": "🇭🇳",
+        "fifaRank": 76
+      },
+      "prediction": {
+        "result": "3-1",
+        "winner": "home",
+        "confidence": 81,
+        "scorers": [
+          { "player": "Hirving Lozano", "team": "Mexico", "minute": 18, "probability": 55 },
+          { "player": "Raúl Jiménez", "team": "Mexico", "minute": 45, "probability": 48 },
+          { "player": "Alexis Vega", "team": "Mexico", "minute": 78, "probability": 37 },
+          { "player": "Alberth Elis", "team": "Honduras", "minute": 62, "probability": 41 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 8,
+            "shotsTotal": 16,
+            "corners": 9,
+            "passes": 556,
+            "fouls": 10,
+            "tackles": 16,
+            "yellowCards": ["Edson Álvarez"],
+            "possession": 62
+          },
+          "away": {
+            "shotsOnTarget": 3,
+            "shotsTotal": 9,
+            "corners": 4,
+            "passes": 341,
+            "fouls": 13,
+            "tackles": 22,
+            "yellowCards": ["Bryan Róchez", "Denil Maldonado"],
+            "possession": 38
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-028",
+      "date": "2026-06-29",
+      "time": "15:00",
+      "venue": "AT&T Stadium, Dallas",
+      "group": "D",
+      "matchday": 3,
+      "home": {
+        "team": "France",
+        "flag": "🇫🇷",
+        "fifaRank": 2
+      },
+      "away": {
+        "team": "Belgium",
+        "flag": "🇧🇪",
+        "fifaRank": 5
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 55,
+        "scorers": [
+          { "player": "Kylian Mbappé", "team": "France", "minute": 33, "probability": 71 },
+          { "player": "Randal Kolo Muani", "team": "France", "minute": 58, "probability": 43 },
+          { "player": "Romelu Lukaku", "team": "Belgium", "minute": 72, "probability": 52 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 8,
+            "passes": 587,
+            "fouls": 9,
+            "tackles": 17,
+            "yellowCards": ["Aurélien Tchouaméni"],
+            "possession": 58
+          },
+          "away": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 6,
+            "passes": 421,
+            "fouls": 12,
+            "tackles": 21,
+            "yellowCards": ["Axel Witsel", "Kevin De Bruyne"],
+            "possession": 42
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-029",
+      "date": "2026-06-29",
+      "time": "15:00",
+      "venue": "BC Place, Vancouver",
+      "group": "D",
+      "matchday": 3,
+      "home": {
+        "team": "Croatia",
+        "flag": "🇭🇷",
+        "fifaRank": 10
+      },
+      "away": {
+        "team": "Morocco",
+        "flag": "🇲🇦",
+        "fifaRank": 14
+      },
+      "prediction": {
+        "result": "1-1",
+        "winner": "draw",
+        "confidence": 44,
+        "scorers": [
+          { "player": "Luka Modrić", "team": "Croatia", "minute": 41, "probability": 38 },
+          { "player": "Youssef En-Nesyri", "team": "Morocco", "minute": 67, "probability": 49 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 11,
+            "corners": 6,
+            "passes": 463,
+            "fouls": 13,
+            "tackles": 22,
+            "yellowCards": ["Mateo Kovačić", "Josip Šutalo"],
+            "possession": 51
+          },
+          "away": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 10,
+            "corners": 5,
+            "passes": 447,
+            "fouls": 14,
+            "tackles": 26,
+            "yellowCards": ["Sofyan Amrabat"],
+            "possession": 49
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-030",
+      "date": "2026-06-29",
+      "time": "18:00",
+      "venue": "SoFi Stadium, Los Angeles",
+      "group": "E",
+      "matchday": 3,
+      "home": {
+        "team": "Spain",
+        "flag": "🇪🇸",
+        "fifaRank": 3
+      },
+      "away": {
+        "team": "Portugal",
+        "flag": "🇵🇹",
+        "fifaRank": 7
+      },
+      "prediction": {
+        "result": "1-1",
+        "winner": "draw",
+        "confidence": 41,
+        "scorers": [
+          { "player": "Pedri", "team": "Spain", "minute": 28, "probability": 40 },
+          { "player": "Bruno Fernandes", "team": "Portugal", "minute": 54, "probability": 46 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 7,
+            "passes": 631,
+            "fouls": 8,
+            "tackles": 15,
+            "yellowCards": ["Rodri"],
+            "possession": 60
+          },
+          "away": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 5,
+            "passes": 419,
+            "fouls": 11,
+            "tackles": 18,
+            "yellowCards": ["Rúben Dias", "João Cancelo"],
+            "possession": 40
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-031",
+      "date": "2026-06-29",
+      "time": "18:00",
+      "venue": "Estadio BBVA, Monterrey",
+      "group": "E",
+      "matchday": 3,
+      "home": {
+        "team": "Turkey",
+        "flag": "🇹🇷",
+        "fifaRank": 31
+      },
+      "away": {
+        "team": "Georgia",
+        "flag": "🇬🇪",
+        "fifaRank": 74
+      },
+      "prediction": {
+        "result": "3-0",
+        "winner": "home",
+        "confidence": 74,
+        "scorers": [
+          { "player": "Arda Güler", "team": "Turkey", "minute": 14, "probability": 58 },
+          { "player": "Hakan Çalhanoğlu", "team": "Turkey", "minute": 42, "probability": 47 },
+          { "player": "Baris Yilmaz", "team": "Turkey", "minute": 81, "probability": 33 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 16,
+            "corners": 8,
+            "passes": 498,
+            "fouls": 11,
+            "tackles": 19,
+            "yellowCards": ["Samet Akaydın"],
+            "possession": 56
+          },
+          "away": {
+            "shotsOnTarget": 2,
+            "shotsTotal": 8,
+            "corners": 3,
+            "passes": 312,
+            "fouls": 16,
+            "tackles": 28,
+            "yellowCards": ["Giorgi Chakvetadze", "Saba Lobjanidze"],
+            "possession": 44
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-032",
+      "date": "2026-06-29",
+      "time": "21:00",
+      "venue": "MetLife Stadium, New York",
+      "group": "F",
+      "matchday": 3,
+      "home": {
+        "team": "England",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "fifaRank": 4
+      },
+      "away": {
+        "team": "Netherlands",
+        "flag": "🇳🇱",
+        "fifaRank": 8
+      },
+      "prediction": {
+        "result": "2-2",
+        "winner": "draw",
+        "confidence": 38,
+        "scorers": [
+          { "player": "Harry Kane", "team": "England", "minute": 22, "probability": 67 },
+          { "player": "Jude Bellingham", "team": "England", "minute": 55, "probability": 52 },
+          { "player": "Cody Gakpo", "team": "Netherlands", "minute": 38, "probability": 55 },
+          { "player": "Memphis Depay", "team": "Netherlands", "minute": 77, "probability": 43 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 8,
+            "shotsTotal": 16,
+            "corners": 7,
+            "passes": 541,
+            "fouls": 10,
+            "tackles": 16,
+            "yellowCards": ["Declan Rice"],
+            "possession": 52
+          },
+          "away": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 8,
+            "passes": 497,
+            "fouls": 12,
+            "tackles": 20,
+            "yellowCards": ["Frenkie de Jong", "Virgil van Dijk"],
+            "possession": 48
+          }
+        }
+      }
+    },
+    {
+      "id": "WC2026-033",
+      "date": "2026-06-29",
+      "time": "21:00",
+      "venue": "Lumen Field, Seattle",
+      "group": "F",
+      "matchday": 3,
+      "home": {
+        "team": "Serbia",
+        "flag": "🇷🇸",
+        "fifaRank": 25
+      },
+      "away": {
+        "team": "Algeria",
+        "flag": "🇩🇿",
+        "fifaRank": 52
+      },
+      "prediction": {
+        "result": "2-0",
+        "winner": "home",
+        "confidence": 65,
+        "scorers": [
+          { "player": "Dušan Vlahović", "team": "Serbia", "minute": 31, "probability": 59 },
+          { "player": "Aleksandar Mitrović", "team": "Serbia", "minute": 74, "probability": 48 }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 13,
+            "corners": 6,
+            "passes": 467,
+            "fouls": 12,
+            "tackles": 20,
+            "yellowCards": ["Nemanja Gudelj"],
+            "possession": 54
+          },
+          "away": {
+            "shotsOnTarget": 2,
+            "shotsTotal": 8,
+            "corners": 4,
+            "passes": 396,
+            "fouls": 14,
+            "tackles": 24,
+            "yellowCards": ["Riyad Mahrez", "Ismael Bennacer"],
+            "possession": 46
+          }
+        }
+      }
+    }
+  ]
+}
