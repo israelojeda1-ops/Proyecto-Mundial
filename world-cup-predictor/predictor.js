@@ -63,18 +63,50 @@
       </div>`;
   }
 
-  /* ─── Render: Récord en el torneo ─── */
+  /* ─── Render: Récord en el torneo + goles marcados ─── */
   function renderWCRecord(ctx, homeTeam, awayTeam) {
-    if (!ctx || !ctx.wcRecord) return '';
+    if (!ctx || !ctx.groupRecord) return '';
+
+    function goalsList(goals) {
+      if (!goals || goals.length === 0) return '';
+      return goals.map(g =>
+        `<span class="wc-scorer"><span class="wc-scorer-name">${g.player}</span><span class="wc-scorer-goals">${'⚽'.repeat(Math.min(g.goals, 5))} ${g.goals}</span></span>`
+      ).join('');
+    }
+
     return `
-      <div class="wc-record-row">
-        <div class="wc-record-item">
-          <span class="form-team-label">${homeTeam.flag} ${homeTeam.team}</span>
-          <span class="wc-record-val">${ctx.wcRecord.home}</span>
+      <div class="context-section">
+        <div class="section-title">📋 Rendimiento en fase de grupos</div>
+        <div class="wc-record-grid">
+          <div class="wc-record-team">
+            <div class="wc-record-label">${homeTeam.flag} ${homeTeam.team}</div>
+            <div class="wc-record-val">${ctx.groupRecord.home}</div>
+            <div class="wc-scorers-list">${goalsList(ctx.wcGoals && ctx.wcGoals.home)}</div>
+          </div>
+          <div class="wc-record-team">
+            <div class="wc-record-label">${awayTeam.flag} ${awayTeam.team}</div>
+            <div class="wc-record-val">${ctx.groupRecord.away}</div>
+            <div class="wc-scorers-list">${goalsList(ctx.wcGoals && ctx.wcGoals.away)}</div>
+          </div>
         </div>
-        <div class="wc-record-item">
-          <span class="form-team-label">${awayTeam.flag} ${awayTeam.team}</span>
-          <span class="wc-record-val">${ctx.wcRecord.away}</span>
+      </div>`;
+  }
+
+  /* ─── Render: Alineaciones probables ─── */
+  function renderLineups(ctx, homeTeam, awayTeam) {
+    if (!ctx || !ctx.lineups) return '';
+    return `
+      <div class="context-section">
+        <div class="section-title">📝 Alineaciones probables</div>
+        <div class="lineups-grid">
+          <div class="lineup-team">
+            <div class="lineup-label">${homeTeam.flag} ${homeTeam.team}</div>
+            <div class="lineup-text">${ctx.lineups.home}</div>
+          </div>
+          <div class="lineup-team">
+            <div class="lineup-label">${awayTeam.flag} ${awayTeam.team}</div>
+            <div class="lineup-text">${ctx.lineups.away}</div>
+          </div>
         </div>
       </div>`;
   }
@@ -104,18 +136,22 @@
       </div>`;
   }
 
-  /* ─── Render: Bajas e lesiones ─── */
-  function renderInjuries(injuries, homeTeam, awayTeam) {
-    if (!injuries) return '';
-    const homeList = injuries.home || [];
-    const awayList = injuries.away || [];
+  /* ─── Render: Bajas, lesiones y suspendidos ─── */
+  function renderInjuries(ctx, homeTeam, awayTeam) {
+    const injuries = ctx.injuries || { home: [], away: [] };
+    const suspensions = ctx.suspensions || { home: [], away: [] };
+    const homeList = [...(injuries.home || []).map(i => ({ ...i, type: 'injury' })),
+                     ...(suspensions.home || []).map(i => ({ ...i, type: 'suspension' }))];
+    const awayList = [...(injuries.away || []).map(i => ({ ...i, type: 'injury' })),
+                     ...(suspensions.away || []).map(i => ({ ...i, type: 'suspension' }))];
+
     if (homeList.length === 0 && awayList.length === 0) return '';
 
-    function injuryChips(list) {
+    function chips(list) {
       if (list.length === 0) return '<span style="color:var(--text-muted);font-size:11px">Sin bajas confirmadas</span>';
       return list.map(i => `
-        <span class="injury-chip">
-          <span class="injury-icon">🚫</span>
+        <span class="injury-chip ${i.type === 'suspension' ? 'suspension' : ''}">
+          <span class="injury-icon">${i.type === 'suspension' ? '🟥' : '🚫'}</span>
           <span class="injury-name">${i.player}</span>
           <span class="injury-reason">${i.reason}</span>
         </span>`).join('');
@@ -127,11 +163,11 @@
         <div class="injuries-grid">
           <div>
             <div class="injury-team-label">${homeTeam.flag} ${homeTeam.team}</div>
-            <div class="injury-list">${injuryChips(homeList)}</div>
+            <div class="injury-list">${chips(homeList)}</div>
           </div>
           <div>
             <div class="injury-team-label">${awayTeam.flag} ${awayTeam.team}</div>
-            <div class="injury-list">${injuryChips(awayList)}</div>
+            <div class="injury-list">${chips(awayList)}</div>
           </div>
         </div>
       </div>`;
@@ -319,10 +355,11 @@
         </button>
 
         <div class="card-details" id="${detailsId}">
-          ${ctx ? renderForm(ctx.form, match.home, match.away) : ''}
           ${ctx ? renderWCRecord(ctx, match.home, match.away) : ''}
+          ${ctx ? renderForm(ctx.form, match.home, match.away) : ''}
           ${ctx ? renderH2H(ctx.h2h, match.home, match.away) : ''}
-          ${ctx ? renderInjuries(ctx.injuries, match.home, match.away) : ''}
+          ${ctx ? renderInjuries(ctx, match.home, match.away) : ''}
+          ${ctx ? renderLineups(ctx, match.home, match.away) : ''}
           ${renderStats(p.stats, match)}
           ${renderYellows(p.stats, match)}
         </div>
