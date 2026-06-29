@@ -217,12 +217,7 @@
         },
         "injuries": {
           "home": [],
-          "away": [
-            {
-              "player": "Takefusa Kubo",
-              "reason": "lesión — 3er partido consecutivo fuera"
-            }
-          ]
+          "away": []
         },
         "suspensions": {
           "home": [],
@@ -230,7 +225,7 @@
         },
         "lineups": {
           "home": "Souza; Beraldo, B. Milão, Henrique, Augusto; Casemiro, Bruno Guimarães; L. Henrique, Vinícius Jr., Paquetá; Martinelli",
-          "away": "Suzuki; Machida, Watanabe, Sugawara, Ito; Sano, Morita; Nakamura, Minamino, Mitoma; Ueda"
+          "away": "Suzuki; Machida, Itakura, Sugawara, Ito; Sano, Endo; Nakamura, Kubo, Doan; Ueda"
         },
         "motm": {
           "player": "Vinícius Jr.",
@@ -277,14 +272,14 @@
             "possession": 63
           },
           "away": {
-            "shotsOnTarget": 3,
-            "shotsTotal": 9,
-            "corners": 4,
-            "passes": 351,
+            "shotsOnTarget": 5,
+            "shotsTotal": 13,
+            "corners": 5,
+            "passes": 368,
             "fouls": 14,
             "tackles": 26,
             "yellowCards": [
-              "Hidemasa Morita"
+              "Wataru Endo"
             ],
             "possession": 37
           }
@@ -834,7 +829,7 @@
         },
         "lineups": {
           "home": "Maignan; Koundé, Lacroix, Upamecano, Th. Hernández; Koné, Tchouaméni; Olise, Dembélé, Doué; Mbappé",
-          "away": "Robin Olsen; Mikael Lustig, Carl Starfelt, Victor Nilsson Lindelöf, Ludwig Augustinsson; Mattias Svanberg, Albin Ekdal; Dejan Kulusevski, Emil Forsberg, Robin Quaison; Viktor Gyökeres"
+          "away": "Robin Olsen; Emil Holm, Carl Starfelt, Victor Nilsson Lindelöf, Ludwig Augustinsson; Mattias Svanberg, Viktor Claesson; Dejan Kulusevski, Emil Forsberg, Robin Quaison; Viktor Gyökeres"
         },
         "motm": {
           "player": "Kylian Mbappé",
@@ -895,7 +890,7 @@
             "tackles": 23,
             "yellowCards": [
               "Mattias Svanberg",
-              "Albin Ekdal"
+              "Viktor Claesson"
             ],
             "possession": 38
           }
@@ -1265,7 +1260,7 @@
           "away": []
         },
         "lineups": {
-          "home": "Casteels; Castagne, Alderweireld, Vertonghen, T. Hazard; Witsel, De Bruyne; Doku, Trossard, Carrasco; Lukaku",
+          "home": "Casteels; Castagne, Faes, Theate, Meunier; Onana, De Bruyne; Doku, Trossard, Carrasco; Lukaku",
           "away": "Edouard Mendy; Maniang, Koulibaly, Diallo, Jakobs; Nampalys Mendy, Gana Guèye; Sarr, Sabaly, B. Diallo; Sadio Mané"
         },
         "motm": {
@@ -1308,7 +1303,7 @@
             "fouls": 10,
             "tackles": 18,
             "yellowCards": [
-              "Axel Witsel"
+              "Amadou Onana"
             ],
             "possession": 57
           },
@@ -1642,7 +1637,7 @@
               "goals": 1
             },
             {
-              "player": "Ivan Perišić",
+              "player": "Andrej Kramarić",
               "goals": 1
             }
           ]
@@ -1684,8 +1679,8 @@
           "away": []
         },
         "lineups": {
-          "home": "Diogo Costa; João Cancelo, Rúben Dias, Pepe, Nuno Mendes; Bruno Fernandes, Vitinha; Bernardo Silva, Bernardo, R. Leão; Gonçalo Ramos",
-          "away": "Livakovic; Juranović, Lovren, Gvardiol, Sosa; Brozović, Kovačić; Kramarić, Modrić, Perišić; Petković"
+          "home": "Diogo Costa; João Cancelo, Rúben Dias, António Silva, Nuno Mendes; Bruno Fernandes, Vitinha; Bernardo Silva, Bernardo, R. Leão; Gonçalo Ramos",
+          "away": "Livakovic; Juranović, Šutalo, Gvardiol, Sosa; Brozović, Kovačić; Kramarić, Modrić, Pašalić; Petković"
         },
         "motm": {
           "player": "Bruno Fernandes",
@@ -1740,7 +1735,7 @@
             "tackles": 21,
             "yellowCards": [
               "Mateo Kovačić",
-              "Domagoj Vida"
+              "Josip Šutalo"
             ],
             "possession": 47
           }
@@ -1788,8 +1783,8 @@
               "goals": 2
             },
             {
-              "player": "Islam Slimani",
-              "goals": 1
+              "player": "El Bilal Touré",
+              "goals": 2
             }
           ]
         },
@@ -1831,7 +1826,7 @@
         },
         "lineups": {
           "home": "Sommer; Widmer, Schär, Akanji, Rodríguez; Freuler, Xhaka; Shaqiri, Zuber, Embolo; Seferović",
-          "away": "Rais M'Bolhi; Mandi, Tahrat, Benlamri, Atal; Laïfaoui, Guendouzi; Mahrez, Bensebaini, Belaïli; Slimani"
+          "away": "Oukidja; Mandi, Tahrat, Benlamri, Atal; Laïfaoui, Guendouzi; Mahrez, Bensebaini, Belaïli; El Bilal Touré"
         },
         "motm": {
           "player": "Granit Xhaka",
@@ -1858,10 +1853,10 @@
             "probability": 39
           },
           {
-            "player": "Riyad Mahrez",
+            "player": "El Bilal Touré",
             "team": "Argelia",
             "minute": 61,
-            "probability": 48
+            "probability": 43
           }
         ],
         "stats": {
@@ -2111,7 +2106,7 @@
           "away": []
         },
         "lineups": {
-          "home": "Dibu Martínez; Molina, Romero, Lisandro Martínez, Tagliafico; De Paul, Paredes, Mac Allister; Di María, Messi; Julián Álvarez",
+          "home": "Dibu Martínez; Molina, Romero, Lisandro Martínez, Tagliafico; De Paul, Paredes, Mac Allister; Garnacho, Messi; Julián Álvarez",
           "away": "Vozinha; Steven Fortes, Stopira, Jeffry Fortes; Garry Rodrigues, Jamiro Monteiro, Lisandro; Nanu, Ryan Mendes, Carlos Ponck; Vagner Dias"
         },
         "motm": {
@@ -2209,8 +2204,8 @@
               "goals": 2
             },
             {
-              "player": "Radamel Falcao",
-              "goals": 1
+              "player": "Jhon Durán",
+              "goals": 2
             },
             {
               "player": "James Rodríguez",
@@ -2260,7 +2255,7 @@
           "away": []
         },
         "lineups": {
-          "home": "Vargas; Muñoz, Dávinson Sánchez, Cuesta, Mojica; Lerma, Uribe; Cuadrado, James Rodríguez, Luis Díaz; Borja",
+          "home": "Vargas; Muñoz, Dávinson Sánchez, Cuesta, Mojica; Lerma, Uribe; Jhon Arias, James Rodríguez, Luis Díaz; Durán",
           "away": "Wollacott; Odoi, Djiku, Amartey, Mensah; Partey, André Ayew; Kudus, Schlupp, Atsu; Jordan Ayew"
         },
         "motm": {
@@ -2282,10 +2277,10 @@
             "probability": 51
           },
           {
-            "player": "James Rodríguez",
+            "player": "Jhon Durán",
             "team": "Colombia",
-            "minute": 67,
-            "probability": 43
+            "minute": 58,
+            "probability": 47
           }
         ],
         "stats": {
