@@ -67,10 +67,9 @@
       "time": "13:00 ET",
       "venue": "NRG Stadium, Houston",
       "stage": "Ronda de 32",
-      "status": "completed",
+      "status": "upcoming",
       "home": { "team": "Brasil",  "flag": "🇧🇷", "fifaRank": 1,  "coach": "Carlo Ancelotti" },
       "away": { "team": "Japón",   "flag": "🇯🇵", "fifaRank": 17, "coach": "Hajime Moriyasu" },
-      "finalScore": { "home": 2, "away": 1 },
       "context": {
         "groupRecord": {
           "home": "Grupo C — 1º · 3PJ · 2G · 1E · 0P · 7-1 · 7pts",
@@ -123,10 +122,9 @@
       "time": "16:30 ET",
       "venue": "Gillette Stadium, Foxborough (Boston)",
       "stage": "Ronda de 32",
-      "status": "completed",
+      "status": "upcoming",
       "home": { "team": "Alemania",  "flag": "🇩🇪", "fifaRank": 12, "coach": "Julian Nagelsmann" },
       "away": { "team": "Paraguay",  "flag": "🇵🇾", "fifaRank": 60, "coach": "Gustavo Alfaro" },
-      "finalScore": { "home": 3, "away": 1 },
       "context": {
         "groupRecord": {
           "home": "Grupo E — 1º · 3PJ · 2G · 0E · 1P · 10-4 · 6pts",
@@ -183,10 +181,9 @@
       "time": "21:00 ET",
       "venue": "Estadio BBVA, Monterrey",
       "stage": "Ronda de 32",
-      "status": "completed",
+      "status": "upcoming",
       "home": { "team": "Países Bajos", "flag": "🇳🇱", "fifaRank": 6,  "coach": "Ronald Koeman" },
       "away": { "team": "Marruecos",    "flag": "🇲🇦", "fifaRank": 14, "coach": "Walid Regragui" },
-      "finalScore": { "home": 1, "away": 2 },
       "context": {
         "groupRecord": {
           "home": "Grupo F — 1º · 3PJ · 2G · 1E · 0P · 10-4 · 7pts",
