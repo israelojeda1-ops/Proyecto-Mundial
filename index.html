@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Predictor de partidos del Mundial FIFA 2026 — estadísticas, anotadores, tiros, corners, pases y más." />
+  <title>Mundial 2026 — Predictor de Partidos</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── Header ─── -->
+  <header class="header">
+    <span class="header-trophy" aria-hidden="true">🏆</span>
+    <h1>Mundial <span>2026</span> — Predictor</h1>
+    <div class="header-meta">
+      <span class="header-date" id="display-date">Cargando…</span>
+      <span class="header-badge live" id="current-stage">Cargando…</span>
+      <span class="header-badge">🇺🇸 🇨🇦 🇲🇽 USA · Canada · Mexico</span>
+      <span class="header-badge">48 equipos · 104 partidos</span>
+    </div>
+  </header>
+
+  <!-- ─── Main ─── -->
+  <main class="main">
+
+    <!-- Date navigation -->
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:20px;flex-wrap:wrap;">
+      <button id="btn-prev" class="nav-btn" title="Día anterior"
+        style="background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px;transition:background 0.15s;"
+        onmouseover="this.style.background='var(--bg-card-hover)'"
+        onmouseout="this.style.background='var(--bg-card)'">
+        ← Anterior
+      </button>
+      <button id="btn-today"
+        style="background:var(--pill-bg);border:1px solid var(--border);color:var(--accent-gold);padding:6px 14px;border-radius:6px;cursor:pointer;font-size:13px;font-weight:600;transition:background 0.15s;"
+        onmouseover="this.style.background='rgba(245,197,24,0.1)'"
+        onmouseout="this.style.background='var(--pill-bg)'">
+        Hoy
+      </button>
+      <button id="btn-next"
+        style="background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px;transition:background 0.15s;"
+        onmouseover="this.style.background='var(--bg-card-hover)'"
+        onmouseout="this.style.background='var(--bg-card)'">
+        Siguiente →
+      </button>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend" role="note" aria-label="Leyenda de colores">
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--accent-blue)"></div>
+        <span>Equipo local</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--accent-purple)"></div>
+        <span>Equipo visitante</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--accent-green)"></div>
+        <span>Alta confianza ≥65%</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--accent-orange)"></div>
+        <span>Media confianza 45–64%</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:var(--accent-red)"></div>
+        <span>Baja confianza &lt;45%</span>
+      </div>
+    </div>
+
+    <!-- Section header -->
+    <div class="section-header">
+      <span class="section-label">Partidos del día</span>
+      <span class="section-count" id="match-count">—</span>
+    </div>
+
+    <!-- Match cards -->
+    <div class="matches-grid" id="matches-container" role="list" aria-live="polite">
+      <div class="no-matches">
+        <div class="no-matches-icon">⏳</div>
+        <h3>Cargando predicciones…</h3>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <p>
+      Mundial 2026 Predictor &nbsp;·&nbsp;
+      Datos simulados con fines ilustrativos &nbsp;·&nbsp;
+      Actualizado diariamente vía
+      <a href="../.github/workflows/world-cup-daily.yml" target="_blank" rel="noopener">GitHub Actions</a>
+    </p>
+    <p style="margin-top:6px;color:var(--text-muted)">
+      Las predicciones se basan en rankings FIFA, estadísticas históricas del torneo y forma reciente de los equipos.
+    </p>
+  </footer>
+
+  <script src="predictor.js"></script>
+</body>
+</html>

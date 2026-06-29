@@ -1,0 +1,2325 @@
+{
+  "tournament": {
+    "name": "Copa Mundial FIFA 2026",
+    "hosts": [
+      "USA",
+      "Canadá",
+      "México"
+    ],
+    "start": "2026-06-11",
+    "final": "2026-07-19",
+    "teams": 48,
+    "totalMatches": 104,
+    "currentStage": "Ronda de 32",
+    "groupStageEnded": "2026-06-27"
+  },
+  "matches": [
+    {
+      "id": "R32-01",
+      "date": "2026-06-28",
+      "time": "15:00 ET",
+      "venue": "SoFi Stadium, Los Ángeles",
+      "stage": "Ronda de 32",
+      "status": "completed",
+      "home": {
+        "team": "Sudáfrica",
+        "flag": "🇿🇦",
+        "fifaRank": 59,
+        "coach": "Hugo Broos"
+      },
+      "away": {
+        "team": "Canadá",
+        "flag": "🇨🇦",
+        "fifaRank": 49,
+        "coach": "Jesse Marsch"
+      },
+      "finalScore": {
+        "home": 0,
+        "away": 1
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo A — 2º · 3PJ · 1G · 1E · 1P · 4-3 · 4pts",
+          "away": "Grupo L — 1º · 3PJ · 2G · 1E · 0P · 5-2 · 7pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Lyle Foster",
+              "goals": 2
+            },
+            {
+              "player": "Percy Tau",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Alphonso Davies",
+              "goals": 3
+            },
+            {
+              "player": "Jonathan David",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "L"
+          ],
+          "away": [
+            "W",
+            "W",
+            "D"
+          ]
+        },
+        "xg": {
+          "home": 0.9,
+          "away": 1.6
+        },
+        "h2h": {
+          "played": 4,
+          "homeWins": 1,
+          "draws": 1,
+          "awayWins": 2,
+          "lastResult": "1-0 CAN (amistoso 2023)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Ronwen Williams; Teboho Mokoena, Sifiso Hlanti, Rushine de Reuck, Nkosinathi Sibisi; Themba Zwane, Ethan Ntsabeleng; Lyle Foster, Percy Tau, Thembinkosi Lorch; Evidence Makgopa",
+          "away": "Maxime Crépeau; Richie Laryea, Kamal Miller, Steven Vitória, Alphonso Davies; Stephen Eustáquio, Ismaël Koné; Tajon Buchanan, Jonathan David, Cyle Larin; Lucas Cavallini"
+        },
+        "motm": {
+          "player": "Alphonso Davies",
+          "team": "Canadá",
+          "flag": "🇨🇦",
+          "probability": 39
+        }
+      },
+      "prediction": {
+        "result": "0-1",
+        "winner": "away",
+        "confidence": 61,
+        "scorers": [
+          {
+            "player": "Alphonso Davies",
+            "team": "Canadá",
+            "minute": 54,
+            "probability": 48
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 2,
+            "shotsTotal": 8,
+            "corners": 4,
+            "passes": 371,
+            "fouls": 13,
+            "tackles": 24,
+            "yellowCards": [
+              "Ethan Ntsabeleng"
+            ],
+            "possession": 42
+          },
+          "away": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 7,
+            "passes": 511,
+            "fouls": 10,
+            "tackles": 18,
+            "yellowCards": [
+              "Ismaël Koné"
+            ],
+            "possession": 58
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-02",
+      "date": "2026-06-29",
+      "time": "13:00 ET",
+      "venue": "NRG Stadium, Houston",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Brasil",
+        "flag": "🇧🇷",
+        "fifaRank": 1,
+        "coach": "Carlo Ancelotti"
+      },
+      "away": {
+        "team": "Japón",
+        "flag": "🇯🇵",
+        "fifaRank": 17,
+        "coach": "Hajime Moriyasu"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo C — 1º · 3PJ · 2G · 1E · 0P · 7-1 · 7pts",
+          "away": "Grupo F — 2º · 3PJ · 1G · 2E · 0P · 7-5 · 5pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Vinícius Jr.",
+              "goals": 4
+            },
+            {
+              "player": "Matheus Cunha",
+              "goals": 3
+            }
+          ],
+          "away": [
+            {
+              "player": "Daichi Kamada",
+              "goals": 2
+            },
+            {
+              "player": "Ayase Ueda",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "D"
+          ],
+          "away": [
+            "D",
+            "W",
+            "D"
+          ]
+        },
+        "xg": {
+          "home": 2.5,
+          "away": 0.9
+        },
+        "h2h": {
+          "played": 8,
+          "homeWins": 6,
+          "draws": 1,
+          "awayWins": 1,
+          "lastResult": "4-1 BRA (Copa Confederaciones 2013)"
+        },
+        "injuries": {
+          "home": [],
+          "away": [
+            {
+              "player": "Takefusa Kubo",
+              "reason": "lesión — 3er partido consecutivo fuera"
+            }
+          ]
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Souza; Beraldo, B. Milão, Henrique, Augusto; Casemiro, Bruno Guimarães; L. Henrique, Vinícius Jr., Paquetá; Martinelli",
+          "away": "Suzuki; Machida, Watanabe, Sugawara, Ito; Sano, Morita; Nakamura, Minamino, Mitoma; Ueda"
+        },
+        "motm": {
+          "player": "Vinícius Jr.",
+          "team": "Brasil",
+          "flag": "🇧🇷",
+          "probability": 47
+        }
+      },
+      "prediction": {
+        "result": "3-0",
+        "winner": "home",
+        "confidence": 72,
+        "scorers": [
+          {
+            "player": "Vinícius Jr.",
+            "team": "Brasil",
+            "minute": 18,
+            "probability": 74
+          },
+          {
+            "player": "Gabriel Martinelli",
+            "team": "Brasil",
+            "minute": 51,
+            "probability": 48
+          },
+          {
+            "player": "Matheus Cunha",
+            "team": "Brasil",
+            "minute": 76,
+            "probability": 44
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 9,
+            "shotsTotal": 18,
+            "corners": 9,
+            "passes": 608,
+            "fouls": 9,
+            "tackles": 14,
+            "yellowCards": [
+              "Casemiro"
+            ],
+            "possession": 63
+          },
+          "away": {
+            "shotsOnTarget": 3,
+            "shotsTotal": 9,
+            "corners": 4,
+            "passes": 351,
+            "fouls": 14,
+            "tackles": 26,
+            "yellowCards": [
+              "Hidemasa Morita"
+            ],
+            "possession": 37
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-03",
+      "date": "2026-06-29",
+      "time": "16:30 ET",
+      "venue": "Gillette Stadium, Foxborough (Boston)",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Alemania",
+        "flag": "🇩🇪",
+        "fifaRank": 12,
+        "coach": "Julian Nagelsmann"
+      },
+      "away": {
+        "team": "Paraguay",
+        "flag": "🇵🇾",
+        "fifaRank": 60,
+        "coach": "Gustavo Alfaro"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo E — 1º · 3PJ · 2G · 0E · 1P · 10-4 · 6pts",
+          "away": "Grupo A — 3º mejor · 3PJ · 1G · 1E · 1P · 2-5 · 4pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Kai Havertz",
+              "goals": 3
+            },
+            {
+              "player": "Jamal Musiala",
+              "goals": 2
+            },
+            {
+              "player": "Florian Wirtz",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Julio Enciso",
+              "goals": 1
+            },
+            {
+              "player": "Antonio Sanabria",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "L",
+            "W",
+            "W"
+          ],
+          "away": [
+            "D",
+            "W",
+            "L"
+          ]
+        },
+        "xg": {
+          "home": 2.2,
+          "away": 0.6
+        },
+        "h2h": {
+          "played": 3,
+          "homeWins": 2,
+          "draws": 1,
+          "awayWins": 0,
+          "lastResult": "1-0 ALE (Mundial 2002)"
+        },
+        "injuries": {
+          "home": [
+            {
+              "player": "Nico Schlotterbeck",
+              "reason": "lesión — no disponible"
+            }
+          ],
+          "away": [
+            {
+              "player": "Omar Alderete",
+              "reason": "duda muscular"
+            }
+          ]
+        },
+        "suspensions": {
+          "home": [],
+          "away": [
+            {
+              "player": "Miguel Almirón",
+              "reason": "roja ante Turquía — suspendido"
+            }
+          ]
+        },
+        "lineups": {
+          "home": "Neuer; Kimmich, Tah, Rüdiger, Brown; Nmecha, Pavlović; Sané, Musiala, Wirtz; Havertz",
+          "away": "Gatito Fernández; Alderete, Alonso, Martínez; Rojas, Villasanti, Bobadilla; Enciso, Gómez, Sanabria; D. Gamarra"
+        },
+        "motm": {
+          "player": "Florian Wirtz",
+          "team": "Alemania",
+          "flag": "🇩🇪",
+          "probability": 38
+        }
+      },
+      "prediction": {
+        "result": "3-1",
+        "winner": "home",
+        "confidence": 74,
+        "scorers": [
+          {
+            "player": "Kai Havertz",
+            "team": "Alemania",
+            "minute": 22,
+            "probability": 56
+          },
+          {
+            "player": "Florian Wirtz",
+            "team": "Alemania",
+            "minute": 49,
+            "probability": 47
+          },
+          {
+            "player": "Jamal Musiala",
+            "team": "Alemania",
+            "minute": 71,
+            "probability": 44
+          },
+          {
+            "player": "Julio Enciso",
+            "team": "Paraguay",
+            "minute": 85,
+            "probability": 38
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 16,
+            "corners": 8,
+            "passes": 571,
+            "fouls": 10,
+            "tackles": 17,
+            "yellowCards": [
+              "Leon Goretzka"
+            ],
+            "possession": 59
+          },
+          "away": {
+            "shotsOnTarget": 2,
+            "shotsTotal": 7,
+            "corners": 3,
+            "passes": 396,
+            "fouls": 17,
+            "tackles": 28,
+            "yellowCards": [
+              "Mathías Villasanti",
+              "Blas Riveros"
+            ],
+            "possession": 41
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-04",
+      "date": "2026-06-29",
+      "time": "21:00 ET",
+      "venue": "Estadio BBVA, Monterrey",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Países Bajos",
+        "flag": "🇳🇱",
+        "fifaRank": 6,
+        "coach": "Ronald Koeman"
+      },
+      "away": {
+        "team": "Marruecos",
+        "flag": "🇲🇦",
+        "fifaRank": 14,
+        "coach": "Walid Regragui"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo F — 1º · 3PJ · 2G · 1E · 0P · 10-4 · 7pts",
+          "away": "Grupo C — 2º · 3PJ · 2G · 1E · 0P · 6-2 · 7pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Brian Brobbey",
+              "goals": 3
+            },
+            {
+              "player": "Cody Gakpo",
+              "goals": 2
+            },
+            {
+              "player": "Crysencio Summerville",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Ismael Saibari",
+              "goals": 3
+            },
+            {
+              "player": "Brahim Díaz",
+              "goals": 1
+            },
+            {
+              "player": "Hakim Ziyech",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "D"
+          ],
+          "away": [
+            "W",
+            "W",
+            "D"
+          ]
+        },
+        "xg": {
+          "home": 2,
+          "away": 1.3
+        },
+        "h2h": {
+          "played": 5,
+          "homeWins": 3,
+          "draws": 1,
+          "awayWins": 1,
+          "lastResult": "2-1 PB (Mundial 1994)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Verbruggen; Dumfries, Van Dijk, Van Hecke, Van de Ven; Gravenberch, F. de Jong, Reijnders; Malen, Brobbey, Gakpo",
+          "away": "Bono; Hakimi, Diop, Riad, Mazraoui; El Aynaoui, Bouaddi; Brahim Díaz, Ounahi, El Khannouss; Saibari"
+        },
+        "motm": {
+          "player": "Ismael Saibari",
+          "team": "Marruecos",
+          "flag": "🇲🇦",
+          "probability": 44
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 52,
+        "scorers": [
+          {
+            "player": "Brian Brobbey",
+            "team": "Países Bajos",
+            "minute": 27,
+            "probability": 58
+          },
+          {
+            "player": "Cody Gakpo",
+            "team": "Países Bajos",
+            "minute": 64,
+            "probability": 46
+          },
+          {
+            "player": "Ismael Saibari",
+            "team": "Marruecos",
+            "minute": 48,
+            "probability": 53
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 7,
+            "passes": 534,
+            "fouls": 10,
+            "tackles": 18,
+            "yellowCards": [
+              "Frenkie de Jong",
+              "Denzel Dumfries"
+            ],
+            "possession": 54
+          },
+          "away": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 16,
+            "corners": 6,
+            "passes": 451,
+            "fouls": 12,
+            "tackles": 22,
+            "yellowCards": [
+              "Sofyan Amrabat"
+            ],
+            "possession": 46
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-05",
+      "date": "2026-06-30",
+      "time": "13:00 ET",
+      "venue": "AT&T Stadium, Dallas",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Costa de Marfil",
+        "flag": "🇨🇮",
+        "fifaRank": 51,
+        "coach": "Emerse Faé"
+      },
+      "away": {
+        "team": "Noruega",
+        "flag": "🇳🇴",
+        "fifaRank": 22,
+        "coach": "Ståle Solbakken"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo E — 2º · 3PJ · 2G · 0E · 1P · 5-3 · 6pts",
+          "away": "Grupo I — 2º · 3PJ · 1G · 2E · 0P · 4-3 · 5pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Sébastien Haller",
+              "goals": 2
+            },
+            {
+              "player": "Franck Kessié",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Erling Haaland",
+              "goals": 3
+            },
+            {
+              "player": "Martin Ødegaard",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "L"
+          ],
+          "away": [
+            "D",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.1,
+          "away": 1.8
+        },
+        "h2h": {
+          "played": 3,
+          "homeWins": 1,
+          "draws": 1,
+          "awayWins": 1,
+          "lastResult": "2-0 NOR (amistoso 2024)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Badra Sangaré; Serge Aurier, Eric Bailly, Wilfried Singo, Ghislain Konan; Franck Kessié, Jean Michaël Seri; Wilfried Zaha, Sébastien Haller, Nicolas Pépé; Oumar Diakité",
+          "away": "Ørjan Nyland; Kristoffer Ajer, Leo Skiri Østigård, Andreas Hanche-Olsen, Birger Meling; Mathias Normann, Sander Berge; Antonio Nusa, Martin Ødegaard, Mohamed Elyounoussi; Erling Haaland"
+        },
+        "motm": {
+          "player": "Erling Haaland",
+          "team": "Noruega",
+          "flag": "🇳🇴",
+          "probability": 51
+        }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 58,
+        "scorers": [
+          {
+            "player": "Sébastien Haller",
+            "team": "Costa de Marfil",
+            "minute": 38,
+            "probability": 42
+          },
+          {
+            "player": "Erling Haaland",
+            "team": "Noruega",
+            "minute": 24,
+            "probability": 72
+          },
+          {
+            "player": "Martin Ødegaard",
+            "team": "Noruega",
+            "minute": 67,
+            "probability": 44
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 11,
+            "corners": 5,
+            "passes": 412,
+            "fouls": 12,
+            "tackles": 22,
+            "yellowCards": [
+              "Franck Kessié"
+            ],
+            "possession": 46
+          },
+          "away": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 7,
+            "passes": 481,
+            "fouls": 10,
+            "tackles": 19,
+            "yellowCards": [
+              "Sander Berge"
+            ],
+            "possession": 54
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-06",
+      "date": "2026-06-30",
+      "time": "17:00 ET",
+      "venue": "MetLife Stadium, East Rutherford (Nueva York)",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Francia",
+        "flag": "🇫🇷",
+        "fifaRank": 2,
+        "coach": "Didier Deschamps"
+      },
+      "away": {
+        "team": "Suecia",
+        "flag": "🇸🇪",
+        "fifaRank": 24,
+        "coach": "Jon Dahl Tomasson"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo D — 1º · 3PJ · 3G · 0E · 0P · 10-1 · 9pts",
+          "away": "Grupo F — 3º mejor · 3PJ · 1G · 2E · 0P · 7-7 · 5pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Kylian Mbappé",
+              "goals": 4
+            },
+            {
+              "player": "Ousmane Dembélé",
+              "goals": 2
+            },
+            {
+              "player": "Désiré Doué",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Viktor Gyökeres",
+              "goals": 3
+            },
+            {
+              "player": "Dejan Kulusevski",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "D",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 2.8,
+          "away": 0.8
+        },
+        "h2h": {
+          "played": 16,
+          "homeWins": 11,
+          "draws": 3,
+          "awayWins": 2,
+          "lastResult": "2-0 FRA (Nations League 2020)"
+        },
+        "injuries": {
+          "home": [],
+          "away": [
+            {
+              "player": "Alexander Isak",
+              "reason": "no convocado (lesión)"
+            }
+          ]
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Maignan; Koundé, Lacroix, Upamecano, Th. Hernández; Koné, Tchouaméni; Olise, Dembélé, Doué; Mbappé",
+          "away": "Robin Olsen; Mikael Lustig, Carl Starfelt, Victor Nilsson Lindelöf, Ludwig Augustinsson; Mattias Svanberg, Albin Ekdal; Dejan Kulusevski, Emil Forsberg, Robin Quaison; Viktor Gyökeres"
+        },
+        "motm": {
+          "player": "Kylian Mbappé",
+          "team": "Francia",
+          "flag": "🇫🇷",
+          "probability": 52
+        }
+      },
+      "prediction": {
+        "result": "3-1",
+        "winner": "home",
+        "confidence": 79,
+        "scorers": [
+          {
+            "player": "Kylian Mbappé",
+            "team": "Francia",
+            "minute": 21,
+            "probability": 71
+          },
+          {
+            "player": "Ousmane Dembélé",
+            "team": "Francia",
+            "minute": 48,
+            "probability": 49
+          },
+          {
+            "player": "Désiré Doué",
+            "team": "Francia",
+            "minute": 74,
+            "probability": 41
+          },
+          {
+            "player": "Viktor Gyökeres",
+            "team": "Suecia",
+            "minute": 61,
+            "probability": 48
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 8,
+            "shotsTotal": 17,
+            "corners": 9,
+            "passes": 601,
+            "fouls": 8,
+            "tackles": 14,
+            "yellowCards": [
+              "Aurélien Tchouaméni"
+            ],
+            "possession": 62
+          },
+          "away": {
+            "shotsOnTarget": 3,
+            "shotsTotal": 9,
+            "corners": 3,
+            "passes": 366,
+            "fouls": 13,
+            "tackles": 23,
+            "yellowCards": [
+              "Mattias Svanberg",
+              "Albin Ekdal"
+            ],
+            "possession": 38
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-07",
+      "date": "2026-06-30",
+      "time": "21:00 ET",
+      "venue": "Estadio Azteca, Ciudad de México",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "México",
+        "flag": "🇲🇽",
+        "fifaRank": 16,
+        "coach": "Javier Aguirre"
+      },
+      "away": {
+        "team": "Ecuador",
+        "flag": "🇪🇨",
+        "fifaRank": 44,
+        "coach": "Sebastián Beccacece"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo A — 1º · 3PJ · 3G · 0E · 0P · 6-0 · 9pts",
+          "away": "Grupo E — 4º mejor · 3PJ · 1G · 0E · 2P · 3-5 · 3pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Raúl Jiménez",
+              "goals": 2
+            },
+            {
+              "player": "Hirving Lozano",
+              "goals": 2
+            },
+            {
+              "player": "Alexis Vega",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Enner Valencia",
+              "goals": 1
+            },
+            {
+              "player": "Ángel Mena",
+              "goals": 1
+            },
+            {
+              "player": "Jeremy Sarmiento",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "L",
+            "L",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 2.1,
+          "away": 0.9
+        },
+        "h2h": {
+          "played": 28,
+          "homeWins": 17,
+          "draws": 7,
+          "awayWins": 4,
+          "lastResult": "1-1 amistoso (oct 2025)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Ochoa; J. Sánchez, C. Montes, J. Vásquez, J. Gallardo; Edson Álvarez, Luis Romo; Hirving Lozano, Alexis Vega, H. Rodríguez; Raúl Jiménez",
+          "away": "Hernán Galíndez; A. Franco, Joel Ordóñez, W. Pacho, Piero Hincapié; C. Gruezo, José Cifuentes; J. Plata, Moisés Caicedo, J. Sarmiento; Enner Valencia"
+        },
+        "motm": {
+          "player": "Raúl Jiménez",
+          "team": "México",
+          "flag": "🇲🇽",
+          "probability": 43
+        }
+      },
+      "prediction": {
+        "result": "2-0",
+        "winner": "home",
+        "confidence": 69,
+        "scorers": [
+          {
+            "player": "Raúl Jiménez",
+            "team": "México",
+            "minute": 33,
+            "probability": 55
+          },
+          {
+            "player": "Hirving Lozano",
+            "team": "México",
+            "minute": 72,
+            "probability": 47
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 8,
+            "passes": 556,
+            "fouls": 9,
+            "tackles": 17,
+            "yellowCards": [
+              "Edson Álvarez"
+            ],
+            "possession": 58
+          },
+          "away": {
+            "shotsOnTarget": 3,
+            "shotsTotal": 9,
+            "corners": 4,
+            "passes": 401,
+            "fouls": 12,
+            "tackles": 21,
+            "yellowCards": [
+              "Moisés Caicedo",
+              "Ángel Mena"
+            ],
+            "possession": 42
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-08",
+      "date": "2026-07-01",
+      "time": "12:00 ET",
+      "venue": "Mercedes-Benz Stadium, Atlanta",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Inglaterra",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "fifaRank": 4,
+        "coach": "Gareth Southgate"
+      },
+      "away": {
+        "team": "Rep. D. Congo",
+        "flag": "🇨🇩",
+        "fifaRank": 68,
+        "coach": "Sébastien Desabre"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo L — 1º · 3PJ · 2G · 1E · 0P · 6-2 · 7pts",
+          "away": "Grupo B — 2º · 3PJ · 1G · 1E · 1P · 4-3 · 4pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Harry Kane",
+              "goals": 3,
+              "note": "11 goles totales en Mundiales — récord de Inglaterra"
+            },
+            {
+              "player": "Jude Bellingham",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Yoane Wissa",
+              "goals": 3,
+              "note": "75% de los goles de Congo"
+            },
+            {
+              "player": "Fiston Mayele",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "L"
+          ]
+        },
+        "xg": {
+          "home": 2.4,
+          "away": 0.7
+        },
+        "h2h": {
+          "played": 2,
+          "homeWins": 2,
+          "draws": 0,
+          "awayWins": 0,
+          "lastResult": "3-0 ENG (amistoso 2019)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Pickford; Alexander-Arnold, Maguire, Stones, Shaw; Rice, Bellingham; Saka, Palmer, Rashford; Kane",
+          "away": "Vumi; Mbenza, Inbekomba, Luyindama, Masuaku; Mateta, Lokanga; Wissa, Fiston Mayele, Kakuta; Bongonda"
+        },
+        "motm": {
+          "player": "Harry Kane",
+          "team": "Inglaterra",
+          "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "probability": 41
+        }
+      },
+      "prediction": {
+        "result": "3-0",
+        "winner": "home",
+        "confidence": 81,
+        "scorers": [
+          {
+            "player": "Harry Kane",
+            "team": "Inglaterra",
+            "minute": 17,
+            "probability": 64
+          },
+          {
+            "player": "Jude Bellingham",
+            "team": "Inglaterra",
+            "minute": 52,
+            "probability": 53
+          },
+          {
+            "player": "Bukayo Saka",
+            "team": "Inglaterra",
+            "minute": 77,
+            "probability": 46
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 9,
+            "shotsTotal": 18,
+            "corners": 9,
+            "passes": 574,
+            "fouls": 8,
+            "tackles": 14,
+            "yellowCards": [
+              "Declan Rice"
+            ],
+            "possession": 61
+          },
+          "away": {
+            "shotsOnTarget": 2,
+            "shotsTotal": 7,
+            "corners": 3,
+            "passes": 368,
+            "fouls": 15,
+            "tackles": 27,
+            "yellowCards": [
+              "Fiston Mayele"
+            ],
+            "possession": 39
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-09",
+      "date": "2026-07-01",
+      "time": "16:00 ET",
+      "venue": "Lumen Field, Seattle",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Bélgica",
+        "flag": "🇧🇪",
+        "fifaRank": 5,
+        "coach": "Domenico Tedesco"
+      },
+      "away": {
+        "team": "Senegal",
+        "flag": "🇸🇳",
+        "fifaRank": 20,
+        "coach": "Aliou Cissé"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo G — 1º · 3PJ · 3G · 0E · 0P · 9-3 · 9pts (incl. 5-1 vs Nueva Zelanda)",
+          "away": "Grupo H — 3º mejor · 3PJ · 2G · 1E · 0P · 8-2 · 7pts (incl. 5-0 vs Iraq)"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Romelu Lukaku",
+              "goals": 3
+            },
+            {
+              "player": "Kevin De Bruyne",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Sadio Mané",
+              "goals": 3
+            },
+            {
+              "player": "Ismaïla Sarr",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.9,
+          "away": 1.4
+        },
+        "h2h": {
+          "played": 5,
+          "homeWins": 3,
+          "draws": 1,
+          "awayWins": 1,
+          "lastResult": "2-0 BEL (amistoso 2021)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Casteels; Castagne, Alderweireld, Vertonghen, T. Hazard; Witsel, De Bruyne; Doku, Trossard, Carrasco; Lukaku",
+          "away": "Edouard Mendy; Maniang, Koulibaly, Diallo, Jakobs; Nampalys Mendy, Gana Guèye; Sarr, Sabaly, B. Diallo; Sadio Mané"
+        },
+        "motm": {
+          "player": "Romelu Lukaku",
+          "team": "Bélgica",
+          "flag": "🇧🇪",
+          "probability": 38
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 56,
+        "scorers": [
+          {
+            "player": "Romelu Lukaku",
+            "team": "Bélgica",
+            "minute": 29,
+            "probability": 52
+          },
+          {
+            "player": "Kevin De Bruyne",
+            "team": "Bélgica",
+            "minute": 64,
+            "probability": 43
+          },
+          {
+            "player": "Sadio Mané",
+            "team": "Senegal",
+            "minute": 51,
+            "probability": 49
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 7,
+            "passes": 531,
+            "fouls": 10,
+            "tackles": 18,
+            "yellowCards": [
+              "Axel Witsel"
+            ],
+            "possession": 57
+          },
+          "away": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 11,
+            "corners": 5,
+            "passes": 396,
+            "fouls": 13,
+            "tackles": 23,
+            "yellowCards": [
+              "Idrissa Gana Guèye"
+            ],
+            "possession": 43
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-10",
+      "date": "2026-07-01",
+      "time": "20:00 ET",
+      "venue": "Levi's Stadium, Santa Clara (San Francisco)",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "EE.UU.",
+        "flag": "🇺🇸",
+        "fifaRank": 13,
+        "coach": "Mauricio Pochettino"
+      },
+      "away": {
+        "team": "Bosnia-Herzegovina",
+        "flag": "🇧🇦",
+        "fifaRank": 64,
+        "coach": "Sergej Barbarez"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo A — 1º implícito · 3PJ · 2G · 1E · 0P · 6-2 · 7pts",
+          "away": "Grupo K — 3º mejor · 3PJ · 1G · 2E · 0P · 4-4 · 5pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Christian Pulisic",
+              "goals": 3
+            },
+            {
+              "player": "Ricardo Pepi",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Edin Džeko",
+              "goals": 2
+            },
+            {
+              "player": "Ermedin Demirović",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "D",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.9,
+          "away": 1
+        },
+        "h2h": {
+          "played": 3,
+          "homeWins": 2,
+          "draws": 1,
+          "awayWins": 0,
+          "lastResult": "2-1 USA (amistoso 2024)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Turner; Dest, Long, Zimmermann, Robinson; Adams, McKennie; Reyna, Pulisic, Weah; Pepi",
+          "away": "Kenan Pirić; Šunjić, Kolašinac, Ahmedhodzic, Kolasinac; Hadžić, Pjanic; Kovacevic, Demirović, Hajradinović; Džeko"
+        },
+        "motm": {
+          "player": "Christian Pulisic",
+          "team": "EE.UU.",
+          "flag": "🇺🇸",
+          "probability": 42
+        }
+      },
+      "prediction": {
+        "result": "2-0",
+        "winner": "home",
+        "confidence": 64,
+        "scorers": [
+          {
+            "player": "Christian Pulisic",
+            "team": "EE.UU.",
+            "minute": 38,
+            "probability": 56
+          },
+          {
+            "player": "Ricardo Pepi",
+            "team": "EE.UU.",
+            "minute": 72,
+            "probability": 44
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 13,
+            "corners": 7,
+            "passes": 502,
+            "fouls": 11,
+            "tackles": 19,
+            "yellowCards": [
+              "Weston McKennie"
+            ],
+            "possession": 55
+          },
+          "away": {
+            "shotsOnTarget": 3,
+            "shotsTotal": 9,
+            "corners": 4,
+            "passes": 411,
+            "fouls": 12,
+            "tackles": 22,
+            "yellowCards": [
+              "Miralem Pjanić",
+              "Miloš Šunjić"
+            ],
+            "possession": 45
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-11",
+      "date": "2026-07-02",
+      "time": "15:00 ET",
+      "venue": "SoFi Stadium, Los Ángeles",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "España",
+        "flag": "🇪🇸",
+        "fifaRank": 3,
+        "coach": "Luis de la Fuente"
+      },
+      "away": {
+        "team": "Austria",
+        "flag": "🇦🇹",
+        "fifaRank": 27,
+        "coach": "Ralf Rangnick"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo J — 1º · 3PJ · 2G · 1E · 0P · 8-1 · 7pts",
+          "away": "Grupo J — 2º · 3PJ · 1G · 1E · 1P · 5-5 · 4pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Álvaro Morata",
+              "goals": 2
+            },
+            {
+              "player": "Pedri",
+              "goals": 2
+            },
+            {
+              "player": "Nico Williams",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Marko Arnautović",
+              "goals": 2
+            },
+            {
+              "player": "Christoph Baumgartner",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "D",
+            "W",
+            "L"
+          ]
+        },
+        "xg": {
+          "home": 2.2,
+          "away": 1
+        },
+        "h2h": {
+          "played": 27,
+          "homeWins": 15,
+          "draws": 8,
+          "awayWins": 4,
+          "lastResult": "0-0 (Nations League 2024)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Raya; Carvajal, Le Normand, Laporte, Cucurella; Rodri, Fabián Ruiz; Yamal, Pedri, Nico Williams; Morata",
+          "away": "Pentz; Posch, Danso, Wöber, Mwene; Grillitsch, Seiwald; Sabitzer, Baumgartner, Adamu; Arnautović"
+        },
+        "motm": {
+          "player": "Lamine Yamal",
+          "team": "España",
+          "flag": "🇪🇸",
+          "probability": 43
+        }
+      },
+      "prediction": {
+        "result": "2-0",
+        "winner": "home",
+        "confidence": 67,
+        "scorers": [
+          {
+            "player": "Álvaro Morata",
+            "team": "España",
+            "minute": 31,
+            "probability": 48
+          },
+          {
+            "player": "Nico Williams",
+            "team": "España",
+            "minute": 68,
+            "probability": 44
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 8,
+            "passes": 648,
+            "fouls": 7,
+            "tackles": 13,
+            "yellowCards": [
+              "Rodri"
+            ],
+            "possession": 66
+          },
+          "away": {
+            "shotsOnTarget": 3,
+            "shotsTotal": 9,
+            "corners": 4,
+            "passes": 336,
+            "fouls": 14,
+            "tackles": 24,
+            "yellowCards": [
+              "Christoph Baumgartner",
+              "Phillipp Mwene"
+            ],
+            "possession": 34
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-12",
+      "date": "2026-07-02",
+      "time": "19:00 ET",
+      "venue": "BMO Field, Toronto",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Portugal",
+        "flag": "🇵🇹",
+        "fifaRank": 7,
+        "coach": "Roberto Martínez"
+      },
+      "away": {
+        "team": "Croacia",
+        "flag": "🇭🇷",
+        "fifaRank": 10,
+        "coach": "Zlatko Dalić"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo B — 2º · 3PJ · 2G · 1E · 0P · 8-2 · 7pts",
+          "away": "Grupo K — 2º · 3PJ · 1G · 2E · 0P · 3-3 · 5pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Bruno Fernandes",
+              "goals": 3
+            },
+            {
+              "player": "Rafael Leão",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Luka Modrić",
+              "goals": 1
+            },
+            {
+              "player": "Ivan Perišić",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "D",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.8,
+          "away": 1.1
+        },
+        "h2h": {
+          "played": 7,
+          "homeWins": 3,
+          "draws": 3,
+          "awayWins": 1,
+          "lastResult": "0-0 (EURO 2024)"
+        },
+        "injuries": {
+          "home": [
+            {
+              "player": "Diogo Jota",
+              "reason": "molestias musculares"
+            }
+          ],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Diogo Costa; João Cancelo, Rúben Dias, Pepe, Nuno Mendes; Bruno Fernandes, Vitinha; Bernardo Silva, Bernardo, R. Leão; Gonçalo Ramos",
+          "away": "Livakovic; Juranović, Lovren, Gvardiol, Sosa; Brozović, Kovačić; Kramarić, Modrić, Perišić; Petković"
+        },
+        "motm": {
+          "player": "Bruno Fernandes",
+          "team": "Portugal",
+          "flag": "🇵🇹",
+          "probability": 38
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 53,
+        "scorers": [
+          {
+            "player": "Bruno Fernandes",
+            "team": "Portugal",
+            "minute": 28,
+            "probability": 51
+          },
+          {
+            "player": "Rafael Leão",
+            "team": "Portugal",
+            "minute": 63,
+            "probability": 44
+          },
+          {
+            "player": "Andrej Kramarić",
+            "team": "Croacia",
+            "minute": 77,
+            "probability": 39
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 13,
+            "corners": 6,
+            "passes": 497,
+            "fouls": 10,
+            "tackles": 17,
+            "yellowCards": [
+              "João Cancelo"
+            ],
+            "possession": 53
+          },
+          "away": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 10,
+            "corners": 5,
+            "passes": 441,
+            "fouls": 12,
+            "tackles": 21,
+            "yellowCards": [
+              "Mateo Kovačić",
+              "Domagoj Vida"
+            ],
+            "possession": 47
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-13",
+      "date": "2026-07-02",
+      "time": "23:00 ET",
+      "venue": "BC Place, Vancouver",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Suiza",
+        "flag": "🇨🇭",
+        "fifaRank": 21,
+        "coach": "Murat Yakin"
+      },
+      "away": {
+        "team": "Argelia",
+        "flag": "🇩🇿",
+        "fifaRank": 52,
+        "coach": "Djamel Belmadi"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo G — 2º · 3PJ · 2G · 0E · 1P · 6-4 · 6pts",
+          "away": "Grupo F — 3º mejor · 3PJ · 1G · 2E · 0P · 5-5 · 5pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Granit Xhaka",
+              "goals": 2
+            },
+            {
+              "player": "Xherdan Shaqiri",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Riyad Mahrez",
+              "goals": 2
+            },
+            {
+              "player": "Islam Slimani",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "L",
+            "W"
+          ],
+          "away": [
+            "D",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.5,
+          "away": 1.3
+        },
+        "h2h": {
+          "played": 4,
+          "homeWins": 2,
+          "draws": 1,
+          "awayWins": 1,
+          "lastResult": "2-1 SUI (EURO Qualifying 2024)"
+        },
+        "injuries": {
+          "home": [],
+          "away": [
+            {
+              "player": "Ismael Bennacer",
+              "reason": "lesión de tobillo"
+            }
+          ]
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Sommer; Widmer, Schär, Akanji, Rodríguez; Freuler, Xhaka; Shaqiri, Zuber, Embolo; Seferović",
+          "away": "Rais M'Bolhi; Mandi, Tahrat, Benlamri, Atal; Laïfaoui, Guendouzi; Mahrez, Bensebaini, Belaïli; Slimani"
+        },
+        "motm": {
+          "player": "Granit Xhaka",
+          "team": "Suiza",
+          "flag": "🇨🇭",
+          "probability": 34
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 51,
+        "scorers": [
+          {
+            "player": "Granit Xhaka",
+            "team": "Suiza",
+            "minute": 42,
+            "probability": 44
+          },
+          {
+            "player": "Breel Embolo",
+            "team": "Suiza",
+            "minute": 74,
+            "probability": 39
+          },
+          {
+            "player": "Riyad Mahrez",
+            "team": "Argelia",
+            "minute": 61,
+            "probability": 48
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 6,
+            "passes": 489,
+            "fouls": 11,
+            "tackles": 20,
+            "yellowCards": [
+              "Manuel Akanji"
+            ],
+            "possession": 52
+          },
+          "away": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 11,
+            "corners": 5,
+            "passes": 451,
+            "fouls": 13,
+            "tackles": 22,
+            "yellowCards": [
+              "Riyad Mahrez",
+              "Haris Belkebla"
+            ],
+            "possession": 48
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-14",
+      "date": "2026-07-03",
+      "time": "14:00 ET",
+      "venue": "AT&T Stadium, Dallas",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Australia",
+        "flag": "🇦🇺",
+        "fifaRank": 25,
+        "coach": "Tony Popovic"
+      },
+      "away": {
+        "team": "Egipto",
+        "flag": "🇪🇬",
+        "fifaRank": 34,
+        "coach": "Hassan Shehata"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo A — 2º · 3PJ · 1G · 2E · 0P · 3-3 · 5pts",
+          "away": "Grupo I — 3º mejor · 3PJ · 0G · 3E · 0P · 2-2 · 3pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Mathew Leckie",
+              "goals": 2
+            },
+            {
+              "player": "Mitchell Duke",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Mohamed Salah",
+              "goals": 1
+            },
+            {
+              "player": "Mostafa Mohamed",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "D"
+          ],
+          "away": [
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "xg": {
+          "home": 1.4,
+          "away": 1.2
+        },
+        "h2h": {
+          "played": 5,
+          "homeWins": 2,
+          "draws": 2,
+          "awayWins": 1,
+          "lastResult": "2-0 AUS (amistoso 2018)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Mat Ryan; Degenek, Rowles, Souttar, Behich; Irvine, Mooy; Leckie, McGree, Goodwin; Mitchell Duke",
+          "away": "Mohamed El-Shenawy; Ahmed Hegazi, Mohamed Abdel-Moneim, Mahmoud Hamdi; Trezeguet, Hamdy Fathi, Emam Ashour, Mohamed Hany; Mohamed Salah, Mustafa Mohamed, Omar Marmoush"
+        },
+        "motm": {
+          "player": "Mohamed Salah",
+          "team": "Egipto",
+          "flag": "🇪🇬",
+          "probability": 44
+        }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 48,
+        "scorers": [
+          {
+            "player": "Mathew Leckie",
+            "team": "Australia",
+            "minute": 51,
+            "probability": 43
+          },
+          {
+            "player": "Mohamed Salah",
+            "team": "Egipto",
+            "minute": 29,
+            "probability": 58
+          },
+          {
+            "player": "Mostafa Mohamed",
+            "team": "Egipto",
+            "minute": 74,
+            "probability": 38
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 11,
+            "corners": 5,
+            "passes": 421,
+            "fouls": 12,
+            "tackles": 22,
+            "yellowCards": [
+              "Aaron Mooy"
+            ],
+            "possession": 48
+          },
+          "away": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 6,
+            "passes": 457,
+            "fouls": 11,
+            "tackles": 20,
+            "yellowCards": [
+              "Hamdy Fathi"
+            ],
+            "possession": 52
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-15",
+      "date": "2026-07-03",
+      "time": "18:00 ET",
+      "venue": "Hard Rock Stadium, Miami",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Argentina",
+        "flag": "🇦🇷",
+        "fifaRank": 9,
+        "coach": "Lionel Scaloni"
+      },
+      "away": {
+        "team": "Cabo Verde",
+        "flag": "🇨🇻",
+        "fifaRank": 80,
+        "coach": "Bubista"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo B — 1º · 3PJ · 2G · 1E · 0P · 6-2 · 7pts",
+          "away": "Grupo K — 3º · 3PJ · 0G · 3E · 0P · 2-2 · 3pts (¡Histórico! 1ª vez en Mundiales)"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Lionel Messi",
+              "goals": 3
+            },
+            {
+              "player": "Julián Álvarez",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Ryan Mendes",
+              "goals": 1
+            },
+            {
+              "player": "Garry Rodrigues",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "D",
+            "D",
+            "D"
+          ]
+        },
+        "xg": {
+          "home": 2.8,
+          "away": 0.5
+        },
+        "h2h": {
+          "played": 1,
+          "homeWins": 1,
+          "draws": 0,
+          "awayWins": 0,
+          "lastResult": "3-0 ARG (amistoso 2013)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Dibu Martínez; Molina, Romero, Lisandro Martínez, Tagliafico; De Paul, Paredes, Mac Allister; Di María, Messi; Julián Álvarez",
+          "away": "Vozinha; Steven Fortes, Stopira, Jeffry Fortes; Garry Rodrigues, Jamiro Monteiro, Lisandro; Nanu, Ryan Mendes, Carlos Ponck; Vagner Dias"
+        },
+        "motm": {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "flag": "🇦🇷",
+          "probability": 57
+        }
+      },
+      "prediction": {
+        "result": "4-0",
+        "winner": "home",
+        "confidence": 88,
+        "scorers": [
+          {
+            "player": "Lionel Messi",
+            "team": "Argentina",
+            "minute": 14,
+            "probability": 73
+          },
+          {
+            "player": "Julián Álvarez",
+            "team": "Argentina",
+            "minute": 33,
+            "probability": 58
+          },
+          {
+            "player": "Julián Álvarez",
+            "team": "Argentina",
+            "minute": 62,
+            "probability": 41
+          },
+          {
+            "player": "Rodrigo De Paul",
+            "team": "Argentina",
+            "minute": 81,
+            "probability": 36
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 10,
+            "shotsTotal": 20,
+            "corners": 11,
+            "passes": 593,
+            "fouls": 7,
+            "tackles": 12,
+            "yellowCards": [],
+            "possession": 68
+          },
+          "away": {
+            "shotsOnTarget": 1,
+            "shotsTotal": 5,
+            "corners": 2,
+            "passes": 278,
+            "fouls": 14,
+            "tackles": 28,
+            "yellowCards": [
+              "Lisandro",
+              "Carlos Ponck"
+            ],
+            "possession": 32
+          }
+        }
+      }
+    },
+    {
+      "id": "R32-16",
+      "date": "2026-07-03",
+      "time": "21:30 ET",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "stage": "Ronda de 32",
+      "status": "upcoming",
+      "home": {
+        "team": "Colombia",
+        "flag": "🇨🇴",
+        "fifaRank": 11,
+        "coach": "Néstor Lorenzo"
+      },
+      "away": {
+        "team": "Ghana",
+        "flag": "🇬🇭",
+        "fifaRank": 61,
+        "coach": "Otto Addo"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "Grupo B — 1º · 3PJ · 2G · 1E · 0P · 5-1 · 7pts",
+          "away": "Grupo C — 2º · 3PJ · 1G · 1E · 1P · 4-5 · 4pts"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Luis Díaz",
+              "goals": 2
+            },
+            {
+              "player": "Radamel Falcao",
+              "goals": 1
+            },
+            {
+              "player": "James Rodríguez",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Mohammed Kudus",
+              "goals": 2
+            },
+            {
+              "player": "Jordan Ayew",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "L"
+          ]
+        },
+        "xg": {
+          "home": 1.8,
+          "away": 1.1
+        },
+        "h2h": {
+          "played": 3,
+          "homeWins": 2,
+          "draws": 1,
+          "awayWins": 0,
+          "lastResult": "2-0 COL (amistoso 2022)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Vargas; Muñoz, Dávinson Sánchez, Cuesta, Mojica; Lerma, Uribe; Cuadrado, James Rodríguez, Luis Díaz; Borja",
+          "away": "Wollacott; Odoi, Djiku, Amartey, Mensah; Partey, André Ayew; Kudus, Schlupp, Atsu; Jordan Ayew"
+        },
+        "motm": {
+          "player": "Luis Díaz",
+          "team": "Colombia",
+          "flag": "🇨🇴",
+          "probability": 43
+        }
+      },
+      "prediction": {
+        "result": "2-0",
+        "winner": "home",
+        "confidence": 63,
+        "scorers": [
+          {
+            "player": "Luis Díaz",
+            "team": "Colombia",
+            "minute": 26,
+            "probability": 51
+          },
+          {
+            "player": "James Rodríguez",
+            "team": "Colombia",
+            "minute": 67,
+            "probability": 43
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 7,
+            "passes": 527,
+            "fouls": 10,
+            "tackles": 18,
+            "yellowCards": [
+              "Mateus Uribe"
+            ],
+            "possession": 57
+          },
+          "away": {
+            "shotsOnTarget": 3,
+            "shotsTotal": 9,
+            "corners": 4,
+            "passes": 394,
+            "fouls": 13,
+            "tackles": 24,
+            "yellowCards": [
+              "Thomas Partey",
+              "Daniel Amartey"
+            ],
+            "possession": 43
+          }
+        }
+      }
+    }
+  ],
+  "_generated": {
+    "date": "2026-06-29",
+    "timestamp": "2026-06-29T13:24:31.559Z"
+  }
+}
