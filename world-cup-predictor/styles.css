@@ -496,6 +496,59 @@ body {
   letter-spacing: 0.3px;
 }
 
+/* ─── Match status badges ─── */
+.result-badge {
+  background: rgba(63, 185, 80, 0.12);
+  border: 1px solid rgba(63, 185, 80, 0.3);
+  color: var(--accent-green);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.live-badge {
+  background: rgba(245, 197, 24, 0.08);
+  border: 1px solid rgba(245, 197, 24, 0.2);
+  color: var(--accent-gold);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ─── Completed match card ─── */
+.match-card.completed {
+  border-color: rgba(63, 185, 80, 0.2);
+}
+
+.match-card.completed .card-header {
+  border-bottom-color: rgba(63, 185, 80, 0.15);
+}
+
+/* ─── Final score display ─── */
+.final-score {
+  font-size: 34px;
+  font-weight: 900;
+  color: var(--text-primary);
+  letter-spacing: -2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.score-label.final {
+  color: var(--accent-green);
+  font-weight: 700;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.predicted-subtext {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
 /* ─── Time slot label ─── */
 .time-slot-label {
   font-size: 11px;

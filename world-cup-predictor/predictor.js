@@ -31,6 +31,13 @@
   }
 
   function winnerClass(match, side) {
+    if (match.status === 'completed' && match.finalScore) {
+      const fs = match.finalScore;
+      if (fs.home === fs.away) return '';
+      if (fs.home > fs.away && side === 'home') return 'winner';
+      if (fs.away > fs.home && side === 'away') return 'winner';
+      return '';
+    }
     const w = match.prediction.winner;
     if (w === 'draw') return '';
     if (w === 'home' && side === 'home') return 'winner';
@@ -300,21 +307,57 @@
     const detailsId = `details-${match.id}`;
     const homeWC = winnerClass(match, 'home');
     const awayWC = winnerClass(match, 'away');
-
-    const resultLabel = p.winner === 'draw'
-      ? `<span style="color:var(--accent-orange)">Empate</span>`
-      : `<span style="color:var(--accent-green)">Victoria ${p.winner === 'home' ? match.home.team : match.away.team}</span>`;
+    const isCompleted = match.status === 'completed' && match.finalScore != null;
 
     const stageLabel = match.stage
       ? `<span class="stage-pill">${match.stage}</span>`
       : `<span class="group-pill">Grupo ${match.group} · J${match.matchday}</span>`;
 
+    const statusChip = isCompleted
+      ? `<span class="result-badge">Finalizado</span>`
+      : `<span class="live-badge">Próximo</span>`;
+
+    let scoreBlockHtml;
+    if (isCompleted) {
+      const fs = match.finalScore;
+      const diff = fs.home - fs.away;
+      const outcomeLabel = diff > 0
+        ? `<span style="color:var(--accent-green)">Victoria ${match.home.team}</span>`
+        : diff < 0
+          ? `<span style="color:var(--accent-green)">Victoria ${match.away.team}</span>`
+          : `<span style="color:var(--accent-orange)">Empate</span>`;
+      scoreBlockHtml = `
+        <div class="score-block">
+          <div class="final-score">${fs.home} — ${fs.away}</div>
+          <div class="score-label final">Resultado Final</div>
+          <div class="predicted-subtext">Pred. ${p.result} · ${p.confidence}% conf.</div>
+          <div style="margin-top:4px;font-size:11px;">${outcomeLabel}</div>
+        </div>`;
+    } else {
+      const resultLabel = p.winner === 'draw'
+        ? `<span style="color:var(--accent-orange)">Empate</span>`
+        : `<span style="color:var(--accent-green)">Victoria ${p.winner === 'home' ? match.home.team : match.away.team}</span>`;
+      scoreBlockHtml = `
+        <div class="score-block">
+          <div class="predicted-score">${p.result}</div>
+          <div class="score-label">Predicción</div>
+          <div class="confidence-bar-wrap">
+            <div class="confidence-bar">
+              <div class="confidence-fill ${confClass}" style="width:${p.confidence}%"></div>
+            </div>
+            <div class="confidence-pct">${p.confidence}% confianza</div>
+          </div>
+          <div style="margin-top:4px;font-size:11px;">${resultLabel}</div>
+        </div>`;
+    }
+
     return `
-      <article class="match-card" id="card-${match.id}" role="listitem">
+      <article class="match-card ${isCompleted ? 'completed' : ''}" id="card-${match.id}" role="listitem">
         <div class="card-header">
           <div class="card-meta-left">
             ${stageLabel}
-            <span class="match-time">🕐 ${match.time}</span>
+            ${statusChip}
+            <span class="match-time">🕐 ${match.time} ET</span>
           </div>
           <span class="match-venue">📍 ${match.venue}</span>
         </div>
@@ -326,17 +369,7 @@
             <span class="team-rank">FIFA #${match.home.fifaRank}</span>
           </div>
 
-          <div class="score-block">
-            <div class="predicted-score">${p.result}</div>
-            <div class="score-label">Predicción</div>
-            <div class="confidence-bar-wrap">
-              <div class="confidence-bar">
-                <div class="confidence-fill ${confClass}" style="width:${p.confidence}%"></div>
-              </div>
-              <div class="confidence-pct">${p.confidence}% confianza</div>
-            </div>
-            <div style="margin-top:4px;font-size:11px;">${resultLabel}</div>
-          </div>
+          ${scoreBlockHtml}
 
           <div class="team ${awayWC}">
             <span class="team-flag">${match.away.flag}</span>
@@ -347,7 +380,7 @@
 
         ${ctx ? renderXgAndMotm(ctx, match.home, match.away) : ''}
 
-        ${renderScorers(p.scorers, match)}
+        ${!isCompleted ? renderScorers(p.scorers, match) : ''}
 
         <button class="card-toggle" onclick="toggleDetails('${detailsId}', this)" aria-expanded="false">
           <span>Ver análisis completo</span>
