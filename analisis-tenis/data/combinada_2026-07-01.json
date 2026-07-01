@@ -1,0 +1,167 @@
+{
+  "slip": {
+    "bookmaker": "Betano",
+    "type": "Combinada de 7",
+    "date": "2026-07-01",
+    "stake": 40000,
+    "currency": "$",
+    "totalOdds": 4.76,
+    "potentialWinnings": 190569.30
+  },
+  "legs": [
+    {
+      "id": "leg-1",
+      "type": "Ganador del partido",
+      "typeTag": "moneyline",
+      "match": "H. Hurkacz vs S. Ofner",
+      "round": "Wimbledon 2026 · Ronda 2",
+      "time": "01/07/2026, 06:00",
+      "selection": "Hubert Hurkacz — Ganador",
+      "odds": 1.27,
+      "ourProbability": 78,
+      "riskLevel": "bajo",
+      "research": {
+        "h2h": "Hurkacz domina el historial 4-0 en sets (25-14 en juegos). Último cruce: 6-3 6-4 a favor de Hurkacz (Halle/Geneva 2025).",
+        "form": "Hurkacz es uno de los sacadores más sólidos del circuito en césped y llega como claro favorito según modelos predictivos (78% de probabilidad).",
+        "notes": "La cuota de Betano (1.27 ≈ 78.7% implícito) está prácticamente alineada con nuestra estimación — apuesta razonablemente justa, sin edge relevante mas es la pata más segura del boleto.",
+        "sources": [
+          { "title": "Dimers — Hurkacz vs Ofner prediction", "url": "https://www.dimers.com/news/hubert-hurkacz-vs-sebastian-ofner-tennis-prediction-wimbledon-2026-ac" },
+          { "title": "TennisTemple — H2H Hurkacz vs Ofner", "url": "https://en.tennistemple.com/h2h/hubert-hurkacz-vs-sebastian-ofner/4315/7261" }
+        ]
+      }
+    },
+    {
+      "id": "leg-2",
+      "type": "Ganador + Total de juegos",
+      "typeTag": "player-total",
+      "match": "S. Kwon vs T. Paul",
+      "round": "Wimbledon 2026 · Ronda 2",
+      "time": "01/07/2026, 06:00",
+      "selection": "Tommy Paul gana y Menos de 48.5 juegos totales",
+      "odds": 1.20,
+      "ourProbability": 68,
+      "riskLevel": "medio",
+      "research": {
+        "h2h": "Paul lidera el historial 2-0, con dominio total en los enfrentamientos previos.",
+        "form": "Paul llega en buena forma (7 de sus últimos 10 partidos) y gana cerca del 80% de sus juegos de saque. Kwon avanzó a base de sets corridos ante Landaluce (6-4 6-3 6-3) y llega con 8 victorias en sus últimos 10 partidos, incluyendo la fase clasificatoria.",
+        "notes": "El mercado favorece a Paul con fuerza (Kalshi: 89% Paul / 13% Kwon; Elo de Tennis Abstract sugiere ~76%+ en formato a 5 sets). El riesgo real de esta pata no es el ganador — es el total de 48.5 juegos: si Kwon estira algún set o fuerza tie-breaks, el total puede superar la línea aunque Paul gane el partido. Por eso bajamos la probabilidad combinada frente al simple 'gana Paul'.",
+        "sources": [
+          { "title": "Kalshi — Wimbledon men's tennis markets", "url": "https://kalshi.com/category/sports/tennis/wimbledon-mens-tennis/game" },
+          { "title": "Korea JoongAng Daily — Kwon avanza a 2ª ronda", "url": "https://www.koreajoongangdaily.com/sports/kwon-soonwoo-wins-1stround-match-at-wimbledon/" },
+          { "title": "predict.tennis — Paul vs Kwon preview", "url": "https://predict.tennis/soonwoo-kwon-vs-tommy-paul-wimbledon-atp-preview-prediction/" }
+        ]
+      }
+    },
+    {
+      "id": "leg-3",
+      "type": "Bet Builder (combinada de props)",
+      "typeTag": "bet-builder",
+      "match": "D. Merida Aguilar vs D. Medvedev",
+      "round": "Wimbledon 2026 · Ronda 2 · Court 2",
+      "time": "01/07/2026, 07:50",
+      "selection": "Medvedev gana Set 1 + Medvedev gana Set 2 + Menos de 36.5 juegos totales",
+      "odds": 1.34,
+      "ourProbability": 58,
+      "riskLevel": "alto",
+      "research": {
+        "h2h": "Sin precedentes entre ambos — primer cruce en el circuito principal.",
+        "form": "Medvedev (Top-10, dos veces semifinalista de Wimbledon) venía de más de 700 días sin ganar un partido en Wimbledon antes de superar a Cilic en R1, y esta temporada perdió en césped ante rivales #76 y #81 del ranking — una señal de alarma real sobre su forma en esta superficie. Merida Aguilar (ranking #82-84, escaló desde el puesto 235 en un año) debuta en Wimbledon y ya ganó su primer partido de Grand Slam con 13 aces — un saque vivo que amenaza con estirar sets y sumar juegos.",
+        "notes": "El modelo predictivo da a Medvedev ~96% de ganar el partido, pero esta pata exige algo más estricto: ganar los dos primeros sets Y que el total de juegos del partido quede por debajo de 36.5 (equivalente a un partido resuelto de forma cómoda, sin sets largos ni un 5º set). Dado el mal historial reciente de Medvedev en césped y el saque agresivo de Merida, consideramos esta la pata de mayor riesgo real del boleto, muy por debajo de lo que sugiere la cuota de 1.34.",
+        "sources": [
+          { "title": "Tennis Tonic — H2H y predicción Medvedev vs Merida Aguilar", "url": "https://tennistonic.com/tennis-news/1020856/h2h-prediction-of-daniil-medvedev-vs-daniel-merida-aguilar-in-wimbledon-with-odds-preview-pick-1st-july-2026/" },
+          { "title": "Outlook India — Medvedev vs Cilic, ronda 1", "url": "https://www.outlookindia.com/sports/tennis/daniil-medvedev-vs-marin-cilic-live-score-wimbledon-2026-first-round-court-1-grand-slam-updates-highlights-london" },
+          { "title": "Matchstat — Perfil y stats de Daniel Merida Aguilar", "url": "https://matchstat.com/tennis/player/Daniel%20Merida%20Aguilar/" }
+        ]
+      }
+    },
+    {
+      "id": "leg-4",
+      "type": "Apuesta de set (marcador exacto)",
+      "typeTag": "set-score",
+      "match": "J. Sinner vs N. Borges",
+      "round": "Wimbledon 2026 · Ronda 2 · Centre Court",
+      "time": "01/07/2026, 08:30",
+      "selection": "Jannik Sinner gana 3-0",
+      "odds": 1.42,
+      "ourProbability": 60,
+      "riskLevel": "alto",
+      "research": {
+        "h2h": "Sinner lidera 1-0, pero nunca se enfrentaron en césped (el único precedente fue en pista dura, Sofía 2022).",
+        "form": "Sinner es el defensor del título, pero en R1 pasó un gran susto: ganó en 5 sets a Kecmanovic (4-6 6-3 6-7 6-2 6-3) con una lesión visible en el pie (sangrado en la uña) que generó dudas sobre su estado físico. Borges llega en buen momento de césped (5 victorias en 2026, semifinal en Mallorca) y, pese a ganarle a Boyer en sets corridos, necesitó 7-5 y 7-5 en los sets 2 y 3 — muestra que sabe estirar sets incluso perdiendo.",
+        "notes": "El mercado da a Sinner como ganador casi seguro del partido (~97-98% de probabilidad, cuotas de hasta -4500 en FanDuel), y varias casas tipean '3-0' como pick recomendado. Sin embargo, el marcador exacto 3-0 es una condición más estricta que 'gana el partido', y el susto físico de R1 es una señal de riesgo real que el precio de 1.42 no refleja del todo. Es, junto al Bet Builder de Medvedev, la otra pata de mayor riesgo del boleto.",
+        "sources": [
+          { "title": "ESPN — Sinner sobrevive en 5 sets en R1", "url": "https://www.espn.com/tennis/story/_/id/49216730/jannik-sinner-begins-wimbledon-title-defense-5-set-win" },
+          { "title": "SI Betting — Sinner vs Borges prediction & odds", "url": "https://www.si.com/betting/jannik-sinner-vs-nuno-borges-prediction-odds-for-wimbledon-second-round" },
+          { "title": "ATP Tour — Borges busca 'causar estrés' a Sinner", "url": "https://www.atptour.com/en/news/borges-wimbledon-2026-feature" }
+        ]
+      }
+    },
+    {
+      "id": "leg-5",
+      "type": "Ganador del partido",
+      "typeTag": "moneyline",
+      "match": "J. De Jong vs J. Fonseca",
+      "round": "Wimbledon 2026 · Ronda 2",
+      "time": "01/07/2026, 09:30",
+      "selection": "João Fonseca — Ganador",
+      "odds": 1.17,
+      "ourProbability": 82,
+      "riskLevel": "bajo",
+      "research": {
+        "h2h": "Único precedente: De Jong ganó en sets corridos (6-2 7-5) en un Challenger de Estoril sobre arcilla en 2025, cuando ambos estaban mucho más abajo en el ranking (Fonseca #65, De Jong #93).",
+        "form": "Fonseca (#27) viene de vencer a Bautista Agut en R1; De Jong (#73) avanzó tras un ajustado 5 sets ante Hijikata, lo que muestra garra pero también desgaste físico de cara a esta 2ª ronda.",
+        "notes": "El modelo predictivo da 85% a Fonseca. Descontamos levemente por el antecedente de derrota ante este mismo rival (aunque en otra superficie) — igual sigue siendo una de las patas más sólidas del boleto.",
+        "sources": [
+          { "title": "Stats Insider — De Jong vs Fonseca prediction", "url": "https://www.statsinsider.com.au/news/jesper-de-jong-vs-joao-fonseca-prediction-wimbledon-2026" },
+          { "title": "Exame — Jesper de Jong, próximo rival de Fonseca", "url": "https://exame.com/esporte/jesper-de-jong-conheca-o-proximo-adversario-de-joao-fonseca-em-wimbledon/" }
+        ]
+      }
+    },
+    {
+      "id": "leg-6",
+      "type": "Ganador del partido",
+      "typeTag": "moneyline",
+      "match": "F. Auger-Aliassime vs D. Prizmic",
+      "round": "Wimbledon 2026 · Ronda 2 · Court 1",
+      "time": "01/07/2026, 10:20",
+      "selection": "Felix Auger-Aliassime — Ganador",
+      "odds": 1.19,
+      "ourProbability": 84,
+      "riskLevel": "bajo",
+      "research": {
+        "h2h": "Sin precedentes registrados entre ambos en el circuito principal.",
+        "form": "Auger-Aliassime acumula 13 títulos ATP pero ninguno en césped — una debilidad de superficie a tener en cuenta. Prizmic está en alza (3-3 en césped esta temporada) y su victoria en R1 ya es su mejor resultado en un Grand Slam. Algunas fuentes mencionan una victoria previa de Prizmic sobre un top-5 en Roma 2026; no pudimos verificar ese dato de forma cruzada, así que lo tomamos con cautela.",
+        "notes": "El modelo predictivo da 87% a Auger-Aliassime (cuotas de mercado de referencia -549/+375, ≈85% implícito). Ajustamos levemente a la baja por la falta de pedigrí de Auger-Aliassime en césped, pero sigue siendo una pata favorable.",
+        "sources": [
+          { "title": "Dimers — Auger-Aliassime vs Prizmic prediction", "url": "https://www.dimers.com/news/felix-auger-aliassime-vs-dino-prizmic-tennis-prediction-wimbledon-2026-ac" }
+        ]
+      }
+    },
+    {
+      "id": "leg-7",
+      "type": "Ganador del partido",
+      "typeTag": "moneyline",
+      "match": "S. Tsitsipas vs N. Djokovic",
+      "round": "Wimbledon 2026 · Ronda 2 · Centre Court",
+      "time": "01/07/2026, 11:20",
+      "selection": "Novak Djokovic — Ganador",
+      "odds": 1.18,
+      "ourProbability": 82,
+      "riskLevel": "bajo-medio",
+      "research": {
+        "h2h": "Djokovic domina el historial 12-2, aunque no se enfrentan desde los Juegos Olímpicos de París 2024.",
+        "form": "La brecha de superficie es enorme: 86.6% de victorias en césped para Djokovic (129-20) frente a 57.1% de Tsitsipas (28-21), quien además cayó en primera ronda en 4 de sus 8 apariciones previas en Wimbledon y nunca pasó de cuartos. Sin embargo, en R1 Djokovic (39 años) necesitó 4 sets ajustados ante Wu Yibing (6-4 5-7 6-4 6-4), mientras Tsitsipas resolvió con autoridad 3-0 ante Gaston — una señal de que el griego llega con más ritmo.",
+        "notes": "El modelo predictivo da 85% a Djokovic. Ajustamos levemente a la baja por la exigencia física que mostró en R1 frente al arranque dominante de Tsitsipas, aunque el historial y el dominio en césped siguen respaldando con fuerza al serbio.",
+        "sources": [
+          { "title": "ATP Tour — Djokovic supera a Wu Yibing en R1", "url": "https://www.atptour.com/en/news/djokovic-wu-wimbledon-2026-monday" },
+          { "title": "CBS Sports Betting — Djokovic en alerta de sorpresa ante Tsitsipas", "url": "https://www.cbssports.com/betting/news/2026-wimbledon-tennis-odds-novak-djokovic-on-potential-2nd-round-upset-alert-wednesday-vs-stefanos-tsitsipas/" }
+        ]
+      }
+    }
+  ],
+  "disclaimer": "Análisis con fines informativos y educativos, elaborado a partir de fuentes públicas (ATP Tour, modelos predictivos de terceros y medios especializados) al 1 de julio de 2026. No constituye asesoría financiera ni una recomendación de apuesta. Las probabilidades propias son estimaciones razonadas, no garantías. Juega con responsabilidad, +18.",
+  "_generated": {
+    "date": "2026-07-01",
+    "timestamp": "2026-07-01T00:00:00.000Z"
+  }
+}

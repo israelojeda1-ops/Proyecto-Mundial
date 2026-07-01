@@ -1,0 +1,255 @@
+{
+  "tournament": {
+    "name": "Wimbledon 2026",
+    "location": "Londres, Gran Bretaña",
+    "category": "Grand Slam",
+    "surface": "Césped",
+    "draw": "Individual Masculino (ATP)",
+    "start": "2026-06-29",
+    "final": "2026-07-12",
+    "currentRound": "Ronda 1"
+  },
+  "bookmakers": ["OddsPeak", "GrassLine", "MatchPoint Bet"],
+  "matches": [
+    {
+      "id": "R1-01",
+      "date": "2026-07-01",
+      "time": "6:00 a.m.",
+      "court": "Court 2",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "H. Hurkacz", "country": "Polonia", "flag": "🇵🇱", "rank": 9 },
+      "player2": { "name": "S. Ofner", "country": "Austria", "flag": "🇦🇹", "rank": 41 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.33, "p2": 3.30 },
+        "GrassLine":    { "p1": 1.30, "p2": 3.50 },
+        "MatchPoint Bet": { "p1": 1.28, "p2": 3.60 }
+      },
+      "ourProjection": { "p1": 78, "p2": 22 },
+      "context": {
+        "h2h": { "played": 1, "p1Wins": 1, "p2Wins": 0, "lastResult": "6-3 6-4 Hurkacz (Halle 2024)" },
+        "form": { "p1": ["W", "W", "L"], "p2": ["W", "L", "W"] },
+        "surfaceRecord": { "p1": "12-4 en césped (2025-26)", "p2": "6-6 en césped (2025-26)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 14.2, "firstServePct": 68, "breakPointsWonPct": 41 },
+          "p2": { "acesPerMatch": 7.8, "firstServePct": 61, "breakPointsWonPct": 33 }
+        },
+        "notes": "Hurkacz llega como uno de los sacadores más sólidos del césped; Ofner viene de perder en primera ronda en Halle."
+      }
+    },
+    {
+      "id": "R1-02",
+      "date": "2026-07-01",
+      "time": "6:00 a.m.",
+      "court": "Court 5",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "J. Brooksby", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 87 },
+      "player2": { "name": "I. Buse", "country": "Perú", "flag": "🇵🇪", "rank": 126 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.65, "p2": 2.20 },
+        "GrassLine":    { "p1": 1.62, "p2": 2.25 },
+        "MatchPoint Bet": { "p1": 1.60, "p2": 2.30 }
+      },
+      "ourProjection": { "p1": 57, "p2": 43 },
+      "context": {
+        "h2h": { "played": 0, "p1Wins": 0, "p2Wins": 0, "lastResult": "Sin precedentes" },
+        "form": { "p1": ["W", "D", "W"], "p2": ["W", "W", "W"] },
+        "surfaceRecord": { "p1": "8-5 en césped (carrera)", "p2": "3-2 en césped (carrera)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 6.1, "firstServePct": 63, "breakPointsWonPct": 39 },
+          "p2": { "acesPerMatch": 5.4, "firstServePct": 60, "breakPointsWonPct": 36 }
+        },
+        "notes": "Buse llega en gran racha de challengers sobre hierba; Brooksby regresa de lesión con ritmo irregular."
+      }
+    },
+    {
+      "id": "R1-03",
+      "date": "2026-07-01",
+      "time": "6:00 a.m.",
+      "court": "Court 8",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "M. Fucsovics", "country": "Hungría", "flag": "🇭🇺", "rank": 64 },
+      "player2": { "name": "L. Tien", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 52 },
+      "odds": {
+        "OddsPeak":     { "p1": 2.10, "p2": 1.75 },
+        "GrassLine":    { "p1": 2.05, "p2": 1.78 },
+        "MatchPoint Bet": { "p1": 2.15, "p2": 1.72 }
+      },
+      "ourProjection": { "p1": 44, "p2": 56 },
+      "context": {
+        "h2h": { "played": 1, "p1Wins": 0, "p2Wins": 1, "lastResult": "7-6 6-4 Tien (Estoril 2025)" },
+        "form": { "p1": ["L", "W", "W"], "p2": ["W", "W", "D"] },
+        "surfaceRecord": { "p1": "5-6 en césped (2025-26)", "p2": "4-2 en césped (2025-26)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 8.9, "firstServePct": 64, "breakPointsWonPct": 37 },
+          "p2": { "acesPerMatch": 7.2, "firstServePct": 66, "breakPointsWonPct": 42 }
+        },
+        "notes": "Tien llega en su mejor forma del año; partido parejo con leve favoritismo de mercado hacia él."
+      }
+    },
+    {
+      "id": "R1-04",
+      "date": "2026-07-01",
+      "time": "6:00 a.m.",
+      "court": "Court 3",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "S. Kwon", "country": "Corea del Sur", "flag": "🇰🇷", "rank": 81 },
+      "player2": { "name": "T. Paul", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 12 },
+      "odds": {
+        "OddsPeak":     { "p1": 3.75, "p2": 1.24 },
+        "GrassLine":    { "p1": 3.60, "p2": 1.26 },
+        "MatchPoint Bet": { "p1": 3.90, "p2": 1.22 }
+      },
+      "ourProjection": { "p1": 21, "p2": 79 },
+      "context": {
+        "h2h": { "played": 0, "p1Wins": 0, "p2Wins": 0, "lastResult": "Sin precedentes" },
+        "form": { "p1": ["L", "W", "L"], "p2": ["W", "W", "W"] },
+        "surfaceRecord": { "p1": "3-5 en césped (carrera)", "p2": "16-7 en césped (carrera)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 4.8, "firstServePct": 58, "breakPointsWonPct": 30 },
+          "p2": { "acesPerMatch": 9.6, "firstServePct": 65, "breakPointsWonPct": 44 }
+        },
+        "notes": "Paul es uno de los favoritos ocultos del cuadro tras semifinales en Queen's; sin valor aparente en su lado."
+      }
+    },
+    {
+      "id": "R1-05",
+      "date": "2026-07-01",
+      "time": "7:10 a.m.",
+      "court": "Court 14",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "N. Mejia", "country": "Colombia", "flag": "🇨🇴", "rank": 158 },
+      "player2": { "name": "M. Zheng", "country": "China", "flag": "🇨🇳", "rank": 71 },
+      "odds": {
+        "OddsPeak":     { "p1": 2.60, "p2": 1.52 },
+        "GrassLine":    { "p1": 2.70, "p2": 1.50 },
+        "MatchPoint Bet": { "p1": 2.55, "p2": 1.54 }
+      },
+      "ourProjection": { "p1": 34, "p2": 66 },
+      "context": {
+        "h2h": { "played": 0, "p1Wins": 0, "p2Wins": 0, "lastResult": "Sin precedentes" },
+        "form": { "p1": ["W", "L", "W"], "p2": ["W", "D", "W"] },
+        "surfaceRecord": { "p1": "1-3 en césped (carrera)", "p2": "9-4 en césped (2025-26)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 3.9, "firstServePct": 57, "breakPointsWonPct": 31 },
+          "p2": { "acesPerMatch": 6.7, "firstServePct": 63, "breakPointsWonPct": 40 }
+        },
+        "notes": "Mejia debuta en el cuadro principal de Wimbledon; su juego de fondo de pista rinde menos en hierba rápida."
+      }
+    },
+    {
+      "id": "R1-06",
+      "date": "2026-07-01",
+      "time": "7:10 a.m.",
+      "court": "Court 6",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "R. Safiullin", "country": "Rusia", "flag": "🇷🇺", "rank": 55 },
+      "player2": { "name": "B. Van de Zandschulp", "country": "Países Bajos", "flag": "🇳🇱", "rank": 68 },
+      "odds": {
+        "OddsPeak":     { "p1": 2.05, "p2": 1.78 },
+        "GrassLine":    { "p1": 2.00, "p2": 1.80 },
+        "MatchPoint Bet": { "p1": 2.10, "p2": 1.75 }
+      },
+      "ourProjection": { "p1": 42, "p2": 58 },
+      "context": {
+        "h2h": { "played": 2, "p1Wins": 1, "p2Wins": 1, "lastResult": "6-4 6-4 Van de Zandschulp (Rotterdam 2024)" },
+        "form": { "p1": ["W", "W", "L"], "p2": ["D", "W", "W"] },
+        "surfaceRecord": { "p1": "4-4 en césped (carrera)", "p2": "9-5 en césped (carrera, incl. QF Wimbledon 2021)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 7.0, "firstServePct": 62, "breakPointsWonPct": 35 },
+          "p2": { "acesPerMatch": 8.4, "firstServePct": 64, "breakPointsWonPct": 38 }
+        },
+        "notes": "Van de Zandschulp tiene pedigrí en césped (llegó a cuartos en 2021); mercado lo respeta como leve favorito."
+      }
+    },
+    {
+      "id": "R1-07",
+      "date": "2026-07-01",
+      "time": "7:40 a.m.",
+      "court": "Court 4",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "A. Davidovich Fokina", "country": "España", "flag": "🇪🇸", "rank": 28 },
+      "player2": { "name": "F. Marozsan", "country": "Hungría", "flag": "🇭🇺", "rank": 45 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.70, "p2": 2.15 },
+        "GrassLine":    { "p1": 1.68, "p2": 2.18 },
+        "MatchPoint Bet": { "p1": 1.72, "p2": 2.12 }
+      },
+      "ourProjection": { "p1": 55, "p2": 45 },
+      "context": {
+        "h2h": { "played": 1, "p1Wins": 1, "p2Wins": 0, "lastResult": "6-2 6-3 Davidovich Fokina (Barcelona 2025)" },
+        "form": { "p1": ["W", "L", "W"], "p2": ["W", "W", "L"] },
+        "surfaceRecord": { "p1": "5-5 en césped (carrera)", "p2": "3-3 en césped (carrera)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 6.3, "firstServePct": 60, "breakPointsWonPct": 38 },
+          "p2": { "acesPerMatch": 5.9, "firstServePct": 61, "breakPointsWonPct": 37 }
+        },
+        "notes": "Ninguno destaca en hierba históricamente; el mercado y nuestra proyección coinciden en un ligero favoritismo español."
+      }
+    },
+    {
+      "id": "R1-08",
+      "date": "2026-07-01",
+      "time": "7:40 a.m.",
+      "court": "Court 1",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "F. Tiafoe", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 17 },
+      "player2": { "name": "T. Atmane", "country": "Francia", "flag": "🇫🇷", "rank": 33 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.75, "p2": 2.05 },
+        "GrassLine":    { "p1": 1.70, "p2": 2.10 },
+        "MatchPoint Bet": { "p1": 1.73, "p2": 2.08 }
+      },
+      "ourProjection": { "p1": 48, "p2": 52 },
+      "context": {
+        "h2h": { "played": 1, "p1Wins": 0, "p2Wins": 1, "lastResult": "7-6 6-7 7-6 Atmane (Cincinnati 2025)" },
+        "form": { "p1": ["W", "D", "L"], "p2": ["W", "W", "W"] },
+        "surfaceRecord": { "p1": "18-9 en césped (carrera)", "p2": "4-1 en césped (carrera)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 8.1, "firstServePct": 61, "breakPointsWonPct": 39 },
+          "p2": { "acesPerMatch": 11.4, "firstServePct": 67, "breakPointsWonPct": 41 }
+        },
+        "notes": "Atmane llega en el mejor momento de su carrera; nuestra proyección le da una ligera ventaja pese a que el mercado favorece a Tiafoe por experiencia en Grand Slams.",
+        "valueFlag": true
+      }
+    },
+    {
+      "id": "R1-09",
+      "date": "2026-07-01",
+      "time": "7:50 a.m.",
+      "court": "Court 12",
+      "round": "Ronda 1",
+      "status": "upcoming",
+      "player1": { "name": "D. Merida", "country": "España", "flag": "🇪🇸", "rank": 173 },
+      "player2": { "name": "D. Medvedev", "country": "Rusia", "flag": "🇷🇺", "rank": 6 },
+      "odds": {
+        "OddsPeak":     { "p1": 6.50, "p2": 1.10 },
+        "GrassLine":    { "p1": 6.00, "p2": 1.11 },
+        "MatchPoint Bet": { "p1": 7.00, "p2": 1.08 }
+      },
+      "ourProjection": { "p1": 12, "p2": 88 },
+      "context": {
+        "h2h": { "played": 0, "p1Wins": 0, "p2Wins": 0, "lastResult": "Sin precedentes" },
+        "form": { "p1": ["W", "W", "L"], "p2": ["W", "W", "D"] },
+        "surfaceRecord": { "p1": "0-1 en césped (carrera)", "p2": "24-11 en césped (carrera, incl. final Wimbledon 2021)" },
+        "keyStats": {
+          "p1": { "acesPerMatch": 3.2, "firstServePct": 55, "breakPointsWonPct": 27 },
+          "p2": { "acesPerMatch": 9.8, "firstServePct": 64, "breakPointsWonPct": 43 }
+        },
+        "notes": "Merida (clasificado, debut en el main draw) enfrenta a un excampeón subcampeón de Wimbledon; sin valor en ningún lado del mercado."
+      }
+    }
+  ],
+  "disclaimer": "Datos y cuotas simulados con fines ilustrativos y educativos. No constituye una recomendación de apuesta. Juega con responsabilidad.",
+  "_generated": {
+    "date": "2026-07-01",
+    "timestamp": "2026-07-01T00:00:00.000Z"
+  }
+}
