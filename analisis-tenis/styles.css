@@ -615,6 +615,221 @@ body {
 .no-matches-icon { font-size: 48px; margin-bottom: 12px; }
 .no-matches h3 { font-size: 16px; margin-bottom: 6px; }
 
+/* ─── Page nav (header link between pages) ─── */
+.page-nav {
+  margin-top: 12px;
+}
+
+.page-nav a {
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--pill-bg);
+}
+
+.page-nav a:hover {
+  color: var(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.header-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--accent-green);
+  text-decoration: none;
+  border: 1px solid rgba(47, 174, 102, 0.3);
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(47, 174, 102, 0.08);
+}
+
+.header-link:hover { background: rgba(47, 174, 102, 0.15); }
+
+/* ─── Slip summary (Analizador de Combinadas) ─── */
+.slip-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.slip-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.slip-title { display: flex; flex-direction: column; gap: 2px; }
+
+.slip-bookmaker {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.slip-type {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.slip-odds {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--accent-gold);
+  letter-spacing: -1px;
+}
+
+.slip-numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.slip-num-item {
+  background: var(--bg-stat);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.slip-num-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.slip-num-val {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.slip-num-val.win { color: var(--accent-green); }
+.slip-num-val.danger { color: var(--accent-red); }
+
+.verdict-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 1px solid var(--border);
+}
+
+.verdict-box.verdict-ok { background: rgba(47, 174, 102, 0.08); border-color: rgba(47, 174, 102, 0.3); color: var(--text-secondary); }
+.verdict-box.verdict-mid { background: rgba(210, 153, 34, 0.08); border-color: rgba(210, 153, 34, 0.3); color: var(--text-secondary); }
+.verdict-box.verdict-caution { background: rgba(248, 81, 73, 0.08); border-color: rgba(248, 81, 73, 0.3); color: var(--text-secondary); }
+
+.risky-legs-note {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ─── Leg card ─── */
+.leg-body {
+  padding: 16px;
+}
+
+.leg-match {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.leg-round {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.leg-selection {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.leg-prob-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.leg-prob-item {
+  background: var(--bg-stat);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.leg-prob-label {
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.leg-prob-val {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.leg-prob-val.accent { color: var(--accent-gold); }
+.leg-prob-val.positive { color: var(--accent-green); }
+.leg-prob-val.negative { color: var(--text-muted); }
+
+.risk-badge {
+  padding: 2px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.risk-badge.risk-low { background: rgba(47, 174, 102, 0.12); border: 1px solid rgba(47, 174, 102, 0.3); color: var(--accent-green); }
+.risk-badge.risk-mid { background: rgba(210, 153, 34, 0.12); border: 1px solid rgba(210, 153, 34, 0.3); color: var(--accent-orange); }
+.risk-badge.risk-high { background: rgba(248, 81, 73, 0.12); border: 1px solid rgba(248, 81, 73, 0.3); color: var(--accent-red); }
+
+/* ─── Sources ─── */
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.source-link {
+  font-size: 11px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--border);
+  width: fit-content;
+}
+
+.source-link:hover { color: var(--accent-green); }
+
+.sources-section { margin-top: 8px; }
+
 /* ─── Responsive ─── */
 @media (max-width: 600px) {
   .header h1 { font-size: 18px; }
@@ -624,4 +839,6 @@ body {
   .value-section { grid-template-columns: 1fr; }
   .surface-grid, .stats-grid-tennis { grid-template-columns: 1fr; }
   .odds-table { font-size: 11px; }
+  .slip-numbers { grid-template-columns: repeat(2, 1fr); }
+  .leg-prob-row { grid-template-columns: repeat(2, 1fr); }
 }
