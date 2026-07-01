@@ -1,0 +1,94 @@
+name: Tennis Odds Daily Update
+
+on:
+  schedule:
+    # Corre a las 06:00 UTC todos los días durante Wimbledon (29 jun – 12 jul 2026)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Fecha objetivo (YYYY-MM-DD). Por defecto, hoy.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Update data and deploy to gh-pages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Determine target date
+        id: date
+        run: |
+          TARGET="${{ github.event.inputs.target_date }}"
+          if [ -z "$TARGET" ]; then
+            TARGET=$(date -u +%Y-%m-%d)
+          fi
+          echo "date=$TARGET" >> "$GITHUB_OUTPUT"
+          echo "Target date: $TARGET"
+
+      - name: Update generated marker in odds data
+        run: |
+          TARGET="${{ steps.date.outputs.date }}"
+          echo "Updating odds data for $TARGET"
+          node -e "
+            const fs = require('fs');
+            const data = JSON.parse(fs.readFileSync('analisis-tenis/data/wimbledon_2026.json', 'utf8'));
+            data._generated = { date: '$TARGET', timestamp: new Date().toISOString() };
+            fs.writeFileSync('analisis-tenis/data/wimbledon_2026.json', JSON.stringify(data, null, 2));
+            const matches = data.matches.filter(m => m.date === '$TARGET');
+            console.log(\`Found \${matches.length} match(es) for $TARGET\`);
+          "
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add analisis-tenis/data/wimbledon_2026.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update tennis odds data for ${{ steps.date.outputs.date }}"
+            git push origin HEAD:main
+          fi
+
+      - name: Deploy to gh-pages branch (analisis-tenis/ subfolder)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Copy the dashboard files to a temp dir
+          cp -r analisis-tenis /tmp/tenis-dist
+
+          # Switch to gh-pages branch (create if needed) — this branch is shared
+          # with other projects in this repo, so only this project's subfolder
+          # is touched, never the whole branch.
+          git fetch origin gh-pages 2>/dev/null || true
+          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
+
+          # Replace only the analisis-tenis/ subfolder with the fresh build
+          rm -rf analisis-tenis
+          mkdir -p analisis-tenis
+          cp -r /tmp/tenis-dist/. analisis-tenis/
+
+          # Commit and push
+          git add analisis-tenis
+          if git diff --staged --quiet; then
+            echo "Nothing to deploy."
+          else
+            git commit -m "deploy: update tennis odds dashboard for ${{ steps.date.outputs.date }}"
+            git push origin gh-pages
+          fi
