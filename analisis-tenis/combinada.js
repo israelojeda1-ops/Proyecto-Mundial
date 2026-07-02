@@ -2,6 +2,11 @@
 (function () {
   'use strict';
 
+  const SLIPS = [
+    { id: '2026-07-01', label: '1 jul · Combinada de 7', file: './data/combinada_2026-07-01.json' },
+    { id: '2026-07-02', label: '2 jul · Combinada de 10', file: './data/combinada_2026-07-02.json' }
+  ];
+
   function formatDisplayDate(isoDate) {
     const [year, month, day] = isoDate.split('-').map(Number);
     const d = new Date(year, month - 1, day);
@@ -11,6 +16,7 @@
   }
 
   function formatMoney(n, currency) {
+    if (n === null || n === undefined) return 'No especificado';
     return currency + n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   }
 
@@ -53,10 +59,13 @@
     const ourCombined = legs.reduce((acc, leg) => acc * (leg.ourProbability / 100), 1) * 100;
     const gapPp = impliedTotal - ourCombined;
 
+    const riskyLegsForVerdict = legs.filter(l => l.riskLevel === 'alto');
+    const riskyNames = riskyLegsForVerdict.map(l => l.match).join(' y ');
+
     let verdictText, verdictClass;
     if (gapPp >= 8) {
       verdictClass = 'verdict-caution';
-      verdictText = `Nuestra estimación (${ourCombined.toFixed(1)}%) queda bien por debajo de la probabilidad implícita por la cuota total (${impliedTotal.toFixed(1)}%). El boleto es más arriesgado de lo que sugiere el precio — principalmente por las patas con condiciones extra (Bet Builder y marcador exacto).`;
+      verdictText = `Nuestra estimación (${ourCombined.toFixed(1)}%) queda bien por debajo de la probabilidad implícita por la cuota total (${impliedTotal.toFixed(1)}%). El boleto es más arriesgado de lo que sugiere el precio${riskyNames ? ` — principalmente por: ${riskyNames}` : ''}.`;
     } else if (gapPp >= 3) {
       verdictClass = 'verdict-mid';
       verdictText = `Nuestra estimación (${ourCombined.toFixed(1)}%) está algo por debajo de la probabilidad implícita (${impliedTotal.toFixed(1)}%). Riesgo moderado, razonable para el pago ofrecido.`;
@@ -170,10 +179,30 @@
       </article>`;
   }
 
-  /* ─── Bootstrap ─── */
-  async function init() {
+  /* ─── Selector de combinadas ─── */
+  function renderSelector(activeId) {
+    const el = document.getElementById('slip-selector');
+    if (!el) return;
+    el.innerHTML = SLIPS.map(s => `
+      <button class="slip-tab ${s.id === activeId ? 'active' : ''}" data-slip-id="${s.id}">${s.label}</button>
+    `).join('');
+    el.querySelectorAll('.slip-tab').forEach(btn => {
+      btn.addEventListener('click', () => loadSlip(btn.dataset.slipId));
+    });
+  }
+
+  /* ─── Carga y render de una combinada ─── */
+  async function loadSlip(slipId) {
+    const slipDef = SLIPS.find(s => s.id === slipId) || SLIPS[SLIPS.length - 1];
+    renderSelector(slipDef.id);
+
+    const summaryEl = document.getElementById('slip-summary');
+    if (summaryEl) summaryEl.innerHTML = `<div class="no-matches"><div class="no-matches-icon">⏳</div><h3>Cargando combinada…</h3></div>`;
+    const legsEl = document.getElementById('legs-container');
+    if (legsEl) legsEl.innerHTML = '';
+
     try {
-      const resp = await fetch('./data/combinada_2026-07-01.json');
+      const resp = await fetch(slipDef.file);
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const data = await resp.json();
 
@@ -183,22 +212,19 @@
       const badgeEl = document.getElementById('bookmaker-badge');
       if (badgeEl) badgeEl.textContent = `${data.slip.bookmaker} · ${data.slip.type}`;
 
-      const summaryEl = document.getElementById('slip-summary');
       if (summaryEl) summaryEl.innerHTML = renderSlipSummary(data);
 
       const countEl = document.getElementById('leg-count');
       if (countEl) countEl.textContent = data.legs.length;
 
-      const legsEl = document.getElementById('legs-container');
       if (legsEl) legsEl.innerHTML = data.legs.map(renderLeg).join('');
 
       const disclaimerEl = document.getElementById('disclaimer-text');
       if (disclaimerEl) disclaimerEl.textContent = data.disclaimer;
 
     } catch (err) {
-      const container = document.getElementById('legs-container');
-      if (container) {
-        container.innerHTML = `
+      if (legsEl) {
+        legsEl.innerHTML = `
           <div class="no-matches">
             <div class="no-matches-icon">⚠️</div>
             <h3>Error al cargar la combinada</h3>
@@ -207,6 +233,12 @@
       }
       console.error('Analizador de Combinadas error:', err);
     }
+  }
+
+  /* ─── Bootstrap ─── */
+  function init() {
+    const defaultSlip = SLIPS[SLIPS.length - 1];
+    loadSlip(defaultSlip.id);
   }
 
   document.addEventListener('DOMContentLoaded', init);
