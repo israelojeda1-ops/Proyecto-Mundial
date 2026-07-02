@@ -649,6 +649,34 @@ body {
 
 .header-link:hover { background: rgba(47, 174, 102, 0.15); }
 
+/* ─── Slip selector ─── */
+.slip-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.slip-tab {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.slip-tab:hover { background: var(--bg-card-hover); }
+
+.slip-tab.active {
+  background: rgba(47, 174, 102, 0.12);
+  border-color: rgba(47, 174, 102, 0.4);
+  color: var(--accent-green);
+}
+
 /* ─── Slip summary (Analizador de Combinadas) ─── */
 .slip-summary {
   background: var(--bg-card);
