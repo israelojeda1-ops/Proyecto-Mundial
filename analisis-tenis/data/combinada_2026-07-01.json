@@ -28,7 +28,16 @@
           { "title": "Dimers — Hurkacz vs Ofner prediction", "url": "https://www.dimers.com/news/hubert-hurkacz-vs-sebastian-ofner-tennis-prediction-wimbledon-2026-ac" },
           { "title": "TennisTemple — H2H Hurkacz vs Ofner", "url": "https://en.tennistemple.com/h2h/hubert-hurkacz-vs-sebastian-ofner/4315/7261" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos",
+          "line": "Menos de 40.5",
+          "odds": null,
+          "verdict": "value",
+          "note": "Varias fuentes marcan el 'Under 40.5' como la jugada recomendada por sus modelos. Con Hurkacz dominando el saque y favorito a resolver en sets corridos, el Under tiene sentido, aunque no encontramos la cuota exacta para confirmar el margen de valor."
+        }
+      ]
     },
     {
       "id": "leg-2",
@@ -50,7 +59,17 @@
           { "title": "Korea JoongAng Daily — Kwon avanza a 2ª ronda", "url": "https://www.koreajoongangdaily.com/sports/kwon-soonwoo-wins-1stround-match-at-wimbledon/" },
           { "title": "predict.tennis — Paul vs Kwon preview", "url": "https://predict.tennis/soonwoo-kwon-vs-tommy-paul-wimbledon-atp-preview-prediction/" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos",
+          "line": "34.5 (señales contradictorias entre casas)",
+          "odds": null,
+          "verdict": "mixed",
+          "note": "Encontramos recomendaciones opuestas: una fuente sugiere el Over 34.5 con valor en plus-money, otra el Under 34 a -111. Sin una señal clara no lo marcamos como valor. Dato posterior: el partido ya se disputó — Paul ganó en sets corridos (6-3, 7-6, 6-2, ≈30 juegos), resultado que habría favorecido el Under en ambas líneas.",
+          "outcome": "El Under habría acertado; el Over habría fallado."
+        }
+      ]
     },
     {
       "id": "leg-3",
@@ -72,7 +91,23 @@
           { "title": "Outlook India — Medvedev vs Cilic, ronda 1", "url": "https://www.outlookindia.com/sports/tennis/daniil-medvedev-vs-marin-cilic-live-score-wimbledon-2026-first-round-court-1-grand-slam-updates-highlights-london" },
           { "title": "Matchstat — Perfil y stats de Daniel Merida Aguilar", "url": "https://matchstat.com/tennis/player/Daniel%20Merida%20Aguilar/" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos",
+          "line": "~45.5 (Under favorito según fuentes)",
+          "odds": null,
+          "verdict": "info",
+          "note": "Merida promedia 23.3 juegos por partido en su carrera, pero cubrió el hándicap de +8.5 juegos en 7 partidos consecutivos sobre césped — tiende a estirar los partidos más de lo esperado. Esto refuerza el riesgo que ya señalamos en el Bet Builder original (menos de 36.5 juegos)."
+        },
+        {
+          "market": "Aces",
+          "line": "Referencia del propio partido",
+          "odds": null,
+          "verdict": "info",
+          "note": "Se registraron 16 aces de Medvedev y 13 de Merida — el saque de Merida sigue siendo un arma real incluso ante un rival de jerarquía, lo que respalda el riesgo de que el partido se estire más de lo que paga la cuota."
+        }
+      ]
     },
     {
       "id": "leg-4",
@@ -94,7 +129,24 @@
           { "title": "SI Betting — Sinner vs Borges prediction & odds", "url": "https://www.si.com/betting/jannik-sinner-vs-nuno-borges-prediction-odds-for-wimbledon-second-round" },
           { "title": "ATP Tour — Borges busca 'causar estrés' a Sinner", "url": "https://www.atptour.com/en/news/borges-wimbledon-2026-feature" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Hándicap de juegos",
+          "line": "Borges +7.5",
+          "odds": 2.05,
+          "verdict": "value",
+          "note": "Resultado confirmado: Sinner ganó 7-6, 7-6, 6-4 (36 juegos totales), venciendo por un margen de solo 4 juegos (20-16). El hándicap Borges +7.5 habría ganado con comodidad, validando que Sinner —pese a ser un ganador casi seguro— no fue un dominador aplastante en el marcador. La pata original 'gana 3-0' también se cumplió.",
+          "outcome": "acertado"
+        },
+        {
+          "market": "Aces (Sinner)",
+          "line": "Referencia del propio partido",
+          "odds": null,
+          "verdict": "info",
+          "note": "Sinner cerró con 22 aces en el partido — su saque siguió siendo un arma dominante pese al susto físico de R1."
+        }
+      ]
     },
     {
       "id": "leg-5",
@@ -115,7 +167,16 @@
           { "title": "Stats Insider — De Jong vs Fonseca prediction", "url": "https://www.statsinsider.com.au/news/jesper-de-jong-vs-joao-fonseca-prediction-wimbledon-2026" },
           { "title": "Exame — Jesper de Jong, próximo rival de Fonseca", "url": "https://exame.com/esporte/jesper-de-jong-conheca-o-proximo-adversario-de-joao-fonseca-em-wimbledon/" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos",
+          "line": "Más de 36.5",
+          "odds": null,
+          "verdict": "value",
+          "note": "El modelo recomienda el Over 36.5 como la mejor jugada de valor en este partido — De Jong ya mostró que pelea puntos largos (llegó a 5 sets en R1) y Fonseca podría necesitar tiempo para quebrar a un rival con buen movimiento en pista."
+        }
+      ]
     },
     {
       "id": "leg-6",
@@ -135,7 +196,24 @@
         "sources": [
           { "title": "Dimers — Auger-Aliassime vs Prizmic prediction", "url": "https://www.dimers.com/news/felix-auger-aliassime-vs-dino-prizmic-tennis-prediction-wimbledon-2026-ac" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos",
+          "line": "Menos de 36.5",
+          "odds": 1.89,
+          "verdict": "value",
+          "note": "Los modelos daban 10.8% de edge y 63.6% de probabilidad al Under 36.5 antes del partido. Resultado confirmado: Auger-Aliassime ganó 7-6(2), 6-3, 7-5 — 34 juegos en total, por debajo de la línea. La jugada de valor se cumplió.",
+          "outcome": "acertado"
+        },
+        {
+          "market": "Aces / Dobles faltas (Auger-Aliassime)",
+          "line": "Referencia del propio partido",
+          "odds": null,
+          "verdict": "info",
+          "note": "Auger-Aliassime cerró con 15 aces pero también 7 dobles faltas — saque potente aunque no del todo consistente."
+        }
+      ]
     },
     {
       "id": "leg-7",
@@ -156,7 +234,16 @@
           { "title": "ATP Tour — Djokovic supera a Wu Yibing en R1", "url": "https://www.atptour.com/en/news/djokovic-wu-wimbledon-2026-monday" },
           { "title": "CBS Sports Betting — Djokovic en alerta de sorpresa ante Tsitsipas", "url": "https://www.cbssports.com/betting/news/2026-wimbledon-tennis-odds-novak-djokovic-on-potential-2nd-round-upset-alert-wednesday-vs-stefanos-tsitsipas/" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos",
+          "line": "Proyección del modelo: ~37.25 (sin línea de mercado confirmada)",
+          "odds": null,
+          "verdict": "info",
+          "note": "No encontramos una línea de mercado publicada, pero el modelo proyecta un partido de duración pareja. En R1, Djokovic sacó 15 aces y Tsitsipas 8 — si esa brecha se mantiene, el saque de Djokovic podría tener valor en mercados de aces si algún libro los ofrece."
+        }
+      ]
     }
   ],
   "disclaimer": "Análisis con fines informativos y educativos, elaborado a partir de fuentes públicas (ATP Tour, modelos predictivos de terceros y medios especializados) al 1 de julio de 2026. No constituye asesoría financiera ni una recomendación de apuesta. Las probabilidades propias son estimaciones razonadas, no garantías. Juega con responsabilidad, +18.",
