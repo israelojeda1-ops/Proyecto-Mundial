@@ -113,6 +113,36 @@
     `;
   }
 
+  /* ─── Render: mercados de valor (juegos, aces, hándicaps) ─── */
+  function vmVerdictLabel(v) {
+    const map = { value: '💎 Valor', 'no-value': '— Sin valor', mixed: '⚠️ Señales mixtas', info: 'ℹ️ Referencia' };
+    return map[v] || v;
+  }
+
+  function vmVerdictClass(v) {
+    const map = { value: 'vm-value', 'no-value': 'vm-no-value', mixed: 'vm-mixed', info: 'vm-info' };
+    return map[v] || 'vm-info';
+  }
+
+  function renderValueMarkets(valueMarkets) {
+    if (!valueMarkets || valueMarkets.length === 0) return '';
+    const items = valueMarkets.map(vm => `
+      <div class="value-market-item">
+        <div class="vm-header">
+          <span class="vm-market">${vm.market}</span>
+          <span class="vm-badge ${vmVerdictClass(vm.verdict)}">${vmVerdictLabel(vm.verdict)}</span>
+        </div>
+        <div class="vm-line">Línea: <strong>${vm.line}</strong>${vm.odds ? ` · Cuota: <strong>${vm.odds.toFixed(2)}</strong>` : ''}</div>
+        <p class="notes-text">${vm.note}</p>
+        ${vm.outcome ? `<div class="vm-outcome">✅ Resultado: ${vm.outcome}</div>` : ''}
+      </div>`).join('');
+    return `
+      <div class="context-section">
+        <div class="section-title">🎯 Mercados de valor (juegos, aces, hándicaps)</div>
+        <div class="value-markets-list">${items}</div>
+      </div>`;
+  }
+
   /* ─── Render: una pata ─── */
   function renderLeg(leg) {
     const implied = impliedProb(leg.odds);
@@ -171,6 +201,7 @@
           <div class="section-title">📝 Análisis</div>
           <p class="notes-text">${r.notes}</p>
         </div>
+        ${renderValueMarkets(leg.valueMarkets)}
         ${sourcesHtml ? `
         <div class="context-section leg-sources">
           <div class="section-title">🔗 Fuentes</div>

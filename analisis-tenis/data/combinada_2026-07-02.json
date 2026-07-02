@@ -28,7 +28,16 @@
           { "title": "Stats Insider — De Minaur vs Mannarino prediction", "url": "https://www.statsinsider.com.au/news/alex-de-minaur-vs-adrian-mannarino-prediction-wimbledon-2026" },
           { "title": "Sports Mole — Preview De Minaur vs Mannarino", "url": "https://www.sportsmole.co.uk/tennis/wimbledon/preview/alex-de-minaur-vs-adrian-mannarino-prediction-head-to-head-tournament-so-far_600446.html" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Hándicap de juegos",
+          "line": "De Minaur -6.5",
+          "odds": 2.17,
+          "verdict": "value",
+          "note": "En Kalshi, el hándicap De Minaur -6.5 paga +117 pese a que es un favorito claro en el moneyline (-500) — el mercado no está totalmente convencido de que gane con margen amplio, aunque su reciente 6-4 6-0 ante este mismo rival sugiere que sí podría cubrirlo."
+        }
+      ]
     },
     {
       "id": "leg-2",
@@ -48,7 +57,30 @@
         "sources": [
           { "title": "Dimers — Fritz vs Kypson prediction", "url": "https://www.dimers.com/news/taylor-fritz-vs-patrick-kypson-tennis-prediction-wimbledon-2026-ac" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos",
+          "line": "Más de 33.5",
+          "odds": null,
+          "verdict": "value",
+          "note": "Recomendación de modelos: Over 33.5. Fritz es un favorito enorme (-1205) pero Kypson no suele regalar juegos con facilidad, y Fritz no necesita forzar el partido ante un rival tan inferior."
+        },
+        {
+          "market": "Hándicap de juegos",
+          "line": "Fritz -6.5",
+          "odds": null,
+          "verdict": "info",
+          "note": "El modelo da 69.6% de probabilidad a que Fritz cubra el hándicap de -6.5 juegos."
+        },
+        {
+          "market": "Aces (Fritz)",
+          "line": "Sin línea de mercado confirmada",
+          "odds": null,
+          "verdict": "info",
+          "note": "Fritz sacó 14 aces y 0 dobles faltas en su R1 — saque muy eficiente, favorable para líneas altas de aces si algún libro las ofrece."
+        }
+      ]
     },
     {
       "id": "leg-3",
@@ -69,7 +101,16 @@
           { "title": "Stats Insider — Royer vs Zverev prediction", "url": "https://www.statsinsider.com.au/news/valentin-royer-vs-alexander-zverev-prediction-wimbledon-2026" },
           { "title": "SI Betting — Royer vs Zverev odds", "url": "https://www.si.com/betting/valentin-royer-vs-alexander-zverev-prediction-odds-for-wimbledon-second-round-01kwf6t7qrec" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Hándicap de juegos",
+          "line": "Zverev -7.5",
+          "odds": 2.08,
+          "verdict": "value",
+          "note": "El modelo da 72.0% de probabilidad a que Zverev cubra el margen de -7.5 juegos, frente a un ~48% que implica la cuota (+108) — uno de los edges más claros que encontramos en toda la investigación."
+        }
+      ]
     },
     {
       "id": "leg-4",
@@ -89,7 +130,16 @@
         "sources": [
           { "title": "Dimers — Jacquet vs Bublik prediction", "url": "https://www.dimers.com/news/kyrian-jacquet-vs-alexander-bublik-tennis-prediction-wimbledon-2026-ac" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos / Aces",
+          "line": "Sin línea de mercado encontrada",
+          "odds": null,
+          "verdict": "info",
+          "note": "No encontramos líneas específicas de juegos o aces publicadas para este partido. Bublik es un jugador de rendimiento muy irregular partido a partido, lo que dificulta proyectar props con confianza."
+        }
+      ]
     },
     {
       "id": "leg-5",
@@ -110,7 +160,16 @@
           { "title": "TennisTemple — Tiafoe vs Choinski", "url": "https://en.tennistemple.com/match/tiafoe-choinski-wimbledon-2026/9470778/" },
           { "title": "Tennis Tonic — Choinski upsets Kopriva en R1", "url": "https://tennistonic.com/tennis-news/1021371/jan-choinski-upsets-kopriva-in-the-1st-round-to-play-vs-tiafoe-or-atmane-wimbledon-results/" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Aces / Saque",
+          "line": "Sin línea de mercado confirmada",
+          "odds": null,
+          "verdict": "info",
+          "note": "Choinski sacó 18 aces con apenas 1 doble falta en R1 (71% de primeros saques); Tiafoe con solo 58% de primeros y 6 dobles faltas. Si algún libro ofrece 'aces de Choinski' o 'total de juegos', el patrón de saque sugiere valor hacia el Over — pero no encontramos la línea publicada para confirmarlo."
+        }
+      ]
     },
     {
       "id": "leg-6",
@@ -131,7 +190,16 @@
           { "title": "SI Betting — McNally vs Rybakina prediction", "url": "https://www.si.com/betting/caty-mcnally-vs-elena-rybakina-prediction-odds-for-wimbledon-second-round-01kwfbjv2ckf" },
           { "title": "Outlook India — Rybakina supera susto ante Boisson en R1", "url": "https://www.outlookindia.com/sports/tennis/elena-rybakina-vs-lois-boisson-wimbledon-2026-ladies-singles-1st-round-in-pics" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos / Aces",
+          "line": "Sin línea de mercado encontrada",
+          "odds": null,
+          "verdict": "info",
+          "note": "No localizamos líneas publicadas de juegos o aces para este partido. Dado que Rybakina ya necesitó 3 sets en R1, un mercado de 'más juegos' — si algún libro lo ofrece — podría tener sentido, aunque no pudimos confirmarlo con una cuota real."
+        }
+      ]
     },
     {
       "id": "leg-7",
@@ -152,7 +220,16 @@
           { "title": "Olympics.com — Anisimova avanza con autoridad en R1", "url": "https://www.olympics.com/en/news/wimbledon-2026-amanda-anisimova-round-one-tennis-reaction" },
           { "title": "Outlook India — Anisimova vs Gjorcheska R1", "url": "https://www.outlookindia.com/sports/tennis/amanda-anisimova-vs-lina-gjorcheska-wimbledon-2026-ladies-singles-1st-round-in-pics" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos / Aces",
+          "line": "Sin línea de mercado encontrada",
+          "odds": null,
+          "verdict": "info",
+          "note": "No encontramos líneas publicadas de props para este partido. El dominio de Anisimova en R1 (sin ceder un break point) sugiere un partido corto, pero no hay cuota confirmada para respaldar un 'Under' con datos concretos."
+        }
+      ]
     },
     {
       "id": "leg-8",
@@ -173,7 +250,16 @@
           { "title": "Matchstat — H2H Pliskova vs Swiatek", "url": "https://matchstat.com/tennis/h2h-odds-bets/Karolina%20Pliskova/Iga%20Swiatek/" },
           { "title": "WTA Tennis — Swiatek sobrevive a Townsend en R1", "url": "https://www.wtatennis.com/news/4528799/defending-champion-swiatek-survives-tough-townsend-test-in-wimbledon-opener" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos / Aces (Pliskova)",
+          "line": "Sin línea de mercado confirmada",
+          "odds": null,
+          "verdict": "info",
+          "note": "No encontramos líneas publicadas de juegos o aces, pero el saque de Pliskova es su arma principal en césped — si algún libro ofrece 'aces de Pliskova' o un total de juegos alto, podría tener valor dado el peligro real que representa su saque ante Swiatek."
+        }
+      ]
     },
     {
       "id": "leg-9",
@@ -194,7 +280,16 @@
           { "title": "Stats Insider — Blinkova vs Kostyuk prediction", "url": "https://www.statsinsider.com.au/news/anna-blinkova-vs-marta-kostyuk-prediction-wimbledon-2026" },
           { "title": "Matchstat — H2H Blinkova vs Kostyuk", "url": "https://matchstat.com/tennis/h2h-odds-bets/Anna%20Blinkova/Marta%20Kostyuk/" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Ganador del Set 1",
+          "line": "Kostyuk",
+          "odds": 1.22,
+          "verdict": "no-value",
+          "note": "La cuota de set 1 (Kostyuk $1.22 ≈ 82% implícito) es casi idéntica a la probabilidad de ganar el partido completo — no aporta valor adicional sobre la apuesta a ganadora simple."
+        }
+      ]
     },
     {
       "id": "leg-10",
@@ -214,7 +309,16 @@
         "sources": [
           { "title": "Dimers — Osorio vs Noskova prediction", "url": "https://www.dimers.com/news/camila-osorio-vs-linda-noskova-tennis-prediction-wimbledon-2026-ac" }
         ]
-      }
+      },
+      "valueMarkets": [
+        {
+          "market": "Total de juegos / Aces",
+          "line": "Sin línea de mercado encontrada",
+          "odds": null,
+          "verdict": "info",
+          "note": "No localizamos líneas de props publicadas para este partido en las fuentes consultadas."
+        }
+      ]
     }
   ],
   "disclaimer": "Análisis con fines informativos y educativos, elaborado a partir de fuentes públicas (ATP/WTA Tour, modelos predictivos de terceros y medios especializados) al 2 de julio de 2026. No constituye asesoría financiera ni una recomendación de apuesta. Las probabilidades propias son estimaciones razonadas, no garantías. Juega con responsabilidad, +18.",
