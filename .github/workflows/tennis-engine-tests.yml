@@ -1,0 +1,32 @@
+name: Tennis Quant Engine Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'analisis-tenis/engine/**'
+  pull_request:
+    paths:
+      - 'analisis-tenis/engine/**'
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: pytest + coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        working-directory: analisis-tenis/engine
+        run: pip install -r requirements.txt
+
+      - name: Run tests with coverage
+        working-directory: analisis-tenis/engine
+        run: python3 -m pytest tests/ --cov=. --cov-report=term-missing --cov-fail-under=90
