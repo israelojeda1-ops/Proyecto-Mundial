@@ -23,6 +23,17 @@
      - removeVig: normaliza un par de probabilidades implícitas para que sumen 100%,
        eliminando el margen de la casa de apuestas (overround)
   */
+  function timeSortKey(timeStr) {
+    const match = /(\d{1,2}):(\d{2})\s*([ap])\.?m\.?/i.exec(timeStr);
+    if (!match) return -1; // horarios no estándar (p.ej. "Suspendido...") van primero
+    let hours = parseInt(match[1], 10);
+    const minutes = parseInt(match[2], 10);
+    const isPM = match[3].toLowerCase() === 'p';
+    if (hours === 12) hours = 0;
+    if (isPM) hours += 12;
+    return hours * 60 + minutes;
+  }
+
   function impliedProb(decimalOdds) {
     return 1 / decimalOdds;
   }
@@ -364,7 +375,7 @@
     });
 
     let html = '';
-    Object.keys(byTime).sort().forEach(time => {
+    Object.keys(byTime).sort((a, b) => timeSortKey(a) - timeSortKey(b)).forEach(time => {
       byTime[time].forEach(m => { html += renderCard(m); });
     });
 
