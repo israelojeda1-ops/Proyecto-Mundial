@@ -4,7 +4,8 @@
 
   const SLIPS = [
     { id: '2026-07-01', label: '1 jul · Combinada de 7', file: './data/combinada_2026-07-01.json' },
-    { id: '2026-07-02', label: '2 jul · Combinada de 10', file: './data/combinada_2026-07-02.json' }
+    { id: '2026-07-02', label: '2 jul · Combinada de 10', file: './data/combinada_2026-07-02.json' },
+    { id: '2026-07-02-valor5', label: '💎 2 jul · Nuestra combinada de 5', file: './data/combinada_2026-07-02-valor5.json', ours: true }
   ];
 
   function formatDisplayDate(isoDate) {
@@ -59,6 +60,7 @@
     const ourCombined = legs.reduce((acc, leg) => acc * (leg.ourProbability / 100), 1) * 100;
     const gapPp = impliedTotal - ourCombined;
 
+    const isOwnPick = slip.bookmaker !== 'Betano';
     const riskyLegsForVerdict = legs.filter(l => l.riskLevel === 'alto');
     const riskyNames = riskyLegsForVerdict.map(l => l.match).join(' y ');
 
@@ -69,6 +71,9 @@
     } else if (gapPp >= 3) {
       verdictClass = 'verdict-mid';
       verdictText = `Nuestra estimación (${ourCombined.toFixed(1)}%) está algo por debajo de la probabilidad implícita (${impliedTotal.toFixed(1)}%). Riesgo moderado, razonable para el pago ofrecido.`;
+    } else if (gapPp <= -3) {
+      verdictClass = 'verdict-value';
+      verdictText = `Valor positivo real: nuestra estimación (${ourCombined.toFixed(1)}%) queda por ENCIMA de la probabilidad implícita por la cuota (${impliedTotal.toFixed(1)}%) — según nuestra investigación, este boleto paga más de lo que "debería" costar acertarlo.`;
     } else {
       verdictClass = 'verdict-ok';
       verdictText = `Nuestra estimación (${ourCombined.toFixed(1)}%) es cercana a la probabilidad implícita por la cuota (${impliedTotal.toFixed(1)}%) — precio razonablemente justo.`;
@@ -77,6 +82,7 @@
     const riskyLegs = legs.filter(l => l.riskLevel === 'alto');
 
     return `
+      ${isOwnPick ? '<div class="own-pick-ribbon">💎 Recomendación propia de Análisis Tenis — no es una captura de una casa de apuestas</div>' : ''}
       <div class="slip-header">
         <div class="slip-title">
           <span class="slip-bookmaker">${slip.bookmaker}</span>
@@ -103,7 +109,7 @@
         </div>
       </div>
       <div class="verdict-box ${verdictClass}">
-        <span class="verdict-icon">${gapPp >= 8 ? '⚠️' : gapPp >= 3 ? '⚖️' : '✅'}</span>
+        <span class="verdict-icon">${gapPp >= 8 ? '⚠️' : gapPp >= 3 ? '⚖️' : gapPp <= -3 ? '💎' : '✅'}</span>
         <span>${verdictText}</span>
       </div>
       ${riskyLegs.length > 0 ? `
