@@ -7,7 +7,7 @@
     "draw": "Individual Masculino (ATP)",
     "start": "2026-06-29",
     "final": "2026-07-12",
-    "currentRound": "Ronda 2"
+    "currentRound": "Ronda 3"
   },
   "bookmakers": ["OddsPeak", "GrassLine", "MatchPoint Bet"],
   "matches": [
@@ -606,6 +606,166 @@
       "context": {
         "h2h": { "played": 0, "p1Wins": 0, "p2Wins": 0, "lastResult": "Sin precedentes" },
         "notes": "Menšik tiene mejor forma actual (65.5% implícito en la cuota), pero Dimitrov conserva una experiencia en césped muy superior — el pick de valor señalado por analistas es Dimitrov a ganar el Set 1, no el partido completo."
+      }
+    },
+    {
+      "id": "R3-01",
+      "date": "2026-07-03",
+      "time": "1:30 p.m.",
+      "court": "Centre Court",
+      "round": "Ronda 3",
+      "status": "upcoming",
+      "player1": { "name": "N. Djokovic", "country": "Serbia", "flag": "🇷🇸", "rank": 5 },
+      "player2": { "name": "A. Rinderknech", "country": "Francia", "flag": "🇫🇷", "rank": 85 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.12, "p2": 6.00 },
+        "GrassLine":    { "p1": 1.10, "p2": 6.50 },
+        "MatchPoint Bet": { "p1": 1.14, "p2": 5.50 }
+      },
+      "ourProjection": { "p1": 87, "p2": 13 },
+      "context": {
+        "h2h": { "played": 0, "p1Wins": 0, "p2Wins": 0, "lastResult": "Sin precedentes" },
+        "notes": "Rinderknech tiene un juego de potencia que podría exigirle más de la cuenta a Djokovic (39 años), pero sigue siendo un favorito abrumador. No encontramos línea de hándicap de juegos publicada para este partido — la cuota de mercado (≈89-92% implícito) ya refleja bien la brecha."
+      }
+    },
+    {
+      "id": "R3-02",
+      "date": "2026-07-03",
+      "time": "1:00 p.m.",
+      "court": "Centre Court",
+      "round": "Ronda 3",
+      "status": "upcoming",
+      "player1": { "name": "A. Sabalenka", "country": "Bielorrusia", "flag": "🇧🇾", "rank": 1 },
+      "player2": { "name": "J. Ostapenko", "country": "Letonia", "flag": "🇱🇻", "rank": 30 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.22, "p2": 4.33 },
+        "GrassLine":    { "p1": 1.19, "p2": 4.60 },
+        "MatchPoint Bet": { "p1": 1.25, "p2": 4.10 }
+      },
+      "ourProjection": { "p1": 79, "p2": 21 },
+      "context": {
+        "h2h": { "played": 0, "p1Wins": 0, "p2Wins": 0, "lastResult": "Ostapenko venció a Sabalenka en sets corridos en Stuttgart 2025 (superficie distinta)" },
+        "notes": "Sabalenka no es tan sólida en césped (perdió feo ante Pegula en Berlín, y necesitó remontar de 2-5 abajo ante Kessler en R2). Mercados de valor: Ostapenko +4.5 juegos de hándicap tiene valor según varias fuentes — Sabalenka no siempre gana con margen amplio. En total de juegos, el pick recomendado es Más de 21.5 (línea baja, casi cantada)."
+      }
+    },
+    {
+      "id": "R3-03",
+      "date": "2026-07-03",
+      "time": "6:30 p.m.",
+      "court": "Centre Court",
+      "round": "Ronda 3",
+      "status": "upcoming",
+      "player1": { "name": "F. Auger-Aliassime", "country": "Canadá", "flag": "🇨🇦", "rank": 9 },
+      "player2": { "name": "M. Zheng", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 178 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.16, "p2": 5.50 },
+        "GrassLine":    { "p1": 1.14, "p2": 6.00 },
+        "MatchPoint Bet": { "p1": 1.18, "p2": 5.00 }
+      },
+      "ourProjection": { "p1": 84, "p2": 16 },
+      "context": {
+        "h2h": { "played": 0, "p1Wins": 0, "p2Wins": 0, "lastResult": "Sin precedentes" },
+        "notes": "Auger-Aliassime enfrentó solo 2 break points en sus primeras dos rondas — saque casi perfecto. Zheng (qualifier) llega en racha de 5 victorias seguidas pero desgastado tras un partido a 4 sets. No encontramos línea de hándicap/juegos publicada para este cruce."
+      }
+    },
+    {
+      "id": "R3-04",
+      "date": "2026-07-03",
+      "time": "3:30 p.m.",
+      "court": "Court 1",
+      "round": "Ronda 3",
+      "status": "upcoming",
+      "player1": { "name": "J. Sinner", "country": "Italia", "flag": "🇮🇹", "rank": 1 },
+      "player2": { "name": "J. Brooksby", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 81 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.03, "p2": 13.00 },
+        "GrassLine":    { "p1": 1.02, "p2": 15.00 },
+        "MatchPoint Bet": { "p1": 1.04, "p2": 12.00 }
+      },
+      "ourProjection": { "p1": 95, "p2": 5 },
+      "context": {
+        "h2h": { "played": 1, "p1Wins": 1, "p2Wins": 0, "lastResult": "Sinner ganó 7-6(2) 6-1 en pista dura (Washington 2021)" },
+        "notes": "Mercado de valor real: hándicap Sinner -8.5 juegos a cuota ~2.10 (bet365). Es un margen exigente — según los analistas, Brooksby solo necesita ganar 12+ juegos en un partido a 3 sets (o forzar un 4º set) para que el hándicap falle, así que no es una apuesta tan cómoda como sugiere la superioridad de Sinner. Alternativa combinada: 'Sinner gana y Menos de 29.5 juegos' a cuota 2.00."
+      }
+    },
+    {
+      "id": "R3-05",
+      "date": "2026-07-03",
+      "time": "1:00 p.m.",
+      "court": "Court 1",
+      "round": "Ronda 3",
+      "status": "upcoming",
+      "player1": { "name": "N. Osaka", "country": "Japón", "flag": "🇯🇵", "rank": 14 },
+      "player2": { "name": "D. Kasatkina", "country": "Australia", "flag": "🇦🇺", "rank": 20 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.20, "p2": 4.50 },
+        "GrassLine":    { "p1": 1.17, "p2": 4.90 },
+        "MatchPoint Bet": { "p1": 1.23, "p2": 4.20 }
+      },
+      "ourProjection": { "p1": 78, "p2": 22 },
+      "context": {
+        "h2h": { "played": 3, "p1Wins": 3, "p2Wins": 0, "lastResult": "Osaka domina el historial 3-0, aunque nunca jugaron en césped" },
+        "notes": "Osaka no perdió un set en el torneo; Kasatkina llegó a la distancia completa en sus dos partidos previos. Mercado de valor: bet365 ofrece un Bet Builder con Kasatkina +4.5 juegos + Más de 20.5 juegos + Más de 0.5 tiebreaks a cuota 4.50 — una combinación específica de props en un solo boleto."
+      }
+    },
+    {
+      "id": "R3-06",
+      "date": "2026-07-03",
+      "time": "10:50 a.m.",
+      "court": "Court 1",
+      "round": "Ronda 3",
+      "status": "upcoming",
+      "player1": { "name": "C. Gauff", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 7 },
+      "player2": { "name": "C. Liu", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 80 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.10, "p2": 7.00 },
+        "GrassLine":    { "p1": 1.08, "p2": 7.50 },
+        "MatchPoint Bet": { "p1": 1.12, "p2": 6.50 }
+      },
+      "ourProjection": { "p1": 85, "p2": 15 },
+      "context": {
+        "h2h": { "played": 1, "p1Wins": 1, "p2Wins": 0, "lastResult": "Gauff ganó 6-4 6-2 en el ASB Classic 2024" },
+        "notes": "Duelo 100% estadounidense. Liu llegó a su primera 3ª ronda de Wimbledon en la carrera tras vencer en sets corridos. No encontramos línea de hándicap/juegos publicada — la cuota (≈90% implícito) ya es muy corta."
+      }
+    },
+    {
+      "id": "R3-07",
+      "date": "2026-07-03",
+      "time": "4:00 p.m.",
+      "court": "Court 2",
+      "round": "Ronda 3",
+      "status": "upcoming",
+      "player1": { "name": "T. Paul", "country": "Estados Unidos", "flag": "🇺🇸", "rank": 12 },
+      "player2": { "name": "H. Hurkacz", "country": "Polonia", "flag": "🇵🇱", "rank": 44 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.70, "p2": 2.15 },
+        "GrassLine":    { "p1": 1.66, "p2": 2.25 },
+        "MatchPoint Bet": { "p1": 1.74, "p2": 2.05 }
+      },
+      "ourProjection": { "p1": 61, "p2": 39 },
+      "context": {
+        "h2h": { "played": 4, "p1Wins": 3, "p2Wins": 1, "lastResult": "Paul lidera 3-1, pero nunca se enfrentaron en césped" },
+        "notes": "Paul llega de la final de Queen's y con buen nivel en la gira de arcilla; el mercado (1.70 ≈ 58.8% implícito) queda algo por debajo del modelo (61%) — leve valor en Paul. No encontramos línea de hándicap/juegos publicada."
+      }
+    },
+    {
+      "id": "R3-08",
+      "date": "2026-07-03",
+      "time": "2:30 p.m.",
+      "court": "Court 3",
+      "round": "Ronda 3",
+      "status": "upcoming",
+      "player1": { "name": "D. Medvedev", "country": "Rusia", "flag": "🇷🇺", "rank": 8 },
+      "player2": { "name": "J. L. Struff", "country": "Alemania", "flag": "🇩🇪", "rank": 55 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.19, "p2": 4.70 },
+        "GrassLine":    { "p1": 1.13, "p2": 5.50 },
+        "MatchPoint Bet": { "p1": 1.22, "p2": 4.30 }
+      },
+      "ourProjection": { "p1": 80, "p2": 20 },
+      "context": {
+        "h2h": { "played": 3, "p1Wins": 2, "p2Wins": 1, "lastResult": "Medvedev lidera en sets 20-8, pero nunca le ganó a Struff en sets corridos sobre césped" },
+        "notes": "Medvedev necesitó 4 sets para superar a Merida en R2 (arrancó lento). Mercados de valor: Más de 35.5 juegos totales es el pick recomendado, y 'Más de 3.5 sets' (el partido llega a un 4º set) paga cuota ~1.80 — respaldado por el dato concreto de que Medvedev nunca resolvió en sets corridos ante Struff en césped."
       }
     }
   ],
