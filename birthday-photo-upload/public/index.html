@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Sube tu foto del cumple 🎉</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg1: #ff6fa5;
+    --bg2: #ffd36e;
+    --card: #ffffff;
+    --text: #3a2a3a;
+    --accent: #ff3e7f;
+    --accent-dark: #d81b60;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(160deg, var(--bg1), var(--bg2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 24px;
+    padding: 28px 24px 32px;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 0 0 4px;
+    color: var(--text);
+  }
+  p.subtitle {
+    margin: 0 0 20px;
+    color: #7a6a7a;
+    font-size: 0.95rem;
+  }
+  label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text);
+    margin: 14px 0 6px;
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 2px solid #f0d6e0;
+    font-size: 1rem;
+    outline: none;
+  }
+  input[type="text"]:focus, input[type="password"]:focus {
+    border-color: var(--accent);
+  }
+  .file-drop {
+    margin-top: 14px;
+    border: 2px dashed #f0a8c0;
+    border-radius: 16px;
+    padding: 18px;
+    cursor: pointer;
+    color: var(--accent-dark);
+    font-weight: 600;
+    position: relative;
+  }
+  .file-drop input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  #preview {
+    margin-top: 14px;
+    max-width: 100%;
+    max-height: 240px;
+    border-radius: 16px;
+    display: none;
+  }
+  button#submitBtn {
+    margin-top: 22px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  button#submitBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  #status {
+    margin-top: 16px;
+    font-size: 0.95rem;
+    min-height: 1.2em;
+  }
+  #status.ok { color: #1b8a3a; }
+  #status.error { color: #c62828; }
+  .emoji-row {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji-row">🎂🎈🎉</div>
+    <h1>¡Comparte tu foto!</h1>
+    <p class="subtitle">Sube una foto o video de la fiesta y quedará guardada para siempre.</p>
+
+    <form id="uploadForm">
+      <label for="guestName">Tu nombre</label>
+      <input type="text" id="guestName" name="guestName" placeholder="Ej: Tía Marta" required />
+
+      <div id="pinField" style="display:none;">
+        <label for="pin">PIN del evento</label>
+        <input type="password" id="pin" name="pin" placeholder="Pide el PIN al anfitrión" />
+      </div>
+
+      <label for="photo">Foto o video</label>
+      <div class="file-drop" id="dropZone">
+        📷 Toca aquí para elegir o tomar una foto
+        <input type="file" id="photo" name="photo" accept="image/*,video/*" capture="environment" required />
+      </div>
+      <img id="preview" alt="Vista previa" />
+
+      <button type="submit" id="submitBtn">Subir foto 🚀</button>
+      <div id="status"></div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('uploadForm');
+    const photoInput = document.getElementById('photo');
+    const preview = document.getElementById('preview');
+    const status = document.getElementById('status');
+    const submitBtn = document.getElementById('submitBtn');
+    const pinField = document.getElementById('pinField');
+
+    fetch('/api/config')
+      .then(r => r.json())
+      .then(cfg => {
+        if (cfg.pinRequired) {
+          pinField.style.display = 'block';
+          document.getElementById('pin').required = true;
+        }
+      })
+      .catch(() => {});
+
+    photoInput.addEventListener('change', () => {
+      const file = photoInput.files[0];
+      if (!file) return;
+      if (file.type.startsWith('image/')) {
+        preview.src = URL.createObjectURL(file);
+        preview.style.display = 'block';
+      } else {
+        preview.style.display = 'none';
+      }
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const file = photoInput.files[0];
+      if (!file) return;
+
+      submitBtn.disabled = true;
+      status.className = '';
+      status.textContent = 'Subiendo... ⏳';
+
+      const formData = new FormData();
+      formData.append('guestName', document.getElementById('guestName').value);
+      const pinValue = document.getElementById('pin').value;
+      if (pinValue) formData.append('pin', pinValue);
+      formData.append('photo', file);
+
+      try {
+        const res = await fetch('/api/upload', { method: 'POST', body: formData });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || 'Error al subir');
+
+        status.className = 'ok';
+        status.textContent = '¡Foto subida! Gracias por compartirla 🎉';
+        form.reset();
+        preview.style.display = 'none';
+      } catch (err) {
+        status.className = 'error';
+        status.textContent = err.message || 'Algo salió mal, intenta de nuevo';
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
