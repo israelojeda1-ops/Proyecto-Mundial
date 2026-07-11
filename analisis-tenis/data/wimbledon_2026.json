@@ -7,7 +7,7 @@
     "draw": "Individual Masculino (ATP)",
     "start": "2026-06-29",
     "final": "2026-07-12",
-    "currentRound": "Ronda 3"
+    "currentRound": "Final"
   },
   "bookmakers": ["OddsPeak", "GrassLine", "MatchPoint Bet"],
   "matches": [
@@ -766,6 +766,49 @@
       "context": {
         "h2h": { "played": 3, "p1Wins": 2, "p2Wins": 1, "lastResult": "Medvedev lidera en sets 20-8, pero nunca le ganó a Struff en sets corridos sobre césped" },
         "notes": "Medvedev necesitó 4 sets para superar a Merida en R2 (arrancó lento). Mercados de valor: Más de 35.5 juegos totales es el pick recomendado, y 'Más de 3.5 sets' (el partido llega a un 4º set) paga cuota ~1.80 — respaldado por el dato concreto de que Medvedev nunca resolvió en sets corridos ante Struff en césped."
+      }
+    },
+    {
+      "id": "F-01",
+      "date": "2026-07-11",
+      "time": "9:00 a.m.",
+      "court": "Centre Court",
+      "round": "Final",
+      "status": "upcoming",
+      "player1": { "name": "K. Muchová", "country": "Rep. Checa", "flag": "🇨🇿", "rank": 11 },
+      "player2": { "name": "L. Nosková", "country": "Rep. Checa", "flag": "🇨🇿", "rank": 13 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.75, "p2": 2.10 },
+        "GrassLine":    { "p1": 1.71, "p2": 2.18 },
+        "MatchPoint Bet": { "p1": 1.79, "p2": 2.05 }
+      },
+      "ourProjection": { "p1": 55, "p2": 45 },
+      "context": {
+        "h2h": { "played": 1, "p1Wins": 1, "p2Wins": 0, "lastResult": "Muchová ganó a 3 sets 6-7 6-4 6-2 (US Open 2025)" },
+        "form": { "p1": ["W", "W", "W"], "p2": ["W", "W", "W"] },
+        "surfaceRecord": { "p1": "11-1 en césped en 2026", "p2": "11-1 en césped en 2026" },
+        "notes": "Final 100% checa por primera vez en la historia de Wimbledon. Muchová (29 años) llega a su primera final de Grand Slam tras remontar y ganar un super-tiebreak 10-8 a Coco Gauff en semis; Nosková (21) busca ser la campeona más joven de Wimbledon desde Petra Kvitová en 2011, tras un cómodo 6-4 6-4 a Marta Kostyuk. Perfiles casi idénticos (ambas 11-1 en césped este año, ranking similar): partido genuinamente parejo, sin edge claro en el ganador. Mercado de valor real: Más de 23.5 juegos totales — varias fuentes lo destacan como la mejor jugada del día, dado que el único precedente entre ambas fue a 3 sets."
+      }
+    },
+    {
+      "id": "F-02",
+      "date": "2026-07-12",
+      "time": "9:00 a.m.",
+      "court": "Centre Court",
+      "round": "Final",
+      "status": "upcoming",
+      "player1": { "name": "J. Sinner", "country": "Italia", "flag": "🇮🇹", "rank": 1 },
+      "player2": { "name": "A. Zverev", "country": "Alemania", "flag": "🇩🇪", "rank": 3 },
+      "odds": {
+        "OddsPeak":     { "p1": 1.22, "p2": 4.20 },
+        "GrassLine":    { "p1": 1.19, "p2": 4.50 },
+        "MatchPoint Bet": { "p1": 1.25, "p2": 4.00 }
+      },
+      "ourProjection": { "p1": 78, "p2": 22 },
+      "context": {
+        "h2h": { "played": 14, "p1Wins": 10, "p2Wins": 4, "lastResult": "Sinner ganó 9 partidos seguidos, incluída la final de Madrid 2026" },
+        "form": { "p1": ["W", "W", "W"], "p2": ["W", "W", "W"] },
+        "notes": "Sinner defiende el título tras vencer a Djokovic en semis (6-4 6-4 6-4); Zverev llegó a su primera final de Wimbledon superando a Fery en sets corridos, un camino más sencillo que el de Sinner. El historial es abrumador: Sinner domina 10-4 y viene de 9 triunfos consecutivos, incluyendo las 4 finales que jugaron en 2026 (Indian Wells, Miami, Monte Carlo y Madrid). El mercado (≈82% implícito) está en línea con nuestra proyección — sin valor real en el ganador, uno de los favoritos más sólidos de todo el torneo. Cuidado con el mercado de 'Más de 20 juegos': la línea es muy baja para una final a 5 sets y no encontramos con certeza si es el total correcto del partido completo — la marcamos como referencia, no como pick confirmado."
       }
     }
   ],
