@@ -10,8 +10,11 @@
     "final": "2026-07-19",
     "teams": 48,
     "totalMatches": 104,
-    "currentStage": "Ronda de 32",
-    "groupStageEnded": "2026-06-27"
+    "currentStage": "Semifinales",
+    "groupStageEnded": "2026-06-27",
+    "r32Ended": "2026-07-03",
+    "r16Ended": "2026-07-07",
+    "qfEnded": "2026-07-10"
   },
   "matches": [
     {
@@ -152,7 +155,7 @@
       "time": "13:00 ET",
       "venue": "NRG Stadium, Houston",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Brasil",
         "flag": "🇧🇷",
@@ -284,6 +287,10 @@
             "possession": 37
           }
         }
+      },
+      "finalScore": {
+        "home": 3,
+        "away": 0
       }
     },
     {
@@ -292,7 +299,7 @@
       "time": "16:30 ET",
       "venue": "Gillette Stadium, Foxborough (Boston)",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Alemania",
         "flag": "🇩🇪",
@@ -450,6 +457,10 @@
             "possession": 41
           }
         }
+      },
+      "finalScore": {
+        "home": 2,
+        "away": 1
       }
     },
     {
@@ -458,7 +469,7 @@
       "time": "21:00 ET",
       "venue": "Estadio BBVA, Monterrey",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Países Bajos",
         "flag": "🇳🇱",
@@ -599,6 +610,10 @@
             "possession": 46
           }
         }
+      },
+      "finalScore": {
+        "home": 2,
+        "away": 1
       }
     },
     {
@@ -607,7 +622,7 @@
       "time": "13:00 ET",
       "venue": "AT&T Stadium, Dallas",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Costa de Marfil",
         "flag": "🇨🇮",
@@ -739,6 +754,10 @@
             "possession": 54
           }
         }
+      },
+      "finalScore": {
+        "home": 1,
+        "away": 2
       }
     },
     {
@@ -747,7 +766,7 @@
       "time": "17:00 ET",
       "venue": "MetLife Stadium, East Rutherford (Nueva York)",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Francia",
         "flag": "🇫🇷",
@@ -895,6 +914,10 @@
             "possession": 38
           }
         }
+      },
+      "finalScore": {
+        "home": 3,
+        "away": 0
       }
     },
     {
@@ -903,7 +926,7 @@
       "time": "21:00 ET",
       "venue": "Estadio Azteca, Ciudad de México",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "México",
         "flag": "🇲🇽",
@@ -1038,6 +1061,10 @@
             "possession": 42
           }
         }
+      },
+      "finalScore": {
+        "home": 2,
+        "away": 0
       }
     },
     {
@@ -1046,7 +1073,7 @@
       "time": "12:00 ET",
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Inglaterra",
         "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
@@ -1180,6 +1207,10 @@
             "possession": 39
           }
         }
+      },
+      "finalScore": {
+        "home": 3,
+        "away": 1
       }
     },
     {
@@ -1188,7 +1219,7 @@
       "time": "16:00 ET",
       "venue": "Lumen Field, Seattle",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Bélgica",
         "flag": "🇧🇪",
@@ -1320,6 +1351,10 @@
             "possession": 43
           }
         }
+      },
+      "finalScore": {
+        "home": 2,
+        "away": 0
       }
     },
     {
@@ -1328,7 +1363,7 @@
       "time": "20:00 ET",
       "venue": "Levi's Stadium, Santa Clara (San Francisco)",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "EE.UU.",
         "flag": "🇺🇸",
@@ -1455,6 +1490,10 @@
             "possession": 45
           }
         }
+      },
+      "finalScore": {
+        "home": 2,
+        "away": 1
       }
     },
     {
@@ -1463,7 +1502,7 @@
       "time": "15:00 ET",
       "venue": "SoFi Stadium, Los Ángeles",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "España",
         "flag": "🇪🇸",
@@ -1594,6 +1633,10 @@
             "possession": 34
           }
         }
+      },
+      "finalScore": {
+        "home": 2,
+        "away": 0
       }
     },
     {
@@ -1602,7 +1645,7 @@
       "time": "19:00 ET",
       "venue": "BMO Field, Toronto",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Portugal",
         "flag": "🇵🇹",
@@ -1740,6 +1783,10 @@
             "possession": 47
           }
         }
+      },
+      "finalScore": {
+        "home": 2,
+        "away": 1
       }
     },
     {
@@ -1748,7 +1795,7 @@
       "time": "23:00 ET",
       "venue": "BC Place, Vancouver",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Suiza",
         "flag": "🇨🇭",
@@ -1886,6 +1933,10 @@
             "possession": 48
           }
         }
+      },
+      "finalScore": {
+        "home": 1,
+        "away": 0
       }
     },
     {
@@ -1894,7 +1945,7 @@
       "time": "14:00 ET",
       "venue": "AT&T Stadium, Dallas",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Australia",
         "flag": "🇦🇺",
@@ -2026,6 +2077,10 @@
             "possession": 52
           }
         }
+      },
+      "finalScore": {
+        "home": 1,
+        "away": 2
       }
     },
     {
@@ -2034,7 +2089,7 @@
       "time": "18:00 ET",
       "venue": "Hard Rock Stadium, Miami",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Argentina",
         "flag": "🇦🇷",
@@ -2171,6 +2226,10 @@
             "possession": 32
           }
         }
+      },
+      "finalScore": {
+        "home": 4,
+        "away": 0
       }
     },
     {
@@ -2179,7 +2238,7 @@
       "time": "21:30 ET",
       "venue": "Arrowhead Stadium, Kansas City",
       "stage": "Ronda de 32",
-      "status": "upcoming",
+      "status": "completed",
       "home": {
         "team": "Colombia",
         "flag": "🇨🇴",
@@ -2310,11 +2369,2385 @@
             "possession": 43
           }
         }
+      },
+      "finalScore": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "id": "R16-01",
+      "date": "2026-07-04",
+      "time": "13:00 ET",
+      "venue": "MetLife Stadium, East Rutherford (Nueva York)",
+      "stage": "Octavos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 1,
+        "away": 3
+      },
+      "home": {
+        "team": "Canadá",
+        "flag": "🇨🇦",
+        "fifaRank": 49,
+        "coach": "Jesse Marsch"
+      },
+      "away": {
+        "team": "Brasil",
+        "flag": "🇧🇷",
+        "fifaRank": 1,
+        "coach": "Carlo Ancelotti"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R32: Canadá 1-0 Sudáfrica",
+          "away": "R32: Brasil 3-0 Japón"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Alphonso Davies",
+              "goals": 3
+            },
+            {
+              "player": "Jonathan David",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Vinícius Jr.",
+              "goals": 4
+            },
+            {
+              "player": "Matheus Cunha",
+              "goals": 3
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "D"
+          ],
+          "away": [
+            "W",
+            "W",
+            "D"
+          ]
+        },
+        "xg": {
+          "home": 1.2,
+          "away": 2.6
+        },
+        "h2h": {
+          "played": 6,
+          "homeWins": 1,
+          "draws": 1,
+          "awayWins": 4,
+          "lastResult": "2-0 BRA (Copa América 2021)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Crépeau; Laryea, Miller, Vitória, Davies; Eustáquio, Koné; Buchanan, David, Larin; Cavallini",
+          "away": "Souza; Beraldo, B. Milão, Henrique, Augusto; Casemiro, Bruno Guimarães; L. Henrique, Vinícius Jr., Paquetá; Martinelli"
+        },
+        "motm": {
+          "player": "Vinícius Jr.",
+          "team": "Brasil",
+          "flag": "🇧🇷",
+          "probability": 51
+        }
+      },
+      "prediction": {
+        "result": "1-3",
+        "winner": "away",
+        "confidence": 74,
+        "scorers": [
+          {
+            "player": "Vinícius Jr.",
+            "team": "Brasil",
+            "minute": 18,
+            "probability": 71
+          },
+          {
+            "player": "Gabriel Martinelli",
+            "team": "Brasil",
+            "minute": 57,
+            "probability": 45
+          },
+          {
+            "player": "Matheus Cunha",
+            "team": "Brasil",
+            "minute": 79,
+            "probability": 42
+          },
+          {
+            "player": "Alphonso Davies",
+            "team": "Canadá",
+            "minute": 65,
+            "probability": 44
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 3,
+            "shotsTotal": 9,
+            "corners": 4,
+            "passes": 418,
+            "fouls": 12,
+            "tackles": 24,
+            "yellowCards": [
+              "Stephen Eustáquio"
+            ],
+            "possession": 38
+          },
+          "away": {
+            "shotsOnTarget": 9,
+            "shotsTotal": 19,
+            "corners": 9,
+            "passes": 691,
+            "fouls": 9,
+            "tackles": 14,
+            "yellowCards": [
+              "Casemiro"
+            ],
+            "possession": 62
+          }
+        }
+      }
+    },
+    {
+      "id": "R16-02",
+      "date": "2026-07-04",
+      "time": "17:00 ET",
+      "venue": "Rose Bowl, Los Ángeles",
+      "stage": "Octavos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 2,
+        "away": 1
+      },
+      "home": {
+        "team": "Alemania",
+        "flag": "🇩🇪",
+        "fifaRank": 12,
+        "coach": "Julian Nagelsmann"
+      },
+      "away": {
+        "team": "Países Bajos",
+        "flag": "🇳🇱",
+        "fifaRank": 6,
+        "coach": "Ronald Koeman"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R32: Alemania 2-1 Paraguay",
+          "away": "R32: Países Bajos 2-1 Marruecos"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Kai Havertz",
+              "goals": 3
+            },
+            {
+              "player": "Jamal Musiala",
+              "goals": 2
+            },
+            {
+              "player": "Florian Wirtz",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Brian Brobbey",
+              "goals": 3
+            },
+            {
+              "player": "Cody Gakpo",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "L",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "W",
+            "D"
+          ]
+        },
+        "xg": {
+          "home": 1.9,
+          "away": 1.7
+        },
+        "h2h": {
+          "played": 42,
+          "homeWins": 17,
+          "draws": 10,
+          "awayWins": 15,
+          "lastResult": "2-2 (Nations League 2022)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Neuer; Kimmich, Tah, Rüdiger, Brown; Nmecha, Pavlović; Sané, Musiala, Wirtz; Havertz",
+          "away": "Verbruggen; Dumfries, Van Dijk, Van Hecke, Van de Ven; Gravenberch, F. de Jong, Reijnders; Malen, Brobbey, Gakpo"
+        },
+        "motm": {
+          "player": "Florian Wirtz",
+          "team": "Alemania",
+          "flag": "🇩🇪",
+          "probability": 39
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 52,
+        "scorers": [
+          {
+            "player": "Kai Havertz",
+            "team": "Alemania",
+            "minute": 28,
+            "probability": 52
+          },
+          {
+            "player": "Florian Wirtz",
+            "team": "Alemania",
+            "minute": 71,
+            "probability": 44
+          },
+          {
+            "player": "Cody Gakpo",
+            "team": "Países Bajos",
+            "minute": 55,
+            "probability": 46
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 7,
+            "passes": 538,
+            "fouls": 11,
+            "tackles": 19,
+            "yellowCards": [
+              "Leon Goretzka"
+            ],
+            "possession": 51
+          },
+          "away": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 6,
+            "passes": 519,
+            "fouls": 12,
+            "tackles": 20,
+            "yellowCards": [
+              "Frenkie de Jong",
+              "Denzel Dumfries"
+            ],
+            "possession": 49
+          }
+        }
+      }
+    },
+    {
+      "id": "R16-03",
+      "date": "2026-07-05",
+      "time": "13:00 ET",
+      "venue": "AT&T Stadium, Dallas",
+      "stage": "Octavos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 1,
+        "away": 2
+      },
+      "home": {
+        "team": "Noruega",
+        "flag": "🇳🇴",
+        "fifaRank": 22,
+        "coach": "Ståle Solbakken"
+      },
+      "away": {
+        "team": "Francia",
+        "flag": "🇫🇷",
+        "fifaRank": 2,
+        "coach": "Didier Deschamps"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R32: Noruega 2-1 Costa de Marfil",
+          "away": "R32: Francia 3-0 Suecia"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Erling Haaland",
+              "goals": 3
+            },
+            {
+              "player": "Martin Ødegaard",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Kylian Mbappé",
+              "goals": 4
+            },
+            {
+              "player": "Ousmane Dembélé",
+              "goals": 2
+            },
+            {
+              "player": "Désiré Doué",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "D",
+            "D",
+            "W"
+          ],
+          "away": [
+            "W",
+            "W",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.4,
+          "away": 2.4
+        },
+        "h2h": {
+          "played": 12,
+          "homeWins": 3,
+          "draws": 2,
+          "awayWins": 7,
+          "lastResult": "2-0 FRA (Nations League 2022)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Nyland; Ajer, Østigård, Hanche-Olsen, Meling; Normann, Berge; Nusa, Ødegaard, Elyounoussi; Haaland",
+          "away": "Maignan; Koundé, Lacroix, Upamecano, Th. Hernández; Koné, Tchouaméni; Olise, Dembélé, Doué; Mbappé"
+        },
+        "motm": {
+          "player": "Kylian Mbappé",
+          "team": "Francia",
+          "flag": "🇫🇷",
+          "probability": 54
+        }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 68,
+        "scorers": [
+          {
+            "player": "Kylian Mbappé",
+            "team": "Francia",
+            "minute": 22,
+            "probability": 69
+          },
+          {
+            "player": "Ousmane Dembélé",
+            "team": "Francia",
+            "minute": 63,
+            "probability": 47
+          },
+          {
+            "player": "Erling Haaland",
+            "team": "Noruega",
+            "minute": 48,
+            "probability": 59
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 5,
+            "passes": 436,
+            "fouls": 13,
+            "tackles": 23,
+            "yellowCards": [
+              "Sander Berge"
+            ],
+            "possession": 42
+          },
+          "away": {
+            "shotsOnTarget": 8,
+            "shotsTotal": 17,
+            "corners": 8,
+            "passes": 601,
+            "fouls": 9,
+            "tackles": 15,
+            "yellowCards": [
+              "Aurélien Tchouaméni"
+            ],
+            "possession": 58
+          }
+        }
+      }
+    },
+    {
+      "id": "R16-04",
+      "date": "2026-07-05",
+      "time": "17:00 ET",
+      "venue": "Estadio Azteca, Ciudad de México",
+      "stage": "Octavos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 1,
+        "away": 0
+      },
+      "home": {
+        "team": "México",
+        "flag": "🇲🇽",
+        "fifaRank": 16,
+        "coach": "Javier Aguirre"
+      },
+      "away": {
+        "team": "Inglaterra",
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "fifaRank": 4,
+        "coach": "Gareth Southgate"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R32: México 2-0 Ecuador",
+          "away": "R32: Inglaterra 3-1 Rep. D. Congo"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Raúl Jiménez",
+              "goals": 2
+            },
+            {
+              "player": "Hirving Lozano",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Harry Kane",
+              "goals": 3
+            },
+            {
+              "player": "Jude Bellingham",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.1,
+          "away": 1.8
+        },
+        "h2h": {
+          "played": 18,
+          "homeWins": 6,
+          "draws": 4,
+          "awayWins": 8,
+          "lastResult": "2-1 ENG (amistoso 2019)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Ochoa; J. Sánchez, C. Montes, J. Vásquez, J. Gallardo; Edson Álvarez, Luis Romo; Hirving Lozano, Alexis Vega, H. Rodríguez; Raúl Jiménez",
+          "away": "Pickford; Alexander-Arnold, Maguire, Stones, Shaw; Rice, Bellingham; Saka, Palmer, Rashford; Kane"
+        },
+        "motm": {
+          "player": "Raúl Jiménez",
+          "team": "México",
+          "flag": "🇲🇽",
+          "probability": 44
+        }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 61,
+        "scorers": [
+          {
+            "player": "Harry Kane",
+            "team": "Inglaterra",
+            "minute": 29,
+            "probability": 63
+          },
+          {
+            "player": "Jude Bellingham",
+            "team": "Inglaterra",
+            "minute": 58,
+            "probability": 48
+          },
+          {
+            "player": "Raúl Jiménez",
+            "team": "México",
+            "minute": 74,
+            "probability": 44
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 7,
+            "passes": 491,
+            "fouls": 11,
+            "tackles": 22,
+            "yellowCards": [
+              "Edson Álvarez"
+            ],
+            "possession": 47
+          },
+          "away": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 15,
+            "corners": 6,
+            "passes": 555,
+            "fouls": 10,
+            "tackles": 18,
+            "yellowCards": [
+              "Declan Rice",
+              "Luke Shaw"
+            ],
+            "possession": 53
+          }
+        }
+      }
+    },
+    {
+      "id": "R16-05",
+      "date": "2026-07-06",
+      "time": "13:00 ET",
+      "venue": "Levi's Stadium, Santa Clara (San Francisco)",
+      "stage": "Octavos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 1,
+        "away": 2
+      },
+      "home": {
+        "team": "Bélgica",
+        "flag": "🇧🇪",
+        "fifaRank": 5,
+        "coach": "Domenico Tedesco"
+      },
+      "away": {
+        "team": "EE.UU.",
+        "flag": "🇺🇸",
+        "fifaRank": 13,
+        "coach": "Mauricio Pochettino"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R32: Bélgica 2-0 Senegal",
+          "away": "R32: EE.UU. 2-1 Bosnia-Herzegovina"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Romelu Lukaku",
+              "goals": 3
+            },
+            {
+              "player": "Kevin De Bruyne",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Christian Pulisic",
+              "goals": 3
+            },
+            {
+              "player": "Ricardo Pepi",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.7,
+          "away": 1.6
+        },
+        "h2h": {
+          "played": 6,
+          "homeWins": 3,
+          "draws": 2,
+          "awayWins": 1,
+          "lastResult": "2-0 BEL (Mundial 2014)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Casteels; Castagne, Faes, Theate, Meunier; Onana, De Bruyne; Doku, Trossard, Carrasco; Lukaku",
+          "away": "Turner; Dest, Long, Zimmermann, Robinson; Adams, McKennie; Reyna, Pulisic, Weah; Pepi"
+        },
+        "motm": {
+          "player": "Christian Pulisic",
+          "team": "EE.UU.",
+          "flag": "🇺🇸",
+          "probability": 41
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 57,
+        "scorers": [
+          {
+            "player": "Romelu Lukaku",
+            "team": "Bélgica",
+            "minute": 31,
+            "probability": 52
+          },
+          {
+            "player": "Kevin De Bruyne",
+            "team": "Bélgica",
+            "minute": 67,
+            "probability": 43
+          },
+          {
+            "player": "Christian Pulisic",
+            "team": "EE.UU.",
+            "minute": 52,
+            "probability": 51
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 6,
+            "passes": 498,
+            "fouls": 11,
+            "tackles": 20,
+            "yellowCards": [
+              "Amadou Onana"
+            ],
+            "possession": 53
+          },
+          "away": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 13,
+            "corners": 7,
+            "passes": 443,
+            "fouls": 12,
+            "tackles": 21,
+            "yellowCards": [
+              "Weston McKennie"
+            ],
+            "possession": 47
+          }
+        }
+      }
+    },
+    {
+      "id": "R16-06",
+      "date": "2026-07-06",
+      "time": "17:00 ET",
+      "venue": "Hard Rock Stadium, Miami",
+      "stage": "Octavos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 1,
+        "away": 1
+      },
+      "penalties": {
+        "home": 4,
+        "away": 3
+      },
+      "home": {
+        "team": "España",
+        "flag": "🇪🇸",
+        "fifaRank": 3,
+        "coach": "Luis de la Fuente"
+      },
+      "away": {
+        "team": "Portugal",
+        "flag": "🇵🇹",
+        "fifaRank": 7,
+        "coach": "Roberto Martínez"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R32: España 2-0 Austria",
+          "away": "R32: Portugal 2-1 Croacia"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Álvaro Morata",
+              "goals": 2
+            },
+            {
+              "player": "Pedri",
+              "goals": 2
+            },
+            {
+              "player": "Nico Williams",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Bruno Fernandes",
+              "goals": 3
+            },
+            {
+              "player": "Rafael Leão",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.6,
+          "away": 1.5
+        },
+        "h2h": {
+          "played": 35,
+          "homeWins": 16,
+          "draws": 10,
+          "awayWins": 9,
+          "lastResult": "1-0 ESP (Nations League 2023)"
+        },
+        "injuries": {
+          "home": [],
+          "away": [
+            {
+              "player": "Diogo Jota",
+              "reason": "molestias musculares"
+            }
+          ]
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Raya; Carvajal, Le Normand, Laporte, Cucurella; Rodri, Fabián Ruiz; Yamal, Pedri, Nico Williams; Morata",
+          "away": "Diogo Costa; João Cancelo, Rúben Dias, António Silva, Nuno Mendes; Bruno Fernandes, Vitinha; Bernardo Silva, Bernardo, R. Leão; Gonçalo Ramos"
+        },
+        "motm": {
+          "player": "Lamine Yamal",
+          "team": "España",
+          "flag": "🇪🇸",
+          "probability": 38
+        }
+      },
+      "prediction": {
+        "result": "1-1 (pen)",
+        "winner": "home",
+        "confidence": 51,
+        "scorers": [
+          {
+            "player": "Álvaro Morata",
+            "team": "España",
+            "minute": 37,
+            "probability": 47
+          },
+          {
+            "player": "Bruno Fernandes",
+            "team": "Portugal",
+            "minute": 59,
+            "probability": 49
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 6,
+            "passes": 601,
+            "fouls": 9,
+            "tackles": 14,
+            "yellowCards": [
+              "Fabián Ruiz"
+            ],
+            "possession": 57
+          },
+          "away": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 11,
+            "corners": 5,
+            "passes": 449,
+            "fouls": 11,
+            "tackles": 19,
+            "yellowCards": [
+              "João Cancelo"
+            ],
+            "possession": 43
+          }
+        }
+      }
+    },
+    {
+      "id": "R16-07",
+      "date": "2026-07-07",
+      "time": "13:00 ET",
+      "venue": "BC Place, Vancouver",
+      "stage": "Octavos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 1,
+        "away": 2
+      },
+      "home": {
+        "team": "Suiza",
+        "flag": "🇨🇭",
+        "fifaRank": 21,
+        "coach": "Murat Yakin"
+      },
+      "away": {
+        "team": "Egipto",
+        "flag": "🇪🇬",
+        "fifaRank": 34,
+        "coach": "Hassan Shehata"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R32: Suiza 1-0 Argelia",
+          "away": "R32: Egipto 2-1 Australia"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Granit Xhaka",
+              "goals": 2
+            },
+            {
+              "player": "Breel Embolo",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Mohamed Salah",
+              "goals": 1
+            },
+            {
+              "player": "Mostafa Mohamed",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "L",
+            "W"
+          ],
+          "away": [
+            "D",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.4,
+          "away": 1.6
+        },
+        "h2h": {
+          "played": 3,
+          "homeWins": 2,
+          "draws": 0,
+          "awayWins": 1,
+          "lastResult": "2-1 SUI (amistoso 2022)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Sommer; Widmer, Schär, Akanji, Rodríguez; Freuler, Xhaka; Shaqiri, Zuber, Embolo; Seferović",
+          "away": "Mohamed El-Shenawy; Ahmed Hegazi, Mohamed Abdel-Moneim, Mahmoud Hamdi; Trezeguet, Hamdy Fathi, Emam Ashour, Mohamed Hany; Mohamed Salah, Mostafa Mohamed, Omar Marmoush"
+        },
+        "motm": {
+          "player": "Mohamed Salah",
+          "team": "Egipto",
+          "flag": "🇪🇬",
+          "probability": 58
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 53,
+        "scorers": [
+          {
+            "player": "Granit Xhaka",
+            "team": "Suiza",
+            "minute": 42,
+            "probability": 44
+          },
+          {
+            "player": "Breel Embolo",
+            "team": "Suiza",
+            "minute": 74,
+            "probability": 39
+          },
+          {
+            "player": "Mohamed Salah",
+            "team": "Egipto",
+            "minute": 28,
+            "probability": 56
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 5,
+            "shotsTotal": 12,
+            "corners": 5,
+            "passes": 462,
+            "fouls": 11,
+            "tackles": 21,
+            "yellowCards": [
+              "Manuel Akanji"
+            ],
+            "possession": 51
+          },
+          "away": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 13,
+            "corners": 6,
+            "passes": 443,
+            "fouls": 12,
+            "tackles": 20,
+            "yellowCards": [
+              "Hamdy Fathi"
+            ],
+            "possession": 49
+          }
+        }
+      }
+    },
+    {
+      "id": "R16-08",
+      "date": "2026-07-07",
+      "time": "17:00 ET",
+      "venue": "Arrowhead Stadium, Kansas City",
+      "stage": "Octavos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 2,
+        "away": 0
+      },
+      "home": {
+        "team": "Argentina",
+        "flag": "🇦🇷",
+        "fifaRank": 9,
+        "coach": "Lionel Scaloni"
+      },
+      "away": {
+        "team": "Colombia",
+        "flag": "🇨🇴",
+        "fifaRank": 11,
+        "coach": "Néstor Lorenzo"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R32: Argentina 4-0 Cabo Verde",
+          "away": "R32: Colombia 2-0 Ghana"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Lionel Messi",
+              "goals": 3
+            },
+            {
+              "player": "Julián Álvarez",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Luis Díaz",
+              "goals": 2
+            },
+            {
+              "player": "Jhon Durán",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 2.1,
+          "away": 1.2
+        },
+        "h2h": {
+          "played": 14,
+          "homeWins": 8,
+          "draws": 3,
+          "awayWins": 3,
+          "lastResult": "1-0 ARG (Copa América 2024)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Dibu Martínez; Molina, Romero, Lisandro Martínez, Tagliafico; De Paul, Paredes, Mac Allister; Garnacho, Messi; Julián Álvarez",
+          "away": "Vargas; Muñoz, Dávinson Sánchez, Cuesta, Mojica; Lerma, Uribe; Jhon Arias, James Rodríguez, Luis Díaz; Durán"
+        },
+        "motm": {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "flag": "🇦🇷",
+          "probability": 52
+        }
+      },
+      "prediction": {
+        "result": "2-0",
+        "winner": "home",
+        "confidence": 61,
+        "scorers": [
+          {
+            "player": "Lionel Messi",
+            "team": "Argentina",
+            "minute": 24,
+            "probability": 61
+          },
+          {
+            "player": "Julián Álvarez",
+            "team": "Argentina",
+            "minute": 68,
+            "probability": 53
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 8,
+            "passes": 571,
+            "fouls": 9,
+            "tackles": 16,
+            "yellowCards": [
+              "Rodrigo De Paul"
+            ],
+            "possession": 56
+          },
+          "away": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 11,
+            "corners": 5,
+            "passes": 447,
+            "fouls": 12,
+            "tackles": 22,
+            "yellowCards": [
+              "Mateus Uribe",
+              "Jhon Arias"
+            ],
+            "possession": 44
+          }
+        }
+      }
+    },
+    {
+      "id": "QF-01",
+      "date": "2026-07-09",
+      "time": "16:00 ET",
+      "venue": "SoFi Stadium, Los Ángeles",
+      "stage": "Cuartos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 3,
+        "away": 2
+      },
+      "home": {
+        "team": "Brasil",
+        "flag": "🇧🇷",
+        "fifaRank": 1,
+        "coach": "Carlo Ancelotti"
+      },
+      "away": {
+        "team": "Alemania",
+        "flag": "🇩🇪",
+        "fifaRank": 12,
+        "coach": "Julian Nagelsmann"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R16: Brasil 3-1 Canadá",
+          "away": "R16: Alemania 2-1 Países Bajos"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Vinícius Jr.",
+              "goals": 5
+            },
+            {
+              "player": "Matheus Cunha",
+              "goals": 3
+            }
+          ],
+          "away": [
+            {
+              "player": "Kai Havertz",
+              "goals": 4
+            },
+            {
+              "player": "Jamal Musiala",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "L",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 2.2,
+          "away": 1.8
+        },
+        "h2h": {
+          "played": 23,
+          "homeWins": 12,
+          "draws": 5,
+          "awayWins": 6,
+          "lastResult": "4-2 GER (Mundial 2014)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [
+            {
+              "player": "Casemiro",
+              "reason": "segunda amarilla — suspendido"
+            }
+          ],
+          "away": []
+        },
+        "lineups": {
+          "home": "Souza; Beraldo, B. Milão, Henrique, Augusto; Joãozinho, Bruno Guimarães; L. Henrique, Vinícius Jr., Paquetá; Martinelli",
+          "away": "Neuer; Kimmich, Tah, Rüdiger, Brown; Nmecha, Pavlović; Sané, Musiala, Wirtz; Havertz"
+        },
+        "motm": {
+          "player": "Vinícius Jr.",
+          "team": "Brasil",
+          "flag": "🇧🇷",
+          "probability": 53
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 57,
+        "scorers": [
+          {
+            "player": "Vinícius Jr.",
+            "team": "Brasil",
+            "minute": 19,
+            "probability": 63
+          },
+          {
+            "player": "Gabriel Martinelli",
+            "team": "Brasil",
+            "minute": 68,
+            "probability": 45
+          },
+          {
+            "player": "Kai Havertz",
+            "team": "Alemania",
+            "minute": 52,
+            "probability": 51
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 8,
+            "shotsTotal": 17,
+            "corners": 8,
+            "passes": 621,
+            "fouls": 10,
+            "tackles": 16,
+            "yellowCards": [
+              "Bruno Guimarães"
+            ],
+            "possession": 57
+          },
+          "away": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 6,
+            "passes": 470,
+            "fouls": 11,
+            "tackles": 20,
+            "yellowCards": [
+              "Joshua Kimmich",
+              "Florian Wirtz"
+            ],
+            "possession": 43
+          }
+        }
+      }
+    },
+    {
+      "id": "QF-02",
+      "date": "2026-07-09",
+      "time": "20:00 ET",
+      "venue": "AT&T Stadium, Dallas",
+      "stage": "Cuartos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 2,
+        "away": 1
+      },
+      "home": {
+        "team": "Francia",
+        "flag": "🇫🇷",
+        "fifaRank": 2,
+        "coach": "Didier Deschamps"
+      },
+      "away": {
+        "team": "México",
+        "flag": "🇲🇽",
+        "fifaRank": 16,
+        "coach": "Javier Aguirre"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R16: Francia 2-1 Noruega",
+          "away": "R16: México 1-0 Inglaterra"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Kylian Mbappé",
+              "goals": 5
+            },
+            {
+              "player": "Ousmane Dembélé",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Raúl Jiménez",
+              "goals": 3
+            },
+            {
+              "player": "Hirving Lozano",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "W",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 2.3,
+          "away": 1.1
+        },
+        "h2h": {
+          "played": 11,
+          "homeWins": 8,
+          "draws": 2,
+          "awayWins": 1,
+          "lastResult": "2-0 FRA (Mundial 2018)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": [
+            {
+              "player": "Edson Álvarez",
+              "reason": "segunda amarilla — suspendido"
+            }
+          ]
+        },
+        "lineups": {
+          "home": "Maignan; Koundé, Lacroix, Upamecano, Th. Hernández; Koné, Tchouaméni; Olise, Dembélé, Doué; Mbappé",
+          "away": "Ochoa; J. Sánchez, C. Montes, J. Vásquez, J. Gallardo; Luis Romo, Erick Gutiérrez; Hirving Lozano, Alexis Vega, H. Rodríguez; Raúl Jiménez"
+        },
+        "motm": {
+          "player": "Kylian Mbappé",
+          "team": "Francia",
+          "flag": "🇫🇷",
+          "probability": 57
+        }
+      },
+      "prediction": {
+        "result": "2-0",
+        "winner": "home",
+        "confidence": 69,
+        "scorers": [
+          {
+            "player": "Kylian Mbappé",
+            "team": "Francia",
+            "minute": 27,
+            "probability": 71
+          },
+          {
+            "player": "Désiré Doué",
+            "team": "Francia",
+            "minute": 62,
+            "probability": 44
+          },
+          {
+            "player": "Raúl Jiménez",
+            "team": "México",
+            "minute": 77,
+            "probability": 46
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 8,
+            "shotsTotal": 17,
+            "corners": 9,
+            "passes": 618,
+            "fouls": 8,
+            "tackles": 13,
+            "yellowCards": [
+              "Aurélien Tchouaméni"
+            ],
+            "possession": 61
+          },
+          "away": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 11,
+            "corners": 4,
+            "passes": 396,
+            "fouls": 14,
+            "tackles": 26,
+            "yellowCards": [
+              "Jorge Sánchez",
+              "Alexis Vega"
+            ],
+            "possession": 39
+          }
+        }
+      }
+    },
+    {
+      "id": "QF-03",
+      "date": "2026-07-10",
+      "time": "16:00 ET",
+      "venue": "MetLife Stadium, East Rutherford (Nueva York)",
+      "stage": "Cuartos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 0,
+        "away": 1
+      },
+      "home": {
+        "team": "EE.UU.",
+        "flag": "🇺🇸",
+        "fifaRank": 13,
+        "coach": "Mauricio Pochettino"
+      },
+      "away": {
+        "team": "España",
+        "flag": "🇪🇸",
+        "fifaRank": 3,
+        "coach": "Luis de la Fuente"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R16: EE.UU. 2-1 Bélgica",
+          "away": "R16: España 1-1 Portugal (pen 4-3)"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Christian Pulisic",
+              "goals": 4
+            },
+            {
+              "player": "Ricardo Pepi",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Álvaro Morata",
+              "goals": 3
+            },
+            {
+              "player": "Pedri",
+              "goals": 2
+            },
+            {
+              "player": "Nico Williams",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "D",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.3,
+          "away": 1.9
+        },
+        "h2h": {
+          "played": 8,
+          "homeWins": 2,
+          "draws": 2,
+          "awayWins": 4,
+          "lastResult": "0-3 ESP (amistoso 2023)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": [
+            {
+              "player": "Rodri",
+              "reason": "segunda amarilla — suspendido"
+            }
+          ]
+        },
+        "lineups": {
+          "home": "Turner; Dest, Long, Zimmermann, Robinson; Adams, McKennie; Reyna, Pulisic, Weah; Pepi",
+          "away": "Raya; Carvajal, Le Normand, Laporte, Cucurella; Zubimendi, Fabián Ruiz; Yamal, Pedri, Nico Williams; Morata"
+        },
+        "motm": {
+          "player": "Lamine Yamal",
+          "team": "España",
+          "flag": "🇪🇸",
+          "probability": 48
+        }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 61,
+        "scorers": [
+          {
+            "player": "Álvaro Morata",
+            "team": "España",
+            "minute": 47,
+            "probability": 49
+          },
+          {
+            "player": "Nico Williams",
+            "team": "España",
+            "minute": 73,
+            "probability": 43
+          },
+          {
+            "player": "Christian Pulisic",
+            "team": "EE.UU.",
+            "minute": 62,
+            "probability": 47
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 11,
+            "corners": 5,
+            "passes": 441,
+            "fouls": 13,
+            "tackles": 24,
+            "yellowCards": [
+              "Tyler Adams"
+            ],
+            "possession": 40
+          },
+          "away": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 7,
+            "passes": 661,
+            "fouls": 8,
+            "tackles": 12,
+            "yellowCards": [
+              "Dani Carvajal"
+            ],
+            "possession": 60
+          }
+        }
+      }
+    },
+    {
+      "id": "QF-04",
+      "date": "2026-07-10",
+      "time": "20:00 ET",
+      "venue": "NRG Stadium, Houston",
+      "stage": "Cuartos de Final",
+      "status": "completed",
+      "finalScore": {
+        "home": 1,
+        "away": 3
+      },
+      "home": {
+        "team": "Egipto",
+        "flag": "🇪🇬",
+        "fifaRank": 34,
+        "coach": "Hassan Shehata"
+      },
+      "away": {
+        "team": "Argentina",
+        "flag": "🇦🇷",
+        "fifaRank": 9,
+        "coach": "Lionel Scaloni"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "R16: Egipto 2-1 Suiza",
+          "away": "R16: Argentina 2-0 Colombia"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Mohamed Salah",
+              "goals": 3
+            },
+            {
+              "player": "Mostafa Mohamed",
+              "goals": 1
+            }
+          ],
+          "away": [
+            {
+              "player": "Lionel Messi",
+              "goals": 4
+            },
+            {
+              "player": "Julián Álvarez",
+              "goals": 3
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "D",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.1,
+          "away": 2.4
+        },
+        "h2h": {
+          "played": 3,
+          "homeWins": 1,
+          "draws": 1,
+          "awayWins": 1,
+          "lastResult": "2-2 (amistoso 2019)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Mohamed El-Shenawy; Ahmed Hegazi, Mohamed Abdel-Moneim, Mahmoud Hamdi; Trezeguet, Hamdy Fathi, Emam Ashour, Mohamed Hany; Mohamed Salah, Mostafa Mohamed, Omar Marmoush",
+          "away": "Dibu Martínez; Molina, Romero, Lisandro Martínez, Tagliafico; De Paul, Paredes, Mac Allister; Garnacho, Messi; Julián Álvarez"
+        },
+        "motm": {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "flag": "🇦🇷",
+          "probability": 59
+        }
+      },
+      "prediction": {
+        "result": "0-2",
+        "winner": "away",
+        "confidence": 71,
+        "scorers": [
+          {
+            "player": "Lionel Messi",
+            "team": "Argentina",
+            "minute": 23,
+            "probability": 64
+          },
+          {
+            "player": "Julián Álvarez",
+            "team": "Argentina",
+            "minute": 58,
+            "probability": 55
+          },
+          {
+            "player": "Mohamed Salah",
+            "team": "Egipto",
+            "minute": 71,
+            "probability": 52
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 4,
+            "shotsTotal": 10,
+            "corners": 5,
+            "passes": 367,
+            "fouls": 14,
+            "tackles": 26,
+            "yellowCards": [
+              "Hamdy Fathi",
+              "Mohamed Hany"
+            ],
+            "possession": 37
+          },
+          "away": {
+            "shotsOnTarget": 9,
+            "shotsTotal": 19,
+            "corners": 9,
+            "passes": 628,
+            "fouls": 8,
+            "tackles": 13,
+            "yellowCards": [
+              "Rodrigo De Paul"
+            ],
+            "possession": 63
+          }
+        }
+      }
+    },
+    {
+      "id": "SF-01",
+      "date": "2026-07-13",
+      "time": "17:00 ET",
+      "venue": "MetLife Stadium, East Rutherford (Nueva York)",
+      "stage": "Semifinal",
+      "status": "upcoming",
+      "home": {
+        "team": "Brasil",
+        "flag": "🇧🇷",
+        "fifaRank": 1,
+        "coach": "Carlo Ancelotti"
+      },
+      "away": {
+        "team": "Francia",
+        "flag": "🇫🇷",
+        "fifaRank": 2,
+        "coach": "Didier Deschamps"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "QF: Brasil 3-2 Alemania (thriller)",
+          "away": "QF: Francia 2-1 México"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Vinícius Jr.",
+              "goals": 6,
+              "note": "Goleador del torneo — hat-trick vs Alemania"
+            },
+            {
+              "player": "Matheus Cunha",
+              "goals": 3
+            },
+            {
+              "player": "Gabriel Martinelli",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Kylian Mbappé",
+              "goals": 6,
+              "note": "5 goles y 1 asistencia en las últimas 3 rondas"
+            },
+            {
+              "player": "Ousmane Dembélé",
+              "goals": 2
+            },
+            {
+              "player": "Désiré Doué",
+              "goals": 2
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "W",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 2.4,
+          "away": 2.2
+        },
+        "h2h": {
+          "played": 31,
+          "homeWins": 14,
+          "draws": 7,
+          "awayWins": 10,
+          "lastResult": "1-0 FRA (Mundial 2006 cuartos)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": [
+            {
+              "player": "Aurélien Tchouaméni",
+              "reason": "segunda amarilla — suspendido"
+            }
+          ]
+        },
+        "lineups": {
+          "home": "Souza; Beraldo, B. Milão, Henrique, Augusto; Joãozinho, Bruno Guimarães; L. Henrique, Vinícius Jr., Paquetá; Martinelli",
+          "away": "Maignan; Koundé, Lacroix, Upamecano, Th. Hernández; Koné, Camavinga; Olise, Dembélé, Doué; Mbappé"
+        },
+        "motm": {
+          "player": "Vinícius Jr.",
+          "team": "Brasil",
+          "flag": "🇧🇷",
+          "probability": 46
+        }
+      },
+      "prediction": {
+        "result": "2-1",
+        "winner": "home",
+        "confidence": 54,
+        "scorers": [
+          {
+            "player": "Vinícius Jr.",
+            "team": "Brasil",
+            "minute": 24,
+            "probability": 63
+          },
+          {
+            "player": "Gabriel Martinelli",
+            "team": "Brasil",
+            "minute": 71,
+            "probability": 41
+          },
+          {
+            "player": "Kylian Mbappé",
+            "team": "Francia",
+            "minute": 55,
+            "probability": 65
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 7,
+            "passes": 598,
+            "fouls": 10,
+            "tackles": 17,
+            "yellowCards": [
+              "Bruno Guimarães"
+            ],
+            "possession": 53
+          },
+          "away": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 7,
+            "passes": 530,
+            "fouls": 11,
+            "tackles": 19,
+            "yellowCards": [
+              "Jules Koundé",
+              "Eduardo Camavinga"
+            ],
+            "possession": 47
+          }
+        }
+      }
+    },
+    {
+      "id": "SF-02",
+      "date": "2026-07-14",
+      "time": "17:00 ET",
+      "venue": "AT&T Stadium, Dallas",
+      "stage": "Semifinal",
+      "status": "upcoming",
+      "home": {
+        "team": "España",
+        "flag": "🇪🇸",
+        "fifaRank": 3,
+        "coach": "Luis de la Fuente"
+      },
+      "away": {
+        "team": "Argentina",
+        "flag": "🇦🇷",
+        "fifaRank": 9,
+        "coach": "Lionel Scaloni"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "QF: España 1-0 EE.UU. (Yamal decisivo)",
+          "away": "QF: Argentina 3-1 Egipto (Messi brace + Álvarez)"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Álvaro Morata",
+              "goals": 3
+            },
+            {
+              "player": "Lamine Yamal",
+              "goals": 3,
+              "note": "18 años — el más joven finalista de la historia"
+            },
+            {
+              "player": "Pedri",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Lionel Messi",
+              "goals": 5,
+              "note": "¿La Copa del Mundo soñada? Ya tiene 3 goles y 2 asistencias"
+            },
+            {
+              "player": "Julián Álvarez",
+              "goals": 4
+            },
+            {
+              "player": "Alejandro Garnacho",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "D",
+            "W"
+          ],
+          "away": [
+            "W",
+            "W",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.7,
+          "away": 2.1
+        },
+        "h2h": {
+          "played": 18,
+          "homeWins": 6,
+          "draws": 5,
+          "awayWins": 7,
+          "lastResult": "1-0 ARG (amistoso 2022)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [
+            {
+              "player": "Dani Carvajal",
+              "reason": "segunda amarilla — suspendido"
+            }
+          ],
+          "away": []
+        },
+        "lineups": {
+          "home": "Raya; Pérez (por Carvajal), Le Normand, Laporte, Cucurella; Zubimendi, Fabián Ruiz; Yamal, Pedri, Nico Williams; Morata",
+          "away": "Dibu Martínez; Molina, Romero, Lisandro Martínez, Tagliafico; De Paul, Mac Allister; Garnacho, Messi, Julián Álvarez; Thiago Almada"
+        },
+        "motm": {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "flag": "🇦🇷",
+          "probability": 51
+        }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 55,
+        "scorers": [
+          {
+            "player": "Lionel Messi",
+            "team": "Argentina",
+            "minute": 33,
+            "probability": 58
+          },
+          {
+            "player": "Julián Álvarez",
+            "team": "Argentina",
+            "minute": 79,
+            "probability": 48
+          },
+          {
+            "player": "Álvaro Morata",
+            "team": "España",
+            "minute": 52,
+            "probability": 47
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 13,
+            "corners": 7,
+            "passes": 652,
+            "fouls": 9,
+            "tackles": 14,
+            "yellowCards": [
+              "Pedri"
+            ],
+            "possession": 58
+          },
+          "away": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 14,
+            "corners": 6,
+            "passes": 471,
+            "fouls": 12,
+            "tackles": 22,
+            "yellowCards": [
+              "Rodrigo De Paul",
+              "Nicolás Otamendi"
+            ],
+            "possession": 42
+          }
+        }
+      }
+    },
+    {
+      "id": "3P-01",
+      "date": "2026-07-17",
+      "time": "14:00 ET",
+      "venue": "Rose Bowl, Los Ángeles",
+      "stage": "Tercer Puesto",
+      "status": "upcoming",
+      "home": {
+        "team": "Francia",
+        "flag": "🇫🇷",
+        "fifaRank": 2,
+        "coach": "Didier Deschamps"
+      },
+      "away": {
+        "team": "España",
+        "flag": "🇪🇸",
+        "fifaRank": 3,
+        "coach": "Luis de la Fuente"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "SF: Francia vs Brasil (pendiente)",
+          "away": "SF: España vs Argentina (pendiente)"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Kylian Mbappé",
+              "goals": 6
+            },
+            {
+              "player": "Ousmane Dembélé",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Álvaro Morata",
+              "goals": 3
+            },
+            {
+              "player": "Lamine Yamal",
+              "goals": 3
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "D",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 1.8,
+          "away": 1.9
+        },
+        "h2h": {
+          "played": 36,
+          "homeWins": 15,
+          "draws": 10,
+          "awayWins": 11,
+          "lastResult": "2-0 FRA (Nations League 2020)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Maignan; Koundé, Lacroix, Upamecano, Th. Hernández; Koné, Camavinga; Olise, Dembélé, Doué; Mbappé",
+          "away": "Raya; Pérez, Le Normand, Laporte, Cucurella; Zubimendi, Fabián Ruiz; Yamal, Pedri, Nico Williams; Morata"
+        },
+        "motm": {
+          "player": "Kylian Mbappé",
+          "team": "Francia",
+          "flag": "🇫🇷",
+          "probability": 44
+        }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 52,
+        "scorers": [
+          {
+            "player": "Álvaro Morata",
+            "team": "España",
+            "minute": 34,
+            "probability": 47
+          },
+          {
+            "player": "Nico Williams",
+            "team": "España",
+            "minute": 72,
+            "probability": 42
+          },
+          {
+            "player": "Kylian Mbappé",
+            "team": "Francia",
+            "minute": 58,
+            "probability": 55
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 6,
+            "shotsTotal": 14,
+            "corners": 6,
+            "passes": 561,
+            "fouls": 10,
+            "tackles": 16,
+            "yellowCards": [
+              "Youssouf Koné"
+            ],
+            "possession": 52
+          },
+          "away": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 14,
+            "corners": 7,
+            "passes": 519,
+            "fouls": 11,
+            "tackles": 18,
+            "yellowCards": [
+              "Fabián Ruiz"
+            ],
+            "possession": 48
+          }
+        }
+      }
+    },
+    {
+      "id": "F-01",
+      "date": "2026-07-19",
+      "time": "17:00 ET",
+      "venue": "MetLife Stadium, East Rutherford (Nueva York)",
+      "stage": "Final",
+      "status": "upcoming",
+      "home": {
+        "team": "Brasil",
+        "flag": "🇧🇷",
+        "fifaRank": 1,
+        "coach": "Carlo Ancelotti"
+      },
+      "away": {
+        "team": "Argentina",
+        "flag": "🇦🇷",
+        "fifaRank": 9,
+        "coach": "Lionel Scaloni"
+      },
+      "context": {
+        "groupRecord": {
+          "home": "SF: Brasil vs Francia (pendiente)",
+          "away": "SF: España vs Argentina (pendiente)"
+        },
+        "wcGoals": {
+          "home": [
+            {
+              "player": "Vinícius Jr.",
+              "goals": 6,
+              "note": "Goleador del torneo — el año de Vini"
+            },
+            {
+              "player": "Matheus Cunha",
+              "goals": 3
+            },
+            {
+              "player": "Gabriel Martinelli",
+              "goals": 2
+            }
+          ],
+          "away": [
+            {
+              "player": "Lionel Messi",
+              "goals": 5,
+              "note": "Su última Copa del Mundo — buscando la segunda estrella"
+            },
+            {
+              "player": "Julián Álvarez",
+              "goals": 4
+            },
+            {
+              "player": "Alejandro Garnacho",
+              "goals": 1
+            }
+          ]
+        },
+        "form": {
+          "home": [
+            "W",
+            "W",
+            "W"
+          ],
+          "away": [
+            "W",
+            "W",
+            "W"
+          ]
+        },
+        "xg": {
+          "home": 2.1,
+          "away": 2.0
+        },
+        "h2h": {
+          "played": 11,
+          "homeWins": 4,
+          "draws": 3,
+          "awayWins": 4,
+          "lastResult": "0-1 ARG (Copa América 2021 Final)"
+        },
+        "injuries": {
+          "home": [],
+          "away": []
+        },
+        "suspensions": {
+          "home": [],
+          "away": []
+        },
+        "lineups": {
+          "home": "Souza; Beraldo, B. Milão, Henrique, Augusto; Joãozinho, Bruno Guimarães; L. Henrique, Vinícius Jr., Paquetá; Martinelli",
+          "away": "Dibu Martínez; Molina, Romero, Lisandro Martínez, Tagliafico; De Paul, Mac Allister; Garnacho, Messi, Julián Álvarez; Thiago Almada"
+        },
+        "motm": {
+          "player": "Lionel Messi",
+          "team": "Argentina",
+          "flag": "🇦🇷",
+          "probability": 53
+        }
+      },
+      "prediction": {
+        "result": "1-2",
+        "winner": "away",
+        "confidence": 52,
+        "scorers": [
+          {
+            "player": "Lionel Messi",
+            "team": "Argentina",
+            "minute": 38,
+            "probability": 56
+          },
+          {
+            "player": "Julián Álvarez",
+            "team": "Argentina",
+            "minute": 74,
+            "probability": 51
+          },
+          {
+            "player": "Vinícius Jr.",
+            "team": "Brasil",
+            "minute": 55,
+            "probability": 58
+          }
+        ],
+        "stats": {
+          "home": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 15,
+            "corners": 7,
+            "passes": 601,
+            "fouls": 9,
+            "tackles": 15,
+            "yellowCards": [
+              "Bruno Guimarães"
+            ],
+            "possession": 54
+          },
+          "away": {
+            "shotsOnTarget": 7,
+            "shotsTotal": 14,
+            "corners": 6,
+            "passes": 563,
+            "fouls": 10,
+            "tackles": 18,
+            "yellowCards": [
+              "Rodrigo De Paul"
+            ],
+            "possession": 46
+          }
+        }
       }
     }
   ],
   "_generated": {
-    "date": "2026-06-29",
-    "timestamp": "2026-06-29T13:24:31.559Z"
+    "date": "2026-07-11",
+    "timestamp": "2026-07-11T14:00:00.000Z"
   }
 }

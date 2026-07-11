@@ -33,6 +33,12 @@
   function winnerClass(match, side) {
     if (match.status === 'completed' && match.finalScore) {
       const fs = match.finalScore;
+      if (match.penalties) {
+        const p = match.penalties;
+        if (p.home > p.away && side === 'home') return 'winner';
+        if (p.away > p.home && side === 'away') return 'winner';
+        return '';
+      }
       if (fs.home === fs.away) return '';
       if (fs.home > fs.away && side === 'home') return 'winner';
       if (fs.away > fs.home && side === 'away') return 'winner';
@@ -320,15 +326,19 @@
     let scoreBlockHtml;
     if (isCompleted) {
       const fs = match.finalScore;
-      const diff = fs.home - fs.away;
-      const outcomeLabel = diff > 0
+      const penNote = match.penalties
+        ? `<span class="pen-note"> (pen ${match.penalties.home}–${match.penalties.away})</span>`
+        : '';
+      const homeWinner = winnerClass(match, 'home') === 'winner';
+      const awayWinner = winnerClass(match, 'away') === 'winner';
+      const outcomeLabel = homeWinner
         ? `<span style="color:var(--accent-green)">Victoria ${match.home.team}</span>`
-        : diff < 0
+        : awayWinner
           ? `<span style="color:var(--accent-green)">Victoria ${match.away.team}</span>`
           : `<span style="color:var(--accent-orange)">Empate</span>`;
       scoreBlockHtml = `
         <div class="score-block">
-          <div class="final-score">${fs.home} — ${fs.away}</div>
+          <div class="final-score">${fs.home} — ${fs.away}${penNote}</div>
           <div class="score-label final">Resultado Final</div>
           <div class="predicted-subtext">Pred. ${p.result} · ${p.confidence}% conf.</div>
           <div style="margin-top:4px;font-size:11px;">${outcomeLabel}</div>
@@ -427,11 +437,18 @@
     if (!container) return;
 
     if (todayMatches.length === 0) {
+      const allDates = fixtures.matches.map(m => m.date);
+      const nextDate = allDates.filter(d => d > displayDate).sort()[0];
+      const prevDate = allDates.filter(d => d < displayDate).sort().slice(-1)[0];
+      const nextHint = nextDate
+        ? `<p class="rest-day-hint">⚽ Próximo partido: <strong>${formatDisplayDate(nextDate)}</strong></p>`
+        : (prevDate ? `<p class="rest-day-hint">El torneo ha finalizado.</p>` : '');
       container.innerHTML = `
         <div class="no-matches">
-          <div class="no-matches-icon">🗓️</div>
-          <h3>Sin partidos hoy</h3>
+          <div class="no-matches-icon">😴</div>
+          <h3>Día de descanso</h3>
           <p>No hay partidos programados para el <strong>${formatDisplayDate(displayDate)}</strong>.</p>
+          ${nextHint}
         </div>`;
       return;
     }
@@ -458,33 +475,34 @@
   /* ─── Navegación ─── */
   function setupNavigation(fixtures) {
     const matchDates = [...new Set(fixtures.matches.map(m => m.date))].sort();
+    const lastMatchDate = matchDates[matchDates.length - 1];
     const prevBtn = document.getElementById('btn-prev');
     const nextBtn = document.getElementById('btn-next');
     const todayBtn = document.getElementById('btn-today');
 
-    let currentDate = matchDates.includes(TODAY)
-      ? TODAY
-      : matchDates[matchDates.length - 1];
+    // Start on TODAY if it's within the tournament window, else last match date
+    let currentDate = TODAY <= lastMatchDate ? TODAY : lastMatchDate;
 
     function update() {
       renderPage(fixtures, currentDate);
-      const idx = matchDates.indexOf(currentDate);
-      if (prevBtn) prevBtn.disabled = idx <= 0;
-      if (nextBtn) nextBtn.disabled = idx >= matchDates.length - 1;
+      const prevDates = matchDates.filter(d => d < currentDate);
+      const nextDates = matchDates.filter(d => d > currentDate);
+      if (prevBtn) prevBtn.disabled = prevDates.length === 0;
+      if (nextBtn) nextBtn.disabled = nextDates.length === 0;
     }
 
     if (prevBtn) prevBtn.addEventListener('click', () => {
-      const idx = matchDates.indexOf(currentDate);
-      if (idx > 0) { currentDate = matchDates[idx - 1]; update(); }
+      const prevDates = matchDates.filter(d => d < currentDate);
+      if (prevDates.length > 0) { currentDate = prevDates[prevDates.length - 1]; update(); }
     });
 
     if (nextBtn) nextBtn.addEventListener('click', () => {
-      const idx = matchDates.indexOf(currentDate);
-      if (idx < matchDates.length - 1) { currentDate = matchDates[idx + 1]; update(); }
+      const nextDates = matchDates.filter(d => d > currentDate);
+      if (nextDates.length > 0) { currentDate = nextDates[0]; update(); }
     });
 
     if (todayBtn) todayBtn.addEventListener('click', () => {
-      currentDate = matchDates.includes(TODAY) ? TODAY : matchDates[matchDates.length - 1];
+      currentDate = TODAY <= lastMatchDate ? TODAY : lastMatchDate;
       update();
     });
 
