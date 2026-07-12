@@ -1,7 +1,0 @@
-[run]
-omit =
-    demo.py
-    tests/*
-
-[report]
-precision = 1

@@ -885,6 +885,10 @@ body {
 
 .no-matches-icon { font-size: 48px; margin-bottom: 12px; }
 .no-matches h3 { font-size: 16px; margin-bottom: 6px; }
+.rest-day-hint { margin-top: 10px; color: var(--accent-green); font-size: 13px; }
+
+/* ─── Penalties note ─── */
+.pen-note { font-size: 14px; font-weight: 600; color: var(--accent-orange); }
 
 /* ─── Responsive ─── */
 @media (max-width: 600px) {
